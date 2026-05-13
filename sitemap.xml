@@ -1,44 +1,52 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://xn--ok0b236bba.site/</loc>
-<lastmod>2026-05-13T09:36:11+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://xn--ok0b236bba.site/</loc>
+  <lastmod>2026-05-13T09:36:11+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://xn--ok0b236bba.site/index.html</loc>
-<lastmod>2026-05-13T09:36:12+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://xn--ok0b236bba.site/index.html</loc>
+  <lastmod>2026-05-13T09:36:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://xn--ok0b236bba.site/link.html</loc>
-<lastmod>2026-05-13T09:36:12+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://xn--ok0b236bba.site/link.html</loc>
+  <lastmod>2026-05-13T09:36:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://xn--ok0b236bba.site/yako.html</loc>
-<lastmod>2026-05-13T09:36:12+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://xn--ok0b236bba.site/yako.html</loc>
+  <lastmod>2026-05-13T09:36:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://xn--ok0b236bba.site/yugigu.html</loc>
-<lastmod>2026-05-13T09:36:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://xn--ok0b236bba.site/yugigu.html</loc>
+  <lastmod>2026-05-13T09:36:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://xn--ok0b236bba.site/bypass.html</loc>
-<lastmod>2026-05-13T09:36:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://xn--ok0b236bba.site/bypass.html</loc>
+  <lastmod>2026-05-13T09:36:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://xn--ok0b236bba.site/blog.html</loc>
-<lastmod>2026-05-13T09:36:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://xn--ok0b236bba.site/blog.html</loc>
+  <lastmod>2026-05-13T09:36:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://xn--ok0b236bba.site/contact.html</loc>
-<lastmod>2026-05-13T09:36:13+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://xn--ok0b236bba.site/contact.html</loc>
+  <lastmod>2026-05-13T09:36:13+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+
+
 </urlset>
