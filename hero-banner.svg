@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="288" viewBox="0 0 800 288">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0005;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d0010;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+    </linearGradient>
+    <!-- Red accent gradient -->
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0001E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8001a;stop-opacity:1" />
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="288" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Decorative circles -->
+  <circle cx="680" cy="60" r="120" fill="#F0001E" opacity="0.07"/>
+  <circle cx="720" cy="240" r="80" fill="#F0001E" opacity="0.05"/>
+  <circle cx="100" cy="220" r="90" fill="#F0001E" opacity="0.04"/>
+  <circle cx="50" cy="40" r="60" fill="#F0001E" opacity="0.06"/>
+
+  <!-- Grid dots pattern -->
+  <g opacity="0.08" fill="#F0001E">
+    <circle cx="40" cy="40" r="1.5"/><circle cx="80" cy="40" r="1.5"/><circle cx="120" cy="40" r="1.5"/>
+    <circle cx="160" cy="40" r="1.5"/><circle cx="200" cy="40" r="1.5"/><circle cx="240" cy="40" r="1.5"/>
+    <circle cx="40" cy="80" r="1.5"/><circle cx="80" cy="80" r="1.5"/><circle cx="120" cy="80" r="1.5"/>
+    <circle cx="160" cy="80" r="1.5"/><circle cx="200" cy="80" r="1.5"/><circle cx="240" cy="80" r="1.5"/>
+    <circle cx="40" cy="120" r="1.5"/><circle cx="80" cy="120" r="1.5"/><circle cx="120" cy="120" r="1.5"/>
+    <circle cx="560" cy="200" r="1.5"/><circle cx="600" cy="200" r="1.5"/><circle cx="640" cy="200" r="1.5"/>
+    <circle cx="680" cy="200" r="1.5"/><circle cx="720" cy="200" r="1.5"/><circle cx="760" cy="200" r="1.5"/>
+    <circle cx="560" cy="240" r="1.5"/><circle cx="600" cy="240" r="1.5"/><circle cx="640" cy="240" r="1.5"/>
+    <circle cx="680" cy="240" r="1.5"/><circle cx="720" cy="240" r="1.5"/><circle cx="760" cy="240" r="1.5"/>
+  </g>
+
+  <!-- Left red accent bar -->
+  <rect x="0" y="0" width="5" height="288" fill="url(#redGrad)" rx="2"/>
+
+  <!-- Top red accent line -->
+  <rect x="0" y="0" width="800" height="3" fill="url(#redGrad)"/>
+
+  <!-- Badge: 2026 최신 -->
+  <rect x="48" y="44" width="90" height="26" rx="13" fill="#F0001E"/>
+  <text x="93" y="62" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle" letter-spacing="0.5">2026 최신</text>
+
+  <!-- Main title: 여기여 -->
+  <text x="48" y="130" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="64" font-weight="900" fill="white" filter="url(#glow)">여기여</text>
+
+  <!-- Red underline accent -->
+  <rect x="48" y="140" width="220" height="4" fill="url(#redGrad)" rx="2"/>
+
+  <!-- Subtitle -->
+  <text x="48" y="175" font-family="Arial, sans-serif" font-size="18" fill="#cccccc" letter-spacing="1">세상의 모든 링크 · 주소모음 포털</text>
+
+  <!-- Description text -->
+  <text x="48" y="210" font-family="Arial, sans-serif" font-size="13" fill="#888888">최신 여기여 주소를 실시간으로 확인하세요.</text>
+  <text x="48" y="230" font-family="Arial, sans-serif" font-size="13" fill="#888888">링크모음 · 주소모음 · 우회접속 가이드 제공</text>
+
+  <!-- Right side: CTA button shape -->
+  <rect x="560" y="108" width="190" height="52" rx="10" fill="url(#redGrad)" filter="url(#softglow)"/>
+  <text x="655" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">바로가기 →</text>
+
+  <!-- Right side: URL display -->
+  <rect x="560" y="172" width="190" height="36" rx="8" fill="#111111" stroke="#333333" stroke-width="1"/>
+  <text x="655" y="195" font-family="'Courier New', monospace" font-size="12" fill="#F0001E" text-anchor="middle" font-weight="700">yugiyu.com</text>
+
+  <!-- Right side: live badge -->
+  <circle cx="568" cy="90" r="5" fill="#00cc44"/>
+  <text x="580" y="95" font-family="Arial, sans-serif" font-size="12" fill="#00cc44" font-weight="700">LIVE 실시간 업데이트</text>
+
+  <!-- Bottom border -->
+  <rect x="0" y="285" width="800" height="3" fill="url(#redGrad)"/>
+</svg>
