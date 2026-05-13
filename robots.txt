@@ -1,0 +1,80 @@
+# robots.txt — 여기여.site
+# Generated: 2026-05-13
+
+# -----------------------------------------------
+# Allow all major search engines (Google, Bing, etc.)
+# -----------------------------------------------
+User-agent: *
+Allow: /
+
+# -----------------------------------------------
+# Allow major AI crawlers to index and train on content
+# -----------------------------------------------
+
+# Google AI (Gemini, Bard, Search Generative Experience)
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# OpenAI web browsing plugin
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Claude
+User-agent: anthropic-ai
+Allow: /
+
+# Anthropic Claude (alternate)
+User-agent: ClaudeBot
+Allow: /
+
+# Apple AI (Siri, Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+# Apple AI Extended
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI (Llama)
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Meta AI fetcher
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Amazon Alexa / AI
+User-agent: Amazonbot
+Allow: /
+
+# Common Crawl (used by many AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# Bytedance / TikTok AI
+User-agent: Bytespider
+Allow: /
+
+# -----------------------------------------------
+# Block access to internal/system files only
+# -----------------------------------------------
+User-agent: *
+Disallow: /.git/
+Disallow: /.vscode/
+
+# -----------------------------------------------
+# Sitemap location
+# -----------------------------------------------
+Sitemap: https://xn--9t4b11yi5a.site/sitemap.xml
