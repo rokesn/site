@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F0001E" />
+<title>VPN 없이 차단된 사이트 접속하는 방법 — DNS 우회 완벽 정리 2026</title>
+<meta name="description" content="VPN 없이 DNS 서버 변경만으로 차단된 사이트에 접속하는 방법 완벽 정리. 구글 DNS, 클라우드플레어, 쿼드9 등 무료 DNS 서버 비교와 기기별 설정 방법 안내." />
+<meta name="keywords" content="VPN 없이 우회, DNS 우회, 차단 사이트 접속, DNS 변경 우회, 8.8.8.8 우회, 무료 DNS 서버" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="여기여" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="여기여.site | 세상의 모든링크 주소찾기" />
+<meta property="og:title" content="VPN 없이 차단된 사이트 접속하는 방법 — DNS 우회 완벽 정리 2026" />
+<meta property="og:description" content="VPN 없이 DNS 변경만으로 차단 사이트 접속하는 방법 완벽 정리. 기기별 설정 가이드 포함." />
+<meta property="og:image" content="https://여기여.site/og-image.svg" />
+<meta property="og:url" content="https://여기여.site/blog-post-3.html" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@ygy1552" />
+<link rel="canonical" href="https://여기여.site/blog-post-3.html" />
+<link rel="alternate" hreflang="ko" href="https://여기여.site/blog-post-3.html" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "VPN 없이 차단된 사이트 접속하는 방법 — DNS 우회 완벽 정리 2026",
+  "datePublished": "2026-05-05",
+  "dateModified": "2026-05-05",
+  "inLanguage": "ko",
+  "url": "https://여기여.site/blog-post-3.html",
+  "author": {"@type": "Organization", "name": "여기여", "url": "https://여기여.site/"},
+  "publisher": {"@type": "Organization", "name": "여기여", "url": "https://여기여.site/"},
+  "image": "https://여기여.site/og-image.svg",
+  "articleSection": "가이드",
+  "keywords": ["VPN 없이 우회", "DNS 우회", "차단 사이트 접속", "DNS 변경"]
+}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"여기여 (Yugiyu)","url":"https://xn--ok0b236bba.site","sameAs":["https://twitter.com/ygy1552","https://yugiyu.com"]}</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: #0d0d0d; font-family: 'Noto Sans KR', Arial, sans-serif; color: #ccc; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+  .notice-bar { width: 100%; background: #F0001E; color: #fff; text-align: center; font-size: 13px; padding: 8px 16px; }
+  nav.site-nav { width: 100%; background: #111; border-bottom: 1px solid #222; display: flex; justify-content: center; flex-wrap: wrap; gap: 4px; padding: 10px 16px; }
+  nav.site-nav a { color: #aaa; text-decoration: none; font-size: 13px; padding: 5px 12px; border-radius: 6px; transition: background 0.2s, color 0.2s; }
+  nav.site-nav a:hover, nav.site-nav a.active { background: #F0001E; color: #fff; }
+  .article-wrap { width: 100%; max-width: 680px; margin: 32px auto 48px; padding: 0 16px; }
+  nav.breadcrumb { font-size: 12px; color: #555; margin-bottom: 16px; }
+  nav.breadcrumb a { color: #888; text-decoration: none; }
+  nav.breadcrumb a:hover { color: #F0001E; }
+  nav.breadcrumb span { margin: 0 6px; }
+  .article-header { background: #1a1a1a; border-radius: 16px; padding: 28px; margin-bottom: 8px; border-left: 5px solid #F0001E; }
+  .article-meta { display: flex; gap: 12px; align-items: center; margin-bottom: 14px; flex-wrap: wrap; }
+  .cat-badge { background: #F0001E22; color: #F0001E; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 10px; }
+  .date-badge { font-size: 12px; color: #555; }
+  .article-header h1 { margin: 0 0 10px; color: #fff; font-size: 22px; font-weight: 900; line-height: 1.5; }
+  .article-header .summary { font-size: 14px; color: #888; line-height: 1.8; margin: 0; }
+  .article-body { background: #1a1a1a; border-radius: 16px; padding: 28px; margin-top: 8px; }
+  .article-body h2 { color: #fff; font-size: 18px; font-weight: 700; border-left: 4px solid #F0001E; padding-left: 14px; margin: 32px 0 14px; }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body h3 { color: #ddd; font-size: 15px; font-weight: 700; margin: 20px 0 10px; padding-left: 8px; border-left: 2px solid #555; }
+  .article-body p { font-size: 14px; color: #999; line-height: 1.95; margin: 0 0 14px; }
+  .article-body ul, .article-body ol { font-size: 14px; color: #999; line-height: 1.95; padding-left: 22px; margin: 0 0 14px; }
+  .article-body li { margin-bottom: 6px; }
+  .compare-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; }
+  .compare-table th { background: #222; color: #aaa; padding: 9px 12px; text-align: left; border-bottom: 1px solid #333; }
+  .compare-table td { padding: 10px 12px; border-bottom: 1px solid #1f1f1f; color: #ccc; vertical-align: top; }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .dns-val { color: #F0001E; font-weight: 700; font-family: monospace; }
+  .good { color: #6a9a6a; }
+  .tip-box { background: #0d1a0d; border: 1px solid #1a3a1a; border-radius: 10px; padding: 14px 16px; font-size: 13px; color: #6a9a6a; line-height: 1.8; margin: 14px 0; }
+  .warn-box { background: #1a1000; border: 1px solid #3a2a00; border-radius: 10px; padding: 14px 16px; font-size: 13px; color: #aa8844; line-height: 1.8; margin: 14px 0; }
+  .method-card { background: #111; border: 1px solid #2a2a2a; border-radius: 10px; padding: 18px; margin: 12px 0; }
+  .method-card h3 { margin: 0 0 10px; color: #fff; font-size: 15px; border: none; padding: 0; }
+  .method-card .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; font-size: 13px; }
+  .pros { color: #6a9a6a; }
+  .cons { color: #aa6644; }
+  .related-posts { margin-top: 32px; }
+  .related-posts h2 { color: #fff; font-size: 16px; font-weight: 700; border-left: 4px solid #F0001E; padding-left: 12px; margin: 0 0 14px; }
+  .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .related-card { background: #111; border: 1px solid #2a2a2a; border-radius: 10px; padding: 14px; text-decoration: none; transition: border-color 0.2s; }
+  .related-card:hover { border-color: #F0001E; }
+  .related-card span { color: #F0001E; font-size: 10px; font-weight: 700; display: block; margin-bottom: 5px; }
+  .related-card p { color: #aaa; font-size: 13px; line-height: 1.5; margin: 0; }
+  footer { width: 100%; text-align: center; padding: 16px; color: #444; font-size: 12px; border-top: 1px solid #1a1a1a; margin-top: auto; }
+  footer a { color: #555; text-decoration: none; }
+  footer a:hover { color: #F0001E; }
+</style>
+</head>
+<body>
+<div class="notice-bar">&#128308; 여기여 최신주소 실시간 업데이트 중 | 공식 주소: yugiyu.com</div>
+<nav class="site-nav" aria-label="사이트 내비게이션">
+  <a href="index.html">메인</a><a href="link.html">사이트 목록</a><a href="yako.html">야코</a>
+  <a href="yugigu.html">여기여</a><a href="bypass.html">우회접속</a><a href="blog.html" class="active">블로그</a><a href="contact.html">연락처</a>
+</nav>
+<div class="article-wrap">
+  <nav class="breadcrumb"><a href="index.html">홈</a><span>›</span><a href="blog.html">블로그</a><span>›</span><span>VPN 없이 우회접속</span></nav>
+  <div class="article-header">
+    <div class="article-meta"><span class="cat-badge">가이드</span><span class="date-badge">2026년 5월 5일</span></div>
+    <h1>VPN 없이 차단된 사이트 접속하는 방법 — DNS 우회 완벽 정리 2026</h1>
+    <p class="summary">VPN을 설치하지 않아도 DNS 서버만 변경하면 차단된 사이트에 접속할 수 있습니다. 구글 DNS, 클라우드플레어, 쿼드9 등 무료 공개 DNS를 비교하고, Windows, Mac, Android, iOS 기기별 설정 방법을 완벽하게 정리했습니다.</p>
+  </div>
+  <div class="article-body">
+
+    <h2>DNS 우회가 가능한 이유</h2>
+    <p>한국에서 사이트를 차단하는 가장 일반적인 방법은 <strong>DNS 차단</strong>입니다. ISP(KT, SKT, LGU+)가 차단 목록에 있는 도메인의 IP 주소 요청을 가로채 차단 페이지로 리다이렉트하는 방식입니다. 이 방식의 취약점은 ISP의 DNS 서버를 사용하지 않으면 차단이 동작하지 않는다는 점입니다.</p>
+    <p>구글(8.8.8.8), 클라우드플레어(1.1.1.1) 같은 해외 공개 DNS 서버는 한국 방통심의위원회의 차단 목록을 따르지 않습니다. 따라서 이 DNS를 사용하면 차단 없이 원하는 사이트에 접속할 수 있습니다. VPN처럼 트래픽 자체를 우회하는 것이 아니라, 도메인 조회 경로만 바꾸는 방식이므로 속도 저하가 거의 없습니다.</p>
+
+    <h2>DNS 우회 vs VPN — 어떤 방법이 더 좋을까?</h2>
+    <div class="method-card">
+      <h3>&#128279; DNS 변경 방법</h3>
+      <p style="font-size:13px;color:#888;margin:0 0 8px;">DNS 서버 주소만 변경 (8.8.8.8 또는 1.1.1.1)</p>
+      <div class="pros-cons">
+        <div><div class="pros">✅ 장점</div><div style="color:#777;font-size:12px;line-height:1.7;">설치 필요 없음<br>속도 저하 거의 없음<br>완전 무료<br>설정 간단 (5분 이내)<br>안정성 높음</div></div>
+        <div><div class="cons">❌ 단점</div><div style="color:#777;font-size:12px;line-height:1.7;">HTTPS 차단(SNI 차단)엔 효과 없음<br>IP 차단된 사이트엔 무효<br>일부 사이트 여전히 차단될 수 있음</div></div>
+      </div>
+    </div>
+    <div class="method-card">
+      <h3>&#128274; VPN 방법</h3>
+      <p style="font-size:13px;color:#888;margin:0 0 8px;">모든 트래픽을 해외 서버를 통해 우회</p>
+      <div class="pros-cons">
+        <div><div class="pros">✅ 장점</div><div style="color:#777;font-size:12px;line-height:1.7;">거의 모든 차단 우회 가능<br>IP 차단도 우회<br>SNI 차단도 우회</div></div>
+        <div><div class="cons">❌ 단점</div><div style="color:#777;font-size:12px;line-height:1.7;">앱 설치 필요<br>속도 저하 발생<br>무료 VPN은 데이터 제한<br>신뢰도 낮은 VPN은 보안 위험</div></div>
+      </div>
+    </div>
+    <div class="tip-box">💡 결론: 여기여와 같이 DNS 차단만 된 사이트는 DNS 변경으로 충분합니다. 더 강한 차단이 적용된 경우에만 VPN을 추가로 사용하세요.</div>
+
+    <h2>추천 무료 공개 DNS 서버 비교</h2>
+    <table class="compare-table" aria-label="공개 DNS 서버 비교">
+      <thead>
+        <tr><th>서비스</th><th>기본 DNS</th><th>보조 DNS</th><th>속도</th><th>개인정보</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>구글 Public DNS</td><td class="dns-val">8.8.8.8</td><td class="dns-val">8.8.4.4</td><td class="good">빠름</td><td>일부 로그 보관</td></tr>
+        <tr><td>클라우드플레어</td><td class="dns-val">1.1.1.1</td><td class="dns-val">1.0.0.1</td><td class="good">가장 빠름</td><td>24시간 후 삭제</td></tr>
+        <tr><td>쿼드9 (Quad9)</td><td class="dns-val">9.9.9.9</td><td class="dns-val">149.112.112.112</td><td>보통</td><td>비영리, 보안 특화</td></tr>
+        <tr><td>OpenDNS</td><td class="dns-val">208.67.222.222</td><td class="dns-val">208.67.220.220</td><td>보통</td><td>Cisco 운영</td></tr>
+      </tbody>
+    </table>
+    <p>일반적인 사용에는 <strong>클라우드플레어(1.1.1.1)</strong>를 가장 추천합니다. 속도가 가장 빠르고 개인정보 보호 정책도 투명합니다. 구글(8.8.8.8)은 안정성이 뛰어나 두 번째 대안으로 좋습니다.</p>
+
+    <h2>브라우저에서만 DNS 변경하는 방법 (Secure DNS)</h2>
+    <p>기기 전체 DNS를 변경하기 어려운 환경이라면, 브라우저에서만 암호화된 DNS(DoH, DNS over HTTPS)를 사용할 수 있습니다.</p>
+    <h3>Chrome (크롬)에서 설정</h3>
+    <ol>
+      <li>Chrome 주소창에 <strong>chrome://settings/security</strong> 입력</li>
+      <li><strong>보안 DNS 사용</strong> 항목을 찾아 켜기</li>
+      <li>드롭다운에서 <strong>Cloudflare(1.1.1.1)</strong> 또는 <strong>Google(8.8.8.8)</strong> 선택</li>
+      <li>브라우저 재시작</li>
+    </ol>
+    <h3>Firefox (파이어폭스)에서 설정</h3>
+    <ol>
+      <li>Firefox 주소창에 <strong>about:preferences#privacy</strong> 입력</li>
+      <li>아래로 스크롤하여 <strong>DNS over HTTPS</strong> 섹션 찾기</li>
+      <li><strong>최대 보호</strong> 선택 후 <strong>Cloudflare</strong> 선택</li>
+    </ol>
+
+    <h2>기기별 DNS 변경 요약</h2>
+    <ul>
+      <li><strong>Windows 10/11:</strong> 설정 → 네트워크 및 인터넷 → 어댑터 옵션 변경 → 해당 어댑터 우클릭 → 속성 → IPv4 속성 → DNS 입력(8.8.8.8 / 8.8.4.4)</li>
+      <li><strong>Mac:</strong> 시스템 환경설정 → 네트워크 → 고급 → DNS → 1.1.1.1, 1.0.0.1 추가</li>
+      <li><strong>Android:</strong> 설정 → Wi-Fi → 연결된 네트워크 → IP 설정 정적으로 변경 → DNS 1: 1.1.1.1, DNS 2: 1.0.0.1</li>
+      <li><strong>iPhone/iPad:</strong> 설정 → Wi-Fi → 연결된 네트워크 ⓘ → DNS 구성 → 수동 → 서버 추가: 8.8.8.8, 8.8.4.4</li>
+      <li><strong>Android 9+:</strong> 설정 → 연결 → 기타 연결 설정 → 프라이빗 DNS → 1dot1dot1dot1.cloudflare-dns.com</li>
+    </ul>
+
+    <h2>DNS 변경 후에도 안 될 경우 — SNI 차단 우회</h2>
+    <p>2019년부터 한국에서는 DNS 차단 외에 <strong>SNI(Server Name Indication) 차단</strong>도 일부 사이트에 적용됩니다. SNI 차단은 HTTPS 연결 시 도메인 이름이 평문으로 노출되는 점을 이용해 차단하는 방식으로, DNS 변경만으로는 우회할 수 없습니다.</p>
+    <p>SNI 차단이 적용된 사이트는 VPN이나 Tor 브라우저를 사용하거나, ECH(Encrypted Client Hello)를 지원하는 브라우저(Firefox Nightly 등)를 사용해야 합니다.</p>
+    <div class="warn-box">⚠️ 여기여는 현재 DNS 차단만 적용된 상태로, DNS 변경(8.8.8.8)으로 충분히 접속 가능합니다.</div>
+
+    <h2>여기여 최신주소 바로가기</h2>
+    <p>DNS 변경 완료 후 현재 여기여 공식 주소 <strong>https://yugiyu.com</strong> 으로 접속하세요. 주소 변경 시 트위터 <a href="https://twitter.com/ygy1552" target="_blank" rel="noopener noreferrer" style="color:#F0001E;">@ygy1552</a>에서 즉시 공지됩니다.</p>
+
+    <div class="related-posts">
+      <h2>관련 포스트</h2>
+      <div class="related-grid">
+        <a class="related-card" href="blog-post-1.html"><span>가이드</span><p>여기여 접속 안 될 때 — DNS 변경 완벽 가이드</p></a>
+        <a class="related-card" href="blog-post-6.html"><span>가이드</span><p>여기여 DNS 변경 방법 Windows/Mac/모바일</p></a>
+        <a class="related-card" href="bypass.html"><span>우회접속</span><p>우회 접속 방법 전체 가이드</p></a>
+        <a class="related-card" href="blog-post-8.html"><span>가이드</span><p>여기여 안전하게 이용하는 방법</p></a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <span>© <span id="year"></span> 여기여.site.</span><br>
+  <a href="privacy.html">개인정보처리방침</a> &nbsp;|&nbsp; <a href="terms.html">이용약관</a> &nbsp;|&nbsp; <a href="contact.html">연락처</a>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
