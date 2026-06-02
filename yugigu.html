@@ -2,6 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<meta name="indexnow" content="a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" />
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#F0001E" />
@@ -28,7 +30,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap&subset=korean" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -57,110 +59,7 @@
   }
 }
 </script>
-<style>
-  *, *::before, *::after { box-sizing: border-box; }
-  body {
-    margin: 0; padding: 0;
-    background: #0d0d0d;
-    font-family: 'Noto Sans KR', Arial, sans-serif;
-    min-height: 100vh;
-    display: flex; flex-direction: column; align-items: center;
-    color: #ccc;
-  }
-  .notice-bar {
-    width: 100%; background: #F0001E; color: #fff;
-    text-align: center; font-size: 13px; padding: 8px 16px;
-  }
-  nav.site-nav {
-    width: 100%; background: #111; border-bottom: 1px solid #222;
-    display: flex; justify-content: center; flex-wrap: wrap; gap: 4px; padding: 10px 16px;
-  }
-  nav.site-nav a {
-    color: #aaa; text-decoration: none; font-size: 13px; padding: 5px 12px;
-    border-radius: 6px; transition: background 0.2s, color 0.2s;
-  }
-  nav.site-nav a:hover, nav.site-nav a.active { background: #F0001E; color: #fff; }
-  .card-wrap {
-    width: 100%; max-width: 420px; margin: 32px auto 20px; padding: 0 16px;
-  }
-  .logo-wrap { text-align: center; margin-bottom: 20px; }
-  nav.breadcrumb {
-    font-size: 12px; color: #555; margin-bottom: 16px; text-align: center;
-  }
-  nav.breadcrumb a { color: #888; text-decoration: none; }
-  nav.breadcrumb a:hover { color: #F0001E; }
-  nav.breadcrumb span { margin: 0 6px; }
-  .card {
-    background: #1a1a1a; border-radius: 16px;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.7); overflow: hidden;
-  }
-  .card-header {
-    background: #F0001E; padding: 20px 24px 16px; text-align: center;
-  }
-  .card-header h1 { margin: 0; color: #fff; font-size: 26px; font-weight: 900; line-height: 1.3; }
-  .card-header p { margin: 6px 0 0; color: rgba(255,255,255,0.85); font-size: 14px; }
-  .card-body { padding: 24px; }
-  .address-box {
-    background: #111; border: 1px solid #333; border-radius: 10px;
-    padding: 14px 16px; text-align: center; margin-bottom: 20px;
-  }
-  .address-box .label { font-size: 12px; color: #888; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
-  .address-box .url { font-size: 20px; font-weight: 700; color: #fff; }
-  .address-box .url span { color: #F0001E; }
-  .btn-goto {
-    display: block; background: #F0001E; color: #fff; text-align: center;
-    text-decoration: none; font-size: 18px; font-weight: 700; letter-spacing: 1px;
-    padding: 16px; border-radius: 10px; transition: background 0.2s;
-  }
-  .btn-goto:hover { background: #c8001a; }
-  .info-text {
-    margin-top: 18px; font-size: 13px; color: #888; line-height: 1.8; text-align: center;
-  }
-  .info-text a { color: #F0001E; text-decoration: none; }
-  .twitter-link {
-    display: inline-flex; align-items: center; gap: 6px; margin-top: 14px;
-    background: #1a1a2e; border: 1px solid #333; border-radius: 8px;
-    padding: 10px 16px; color: #1d9bf0; text-decoration: none;
-    font-size: 13px; font-weight: 500; width: 100%; justify-content: center;
-    transition: background 0.2s;
-  }
-  .twitter-link:hover { background: #222240; }
-  .content-section {
-    width: 100%; max-width: 420px; margin: 0 auto 24px; padding: 0 16px;
-  }
-  .content-section h2 {
-    color: #fff; font-size: 18px; font-weight: 700;
-    border-left: 4px solid #F0001E; padding-left: 12px; margin: 0 0 12px;
-  }
-  .content-section p { font-size: 14px; color: #999; line-height: 1.9; margin: 0 0 10px; }
-  .steps-list { list-style: none; padding: 0; margin: 0; counter-reset: step; }
-  .steps-list li {
-    counter-increment: step; display: flex; gap: 12px; align-items: flex-start;
-    margin-bottom: 14px; font-size: 14px; color: #999; line-height: 1.7;
-  }
-  .steps-list li::before {
-    content: counter(step); min-width: 26px; height: 26px;
-    background: #F0001E; color: #fff; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 13px; font-weight: 700; flex-shrink: 0; margin-top: 2px;
-  }
-  .steps-list li strong { color: #ddd; display: block; margin-bottom: 2px; }
-  .faq-list { list-style: none; padding: 0; margin: 0; }
-  .faq-list li {
-    background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px;
-    padding: 14px 16px; margin-bottom: 10px;
-  }
-  .faq-q { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 6px; }
-  .faq-q::before { content: "Q. "; color: #F0001E; }
-  .faq-a { font-size: 13px; color: #888; line-height: 1.8; }
-  .faq-a a { color: #F0001E; text-decoration: none; }
-  footer {
-    width: 100%; text-align: center; padding: 16px; color: #444;
-    font-size: 12px; border-top: 1px solid #1a1a1a; margin-top: auto;
-  }
-  footer a { color: #555; text-decoration: none; }
-  footer a:hover { color: #F0001E; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -169,13 +68,13 @@
 </div>
 
 <nav class="site-nav" aria-label="사이트 내비게이션">
-  <a href="index.html">메인</a>
-  <a href="link.html">사이트 목록</a>
-  <a href="yako.html">야코</a>
-  <a href="yugigu.html" class="active">여기여</a>
-  <a href="bypass.html">우회접속</a>
-  <a href="blog.html">블로그</a>
-  <a href="contact.html">연락처</a>
+  <a href="index.html">🏠 메인</a>
+  <a href="link.html">📋 사이트 목록</a>
+  <a href="yako.html">🎬 야코</a>
+  <a href="yugigu.html" class="active">🔗 여기여</a>
+  <a href="bypass.html">🔒 우회접속</a>
+  <a href="blog.html">📝 블로그</a>
+  <a href="contact.html">📧 연락처</a>
 </nav>
 
 <div class="card-wrap">
@@ -229,7 +128,7 @@
   <h2 id="about-heading">여기여란 무엇인가?</h2>
   <p>여기여(yugiyu)는 국내외 다양한 사이트의 주소를 한 곳에서 모아볼 수 있는 링크모음·주소모음 포털입니다. 웹툰, 영화, 드라마 등 다양한 카테고리의 사이트 링크를 제공하며, 사용자들이 원하는 사이트를 빠르게 찾을 수 있도록 도와줍니다.</p>
   <p>여기여는 "세상의 모든 링크"라는 슬로건 아래 운영되며, 국내 인터넷 차단 정책으로 인해 주소가 주기적으로 변경됩니다. 이 페이지에서는 항상 최신 여기여 주소를 실시간으로 업데이트하여 제공합니다.</p>
-  <p>여기여 공식 주소는 현재 <strong>https://yugiyu.com</strong> 입니다. 주소 변경 공지는 트위터 <a href="https://twitter.com/ygy1552" rel="noopener noreferrer" target="_blank" style="color:#F0001E;">@ygy1552</a>를 통해 실시간으로 안내됩니다. 이 페이지를 북마크해 두시면 주소가 변경되어도 항상 최신 정보를 확인할 수 있습니다.</p>
+  <p>여기여 공식 주소는 현재 <strong>https://yugiyu.com</strong> 입니다. 주소 변경 공지는 트위터 <a href="https://twitter.com/ygy1552">@ygy1552</a>를 통해 실시간으로 안내됩니다. 이 페이지를 북마크해 두시면 주소가 변경되어도 항상 최신 정보를 확인할 수 있습니다.</p>
 </section>
 
 <section class="content-section" aria-labelledby="howto-heading">
@@ -243,6 +142,43 @@
   </ol>
 </section>
 
+<section class="content-section" aria-labelledby="history-heading">
+<h2 id="history-heading">여기여 연혁 및 운영 철학</h2>
+
+<h3>여기여 연혁</h3>
+<ul class="steps-list">
+<li><div><strong>2025년</strong> — 여기여 서비스 론칭. 국내 인터넷 이용자에게 최신 사이트 주소를 안내하는 링크모음·주소모음 포털로 시작.</div></li>
+<li><div><strong>2025년 하반기</strong> — DNS 변경 가이드(8.8.8.8, 1.1.1.1) 추가. Windows, Mac, Android, iOS 각 환경별 우회접속 방법 안내.</div></li>
+<li><div><strong>2026년</strong> — 블로그 오픈 및 10개 이상의 상세 가이드 게시. 실시간 주소 업데이트 시스템 구축. 트위터 @ygy1552를 통한 공지체계 강화.</div></li>
+</ul>
+
+<h3>여기여만의 특별한 점</h3>
+<ul class="steps-list">
+<li><div><strong>① 정확성 우선</strong> — 공식 경로를 통해 검증된 정보만 제공합니다.</div></li>
+<li><div><strong>② 다중 접근 가이드</strong> — DNS 변경, VPN, 프록시 등 다양한 접속 방법을 상세히 안내합니다.</div></li>
+<li><div><strong>③ 실시간 업데이트</strong> — 트위터 @ygy1552를 통해 주소 변경을 즉시 공지합니다.</div></li>
+<li><div><strong>④ 완전 무료</strong> — 회원가입, 개인정보 입력 없이 누구나 즉시 이용 가능합니다.</div></li>
+<li><div><strong>⑤ 한국어 최적화</strong> — 한국 사용자를 위한 네이티브 한국어 콘텐츠를 제공합니다.</div></li>
+</ul>
+</section>
+
+<section class="content-section" aria-labelledby="history-heading">
+<h2 id="history-heading">여기여 연혁 및 운영 철학</h2>
+<h3>여기여 연혁</h3>
+<ul class="steps-list">
+<li><div><strong>2025년</strong> — 여기여 서비스 론칭. 국내 인터넷 이용자에게 최신 사이트 주소를 안내하는 링크모음·주소모음 포털로 시작.</div></li>
+<li><div><strong>2025년 하반기</strong> — DNS 변경 가이드(8.8.8.8, 1.1.1.1) 추가. Windows, Mac, Android, iOS 각 환경별 우회접속 방법 안내.</div></li>
+<li><div><strong>2026년</strong> — 블로그 오픈 및 상세 가이드 게시. 실시간 주소 업데이트 시스템 구축. 트위터 @ygy1552 공지체계 강화.</div></li>
+</ul>
+<h3>여기여만의 특별한 점</h3>
+<ul class="steps-list">
+<li><div><strong>정확성 우선</strong> — 공식 경로 검증 정보만 제공</div></li>
+<li><div><strong>다중 접근 가이드</strong> — DNS, VPN, 프록시 안내</div></li>
+<li><div><strong>실시간 업데이트</strong> — 트위터 @ygy1552 즉시 공지</div></li>
+<li><div><strong>완전 무료</strong> — 회원가입, 개인정보 입력 불필요</div></li>
+<li><div><strong>한국어 최적화</strong> — 네이티브 한국어 콘텐츠</div></li>
+</ul>
+</section>
 <section class="content-section" aria-labelledby="faq-heading">
   <h2 id="faq-heading">자주 묻는 질문 (FAQ)</h2>
   <ul class="faq-list">
@@ -262,9 +198,17 @@
 </section>
 
 <footer>
-  <span>&#169; <span id="year"></span> 여기여.site. 본 사이트는 주소 안내 목적으로만 운영됩니다.</span><br>
-  <a href="privacy.html">개인정보처리방침</a> &nbsp;|&nbsp; <a href="terms.html">이용약관</a> &nbsp;|&nbsp; <a href="contact.html">연락처</a>
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <div class="footer-inner">
+<div>
+<a href="https://twitter.com/ygy1552" target="_blank" rel="noopener noreferrer" >🐦 트위터 @ygy1552</a>
+</div>
+<p >상담 가능 시간: 매일 10:00~20:00</p>
+<p >※ 여기여는 개재된 사이트들과 직접적인 연관이 없으며, 단지 링크 안내 사이트입니다.</p>
+<span >© <span id="year"></span> 여기여.site. All rights reserved.</span><br>
+<a href="privacy.html" >개인정보처리방침</a> |
+<a href="terms.html" >이용약관</a> |
+<a href="contact.html" >📧 연락처</a>
+</div>
+</footer><script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

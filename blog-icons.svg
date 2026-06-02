@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- Info icon for "정보" category -->
+  <symbol id="icon-info" viewBox="0 0 24 24" fill="none" stroke="#F0001E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/>
+    <line x1="12" y1="16" x2="12" y2="12"/>
+    <line x1="12" y1="8" x2="12.01" y2="8"/>
+  </symbol>
+
+  <!-- Guide icon for "가이드" category -->
+  <symbol id="icon-guide" viewBox="0 0 24 24" fill="none" stroke="#F0001E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+  </symbol>
+
+  <!-- Compare icon for "비교" category -->
+  <symbol id="icon-compare" viewBox="0 0 24 24" fill="none" stroke="#F0001E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="18" y1="20" x2="18" y2="10"/>
+    <line x1="6" y1="20" x2="6" y2="4"/>
+    <polyline points="14,14 18,10 22,14"/>
+    <polyline points="2,8 6,4 10,8"/>
+  </symbol>
+
+  <!-- New badge icon -->
+  <symbol id="icon-new" viewBox="0 0 24 24" fill="#6a9a6a" stroke="#6a9a6a" stroke-width="1">
+    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+  </symbol>
+
+  <!-- Network/Server icon for DNS and bypass posts -->
+  <symbol id="icon-network" viewBox="0 0 24 24" fill="none" stroke="#F0001E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+    <line x1="6" y1="6" x2="6.01" y2="6"/>
+    <line x1="6" y1="18" x2="6.01" y2="18"/>
+  </symbol>
+
+  <!-- Link icon for address and ranking posts -->
+  <symbol id="icon-link" viewBox="0 0 24 24" fill="none" stroke="#F0001E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+  </symbol>
+
+  <!-- Movie icon for yako post -->
+  <symbol id="icon-movie" viewBox="0 0 24 24" fill="none" stroke="#F0001E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
+    <line x1="7" y1="2" x2="7" y2="22"/>
+    <line x1="17" y1="2" x2="17" y2="22"/>
+    <line x1="2" y1="12" x2="22" y2="12"/>
+    <line x1="2" y1="7" x2="7" y2="7"/>
+    <line x1="2" y1="17" x2="7" y2="17"/>
+    <line x1="17" y1="7" x2="22" y2="7"/>
+    <line x1="17" y1="17" x2="22" y2="17"/>
+  </symbol>
+
+  <!-- Shield icon for safety post -->
+  <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="#F0001E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+  </symbol>
+
+  <!-- Play icon for movies post -->
+  <symbol id="icon-play" viewBox="0 0 24 24" fill="none" stroke="#F0001E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="5 3 19 12 5 21 5 3"/>
+  </symbol>
+
+  <!-- Book icon for webtoon post -->
+  <symbol id="icon-book" viewBox="0 0 24 24" fill="none" stroke="#F0001E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    <path d="M12 6v7"/>
+    <path d="M9 9h6"/>
+  </symbol>
+</svg>

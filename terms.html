@@ -2,6 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<meta name="indexnow" content="a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6" />
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#F0001E" />
@@ -20,7 +22,7 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap&subset=korean" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -39,64 +41,7 @@
   }
 }
 </script>
-<style>
-  *, *::before, *::after { box-sizing: border-box; }
-  body {
-    margin: 0; padding: 0;
-    background: #0d0d0d;
-    font-family: 'Noto Sans KR', Arial, sans-serif;
-    min-height: 100vh;
-    display: flex; flex-direction: column; align-items: center;
-    color: #ccc;
-  }
-  .notice-bar {
-    width: 100%; background: #F0001E; color: #fff;
-    text-align: center; font-size: 13px; padding: 8px 16px; letter-spacing: 0.3px;
-  }
-  nav.site-nav {
-    width: 100%; background: #111; border-bottom: 1px solid #222;
-    display: flex; justify-content: center; flex-wrap: wrap; gap: 4px; padding: 10px 16px;
-  }
-  nav.site-nav a {
-    color: #aaa; text-decoration: none; font-size: 13px; padding: 5px 12px;
-    border-radius: 6px; transition: background 0.2s, color 0.2s;
-  }
-  nav.site-nav a:hover, nav.site-nav a.active { background: #F0001E; color: #fff; }
-  .page-wrap {
-    width: 100%; max-width: 680px; margin: 32px auto 40px; padding: 0 16px;
-  }
-  nav.breadcrumb { font-size: 12px; color: #555; margin-bottom: 16px; }
-  nav.breadcrumb a { color: #888; text-decoration: none; }
-  nav.breadcrumb a:hover { color: #F0001E; }
-  nav.breadcrumb span { margin: 0 6px; }
-  .page-header {
-    background: #F0001E; border-radius: 16px 16px 0 0; padding: 24px; text-align: center;
-  }
-  .page-header h1 { margin: 0; color: #fff; font-size: 22px; font-weight: 900; }
-  .page-header p { margin: 6px 0 0; color: rgba(255,255,255,0.85); font-size: 14px; }
-  .page-body {
-    background: #1a1a1a; border-radius: 0 0 16px 16px; padding: 28px 24px; margin-bottom: 24px;
-  }
-  .section-block { margin-bottom: 28px; }
-  .section-block h2 {
-    color: #fff; font-size: 16px; font-weight: 700;
-    border-left: 4px solid #F0001E; padding-left: 12px; margin: 0 0 12px;
-  }
-  .section-block p { font-size: 14px; color: #999; line-height: 1.9; margin: 0 0 10px; }
-  .section-block ul { font-size: 14px; color: #999; line-height: 1.9; padding-left: 20px; margin: 0 0 10px; }
-  .section-block ul li { margin-bottom: 6px; }
-  .warn-box {
-    background: #1a0d00; border: 1px solid #F0001E44; border-radius: 10px;
-    padding: 16px; font-size: 13px; color: #cc8866; line-height: 1.8; margin: 12px 0;
-  }
-  .warn-box strong { color: #F0001E; }
-  footer {
-    width: 100%; text-align: center; padding: 16px; color: #444;
-    font-size: 12px; border-top: 1px solid #1a1a1a; margin-top: auto;
-  }
-  footer a { color: #666; text-decoration: none; }
-  footer a:hover { color: #F0001E; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -105,13 +50,13 @@
 </div>
 
 <nav class="site-nav" aria-label="사이트 내비게이션">
-  <a href="index.html">메인</a>
-  <a href="link.html">사이트 목록</a>
-  <a href="yako.html">야코</a>
-  <a href="yugigu.html">여기여</a>
-  <a href="bypass.html">우회접속</a>
-  <a href="blog.html">블로그</a>
-  <a href="contact.html">연락처</a>
+  <a href="index.html">🏠 메인</a>
+  <a href="link.html">📋 사이트 목록</a>
+  <a href="yako.html">🎬 야코</a>
+  <a href="yugigu.html">🔗 여기여</a>
+  <a href="bypass.html">🔒 우회접속</a>
+  <a href="blog.html">📝 블로그</a>
+  <a href="contact.html">📧 연락처</a>
 </nav>
 
 <div class="page-wrap">
@@ -199,7 +144,7 @@
 
 <footer>
   <span>&#169; <span id="year"></span> 여기여.site. 본 사이트는 주소 안내 목적으로만 운영됩니다.</span><br>
-  <a href="privacy.html">개인정보처리방침</a> &nbsp;|&nbsp; <a href="terms.html">이용약관</a> &nbsp;|&nbsp; <a href="contact.html">연락처</a>
+  <a href="privacy.html">개인정보처리방침</a> &nbsp;|&nbsp; <a href="terms.html">이용약관</a> &nbsp;|&nbsp; <a href="contact.html">📧 연락처</a>
 </footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>

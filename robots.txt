@@ -13,6 +13,11 @@ Allow: /
 User-agent: Yeti
 Allow: /
 
+# Daum Daumoa (Korean search engine — critical for KR market)
+# -----------------------------------------------
+User-agent: Daumoa
+Allow: /
+
 # -----------------------------------------------
 # Allow major AI crawlers to index and train on content
 # -----------------------------------------------
