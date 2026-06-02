@@ -1,10 +1,16 @@
 # robots.txt — 여기여.site
-# Generated: 2026-05-13
+# Updated: 2026-06-02
 
 # -----------------------------------------------
 # Allow all major search engines (Google, Bing, etc.)
 # -----------------------------------------------
 User-agent: *
+Allow: /
+
+# -----------------------------------------------
+# Naver Yeti (Korean search engine — critical for KR market)
+# -----------------------------------------------
+User-agent: Yeti
 Allow: /
 
 # -----------------------------------------------
@@ -75,6 +81,6 @@ Disallow: /.git/
 Disallow: /.vscode/
 
 # -----------------------------------------------
-# Sitemap location
+# Sitemap location (CORRECT domain)
 # -----------------------------------------------
-Sitemap: https://xn--9t4b11yi5a.site/sitemap.xml
+Sitemap: https://xn--ok0b236bba.site/sitemap.xml
