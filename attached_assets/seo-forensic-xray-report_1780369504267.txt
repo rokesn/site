@@ -1,0 +1,593 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                SEO FORENSIC XRAY REPORT                                     ║
+║  Competitor: https://www.xn--v52b19jh8ekzb.com (주소모음.com)            ║
+║  Your Site:  https://xn--ok0b236bba.site (여기여.site)    ║
+║  Generated:  2026-06-02                                                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: SITE MAP COMPARISON
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COMPETITOR PAGES (6 pages found):
+  /                         주소모음  (homepage)
+  /링크모음                   Link collection guide
+  /링크사이트                 Link site page
+  /사이트순위                 Site rankings page
+  /여기여                    About YGY (brand history)
+  /blog                     Blog/info page
+
+YOUR PAGES (7 pages found):
+  /index.html               여기여 메인 (homepage)
+  /link.html                사이트 목록 (link directory)
+  /yako.html                야코 주소
+  /yugigu.html              여기여 정보
+  /bypass.html              우회접속 (DNS/VPN guide)
+  /blog.html                블로그 (5 posts)
+  /contact.html             연락처
+
+PAGES COMPETITOR HAS THAT YOU DON'T:
+  ❌ /링크모음                — Dedicated link collection guide page
+  ❌ /링크사이트               — Link site explanation page
+  ❌ /사이트순위               — Site rankings concept page
+  ❌ /여기여 (About)          — Brand history + contact form + timeline
+  ❌ /blog (info blog)       — Blog (actual format unclear)
+
+PAGES YOU HAVE THAT COMPETITOR DOESN'T:
+  ✅ /yako.html              — Secondary brand page (야코)
+  ✅ /bypass.html            — DNS/VPN bypass guide ← YOUR UNIQUE ADVANTAGE!
+  ✅ /blog.html with 5 posts — Dated blog with content
+  ✅ /contact.html           — Contact page
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: ATOMIC PAGE-BY-PAGE COMPARISON
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+─── PAGE: HOMEPAGE ──────────────────────────────────────────────────────────
+
+ELEMENT                 COMPETITOR (주소모음.com)          YOU (여기여.site)           MATCH
+────────────────────────────────────────────────────────────────────────────────────────────────
+TITLE                   "주소모음 | 링크모음, 링크사이트,    "여기여 최신주소 2026 바로가기    ⚠️ Different
+                        사이트순위, 여기여" (37 chars)       | 링크모음 주소모음 여기여"     approach
+                                                             (51 chars)
+
+META DESCRIPTION        ❌ NONE                             ❌ NONE (not confirmed)     ✅ Same
+
+H1 TEXT                 "주소모음" (4 chars)                 "여기여 최신주소 2026        ⚠️ Your H1
+                                                             바로가기 | 링크모음            has more info
+                                                             주소모음 여기여"
+
+H2 COUNT                6 H2s                                ~4 H2s                      ❌ Gap: you
+                                                                                        have fewer
+
+H3 COUNT                3 H3s                                0 H3s                       ❌ Gap
+
+SCHEMA (JSON-LD)        ❌ NONE                              ❌ NONE                     ✅ Same
+
+IMAGES                  11 images                            1 image                     ❌ Big Gap!
+                        - Logo (115×60)                      - hero-banner.svg
+                        - Hero (975×370)
+                        - 3 category images (linked)
+                        - 2 detailed infographics (480×639)
+                        - 10 social icons
+                        - Footer logo (72×102)
+
+ALT TEXT                ❌ 4/11 have alt text (36%)          ❌ 1/1 has alt text (100%)  ⚠️ You: better
+                        ✅ "YGY LOGO"                        ✅ "여기여 2026 최신주소       alt ratio
+                        ✅ "여기여 이미지"                      바로가기 — 세상의 모든
+                        ✅ "여기여 드라마 다시보기"              링크 주소모음 포털"
+                        ✅ "여기여 무료 웹툰 사이트"
+                        ❌ 7 images have EMPTY alt
+
+TOTAL LINKS             33 total                             ~18 total                   ❌ Gap: more
+                        8 internal (to own domain)           8 internal                   links
+                        25 external (ygy01.com + social)     2 external (yugiyu, Twitter)
+
+EXTERNAL LINK DOMAINS   ygy01.com, t.me, instagram.com,      yugiyu.com, twitter.com     ❌ Gap: you
+                        youtube.com, tiktok.com, x.com,                                              have only
+                        threads.net, facebook.com, yugiyu.com                                       2 external
+
+FOOTER CONTENT          Full:                               Minimal:                    ❌ Big Gap
+                        - Logo + social icons (7 platforms)  - Copyright only
+                        - Contact: email, Telegram, phone    - "주소 안내 목적으로만"
+                        - Physical address (Seoul, Gangnam)  - No social links
+                        - Business hours (10:00-20:00)       - No email
+                        - Disclaimer                         - No phone
+                        - Copyright 2024                     - No address
+
+SOCIAL MEDIA            7 platforms:                         Only Twitter (@ygy1552)     ❌ Gap: you
+                        Telegram, Instagram, YouTube,                                       have 1,
+                        TikTok, X, Threads, Facebook                                        they have 7
+
+CONTACT FORM            ✅ YES (성, 이름, 이메일, 제목,       ❌ NO                        ❌ Gap
+                        메시지 → 제출)
+
+FAQ SECTION             ❌ NO                                ✅ YES (3 Q&A pairs)          ✅ You win
+
+DISCLAIMER/PRIVACY      ✅ YES (명시적 면책 문구)             ✅ PARTIAL (연락처 페이지     ⚠️ You: weaker
+                                                             에 간단한 면책)
+
+COPYRIGHT YEAR          2024                                 None visible                 ❌ Gap
+
+BUSINESS ADDRESS        ✅ 서울 강남구 삼성로 341              ❌ NONE                       ❌ Gap
+
+PHONE NUMBER            ✅ (02)640-8080                      ❌ NONE                       ❌ Gap
+
+EMAIL                   ✅ yugiyu@gmail.com                  ❌ NONE                       ❌ Gap
+
+TELEGRAM                ✅ @ygymain                          ❌ NONE                       ❌ Gap
+
+ESTIMATED WORD COUNT    ~1,750-1,900 words                   ~900 words (index.html)      ❌ You have
+                                                                                        less content
+                                                                                        on homepage
+
+PLATFORM                Wix (static.wixstatic.com)           Unknown (simple HTML)        Different
+
+DOMAIN TYPE             Exact-match keyword                  Exact-match keyword           ✅ Same
+                        (주소모음.com)                     (여기여.site)                  advantage
+
+YEAR IN TITLE           ❌ NO (no "2024", "2025", "2026")    ✅ YES ("2026")               ✅ You win
+
+─── PAGE: LINK DIRECTORY ────────────────────────────────────────────────────
+
+ELEMENT                 COMPETITOR (/링크모음)               YOU (/link.html)             MATCH
+────────────────────────────────────────────────────────────────────────────────────────────────
+TITLE                   "링크모음 | 주소모음, 링크사이트,    "링크모음 주소모음 포털"      Similar
+                        사이트순위, 여기여"
+
+H1                      "링크모음 여기여"                    "여기여 최신주소 바로가기     ⚠️ Different
+                                                                2026"
+
+CATEGORY STRUCTURE      6 sections with bullet points        4 categories with 2 links    Same type
+                                                             each                         but you:
+                                                                                        more organized
+DESCRIPTIVE TEXT        ✅ YES — "링크모음이란?",             ❌ NO — just lists           ❌ Gap
+                        "링크모음이 필요한 이유?",             link names
+                        "링크모음의 장점", etc.
+
+LINKS TO EXTERNAL       ✅ Links to ygy01.com/               ✅ Links to yugiyu.com       ✅ Same
+                        categories                                                       purpose
+
+WORD COUNT              ~1,100-1,200 words                   ~750 words                   ❌ Competitor
+                                                                                        has more detail
+
+─── PAGE: BRAND/PAGE INFO ───────────────────────────────────────────────────
+
+ELEMENT                 COMPETITOR (/여기여)                 YOU (/yugigu.html)          MATCH
+────────────────────────────────────────────────────────────────────────────────────────────────
+TITLE                   "여기여 | 링크모음, 링크사이트,     [Not fetched separately]     —
+                        사이트순위, 주소모음"
+
+BRAND HISTORY           2020-2024 timeline (5 years)         None visible                 ❌ Gap
+
+CONTACT FORM            ✅ YES with 5 fields                 ❌ NO                        ❌ Gap
+
+12 UNIQUE SELLING       ✅ YES — numbered list               ❌ NO                        ❌ Gap
+POINTS
+
+MISSION STATEMENT       ✅ YES                               ✅ YES                       ✅ Both
+
+MANAGEMENT PHILOSOPHY   ✅ 5 core values                     ❌ NO                        ❌ Gap
+
+USAGE GUIDE             5-step numbered guide                5-step access guide           ✅ Both
+                                                                                        (similar)
+
+─── KEY UNIQUE ELEMENTS COMPARISON ──────────────────────────────────────────
+
+SIGNAL                      COMPETITOR HAS?          YOU HAVE?               WHO WINS
+────────────────────────────────────────────────────────────────────────────────────────
+JSON-LD Schema              ❌ NO                    ❌ NO                    Tied
+OG Tags                     ❌ Not visible           ❌ Not confirmed         Tied
+Twitter Card Tags           ❌ Not visible           ❌ Not confirmed          Tied
+Naver Verification          ❌ Not found             ❌ Not found             Tied
+Year in Title               ❌ NO                    ✅ "2026"                YOU
+Bypass/DNS/VPN Guide        ❌ NO                    ✅ YES (bypass.html)     YOU
+FAQ Section                 ❌ NO                    ✅ YES (3 Q&As)          YOU
+Dated Blog Posts            ❌ NO                    ✅ 5 posts (2026)       YOU
+Social Media Links          7 platforms              1 platform (Twitter)    COMPETITOR
+Contact Form                ✅ YES (5 fields)        ❌ NO                    COMPETITOR
+Physical Address            ✅ Gangnam-gu             ❌ NONE                 COMPETITOR
+Phone Number                ✅ (02)640-8080           ❌ NONE                 COMPETITOR
+Email                       ✅ yugiyu@gmail.com       ❌ NONE                 COMPETITOR
+Telegram                    ✅ @ygymain               ❌ NONE                 COMPETITOR
+Privacy Policy              ❌ Not visible           ❌ NONE                  Tied
+Business Registration       ❌ Not visible           ❌ NONE                  Tied
+SEO Title Optimization      ❌ Basic                 ❌ Basic                 Tied
+Meta Description            ❌ NONE                  ❌ NONE                  Tied
+Mobile Optimization         Wix responsive           Unknown                 COMPETITOR
+Total Pages                 6                        7                        YOU (more)
+Category Descriptions       ✅ YES (6 sections)      ❌ NO (just link names)  COMPETITOR
+Contact Email               ✅ YES                   ❌ NONE                  COMPETITOR
+Site Platform               Wix (professional)      Simple HTML/Template     COMPETITOR
+Breadcrumb Navigation       ❌ NO                    ❌ NO                   Tied
+Image Alt Texts             36% coverage (4/11)      100% coverage (1/1)      YOU (better %)
+Business Hours              ✅ 10:00-20:00            ❌ NONE                 COMPETITOR
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: COMPLETE GAP LIST — EVERYTHING COMPETITOR HAS THAT YOU DON'T
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Total Signals Checked: 45
+Gaps Found: 24 (where competitor has it and you DON'T)
+You Lead: 8 (where you have it and competitor DOESN'T)
+
+─── CRITICAL GAPS (High Impact) ─────────────────────────────────────────
+
+Gap #1: MORE IMAGES
+  Competitor: 11 images (logo, hero, 3 category images, 2 infographics, 7 social icons)
+  You:        1 SVG
+  How to fix: Add OG image (1200×630), blog post thumbnails, category icons, social icons
+
+Gap #2: SOCIAL MEDIA PRESENCE (7 vs 1)
+  Competitor: Telegram, Instagram, YouTube, TikTok, X, Threads, Facebook
+  You:        Only Twitter (@ygy1552)
+  How to fix: Create Telegram (@ygymain match), Instagram, YouTube channels
+  Why it matters: More platforms = more brand visibility, more link sources
+
+Gap #3: FOOTER CONTENT
+  Competitor: Full footer with logo, 7 social icons, contact info, address, phone, email, business hours, disclaimer, copyright
+  You:        Copyright notice only
+  How to fix: Add footer with social links, email, and disclaimer
+
+Gap #4: CONTACT FORM
+  Competitor: Has 5-field contact form (성, 이름, 이메일, 제목, 메시지 → 제출)
+  You:        Contact page with just Twitter link
+  How to fix: Add contact form to contact.html or yugigu.html
+  Copy-paste: Add fields: 성, 이름, 이메일, 메시지 → 제출 버튼
+
+Gap #5: BUSINESS INFORMATION
+  Competitor: Physical address (서울특별시 강남구 삼성로 341), phone ((02)640-8080), email
+  You:        None
+  How to fix: Add contact info, business hours, email address
+  Why: Builds trust and legitimacy in Korean market
+
+─── HIGH GAPS ────────────────────────────────────────────────────────
+
+Gap #6: CATEGORY DESCRIPTIONS
+  Competitor: Each category page has 3-6 sections of descriptive text explaining the category
+  You:        Just list link names with no context
+  How to fix: Add 50-100 word description per category on link.html
+
+Gap #7: BRAND HISTORY/TIMELINE
+  Competitor: 2020-2024 timeline with specific milestones
+  You:        No brand history
+  How to fix: Add "여기여 연혁" section to yugigu.html with 2020-2026 milestones
+
+Gap #8: DIFFERENTIATION/UNIQUE SELLING POINTS
+  Competitor: "12가지 특별한 점" (12 unique selling points)
+  You:        None listed
+  How to fix: Add a "여기여만의 특별한 점" section on yugigu.html
+
+Gap #9: MANAGEMENT PHILOSOPHY
+  Competitor: 5 core business values
+  You:        None
+  How to fix: Add management philosophy section (short)
+
+Gap #10: TELEGRAM CHANNEL
+  Competitor: @ygymain (Telegram)
+  You:        None
+  How to fix: Create Telegram channel @ygy (or similar)
+  Why: 거의 모든 경쟁자가 Telegram 사용
+
+─── MEDIUM GAPS ──────────────────────────────────────────────────────
+
+Gap #11: H3 HEADINGS ON HOMEPAGE
+  Competitor: 3 H3s (드라마, 웹툰, 스포츠)
+  You:        0 H3s
+  How to fix: Add H3 subheadings under main H2 sections
+
+Gap #12: COPYRIGHT YEAR
+  Competitor: "Copyright © 2024"
+  You:        No copyright visible
+  How to fix: Add "Copyright © 2026 여기여.site" to all pages
+
+Gap #13: MORE INTERNAL LINKS
+  Competitor: 8 internal links between pages
+  You:        3-5 per page
+  How to fix: Add more cross-links between your pages
+
+Gap #14: MORE EXTERNAL LINKS
+  Competitor: 25 external links (ygy01.com + social + email + telegram)
+  You:        2 external links (yugiyu.com, Twitter)
+  How to fix: Not a priority — yours matches your purpose
+  Note:       25 external links = link farm pattern. NOT recommended to copy.
+
+Gap #15: TELEGRAM AS CONTACT METHOD
+  Competitor: @ygymain for contact
+  You:        None
+  How to fix: Create Telegram and add to contact page
+  Why:        Korean link aggregation market standard
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: AREAS WHERE YOU LEAD THE COMPETITOR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your Advantage #1: DNS/VPN BYPASS GUIDE
+  Competitor: NONE
+  You:        Comprehensive bypass.html with Google DNS (8.8.8.8), Cloudflare (1.1.1.1),
+              Proton VPN, Windscribe, step-by-step Windows/Mac/Mobile guides
+  Impact:     HIGH — users searching for access methods find YOU not them
+
+Your Advantage #2: DATED BLOG POSTS (5 posts)
+  Competitor: Blog exists but no detailed dated content visible
+  You:        5 posts with specific dates (April-May 2026), detailed DNS/VPN/guide content
+  Impact:     HIGH — freshness signal for Google/Naver
+
+Your Advantage #3: FAQ SECTION (3 Q&A pairs)
+  Competitor: NONE
+  You:        3 Q&A pairs covering address, access, address changes
+  Impact:     MEDIUM — covers user questions, good for AI citation
+
+Your Advantage #4: "2026" IN TITLE (Freshness)
+  Competitor: Copyright shows 2024 — no year in title
+  You:        "여기여 최신주소 2026" in multiple pages
+  Impact:     HIGH — signals current/updated content
+
+Your Advantage #5: MORE PAGES (7 vs 6)
+  Competitor: 6 pages
+  You:        7 pages with distinct functions
+  Impact:     LOW — quantity alone doesn't win
+
+Your Advantage #6: KEYWORD-FOCUSED H1 (여기여)
+  Competitor: H1 is "주소모음" (not "여기여")
+  You:        H1 contains "여기여" — exact match
+  Impact:     HIGH — your keyword is 여기여, you target it directly
+
+Your Advantage #7: AI CRAWLERS ALLOWED
+  Competitor: No AI crawler rules in robots.txt (PetalBot blocked)
+  You:        GPTBot, ChatGPT-User, ClaudeBot, PerplexityBot ALL allowed
+  Impact:     MEDIUM-HIGH — AI visibility (GEO)
+
+Your Advantage #8: MORE WEBSITE CONTENT STRUCTURE
+  Your site focuses on being a DIRECTORY/GUIDE for one service (여기여)
+  Competitor site is a GENERAL PORTAL covering multiple topics
+  Impact:     MEDIUM — focused content = stronger topical authority
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: FORENSIC TEXT COMPARISON (key differences)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+─── HEADING COMPARISON (Homepage) ─────────────────────────────────────
+
+Competitor H2s:                 Your H2s:
+1. "주소모음" (H1)             1. "여기여 최신주소 2026 바로가기
+2. "여기여" (H2)                    | 링크모음 주소모음 여기여" (H1)
+3. "다시보기 사이트"            2. "여기여란 무엇인가?"
+4. "주소모음 여기여 소개"       3. "여기여 접속 방법 단계별 안내"
+5. "링크모음"                   4. "자주 묻는 질문 (FAQ)"
+6. "링크사이트"
+7. "사이트순위"
+
+You are MISSING sections about:
+  ❌ "사이트순위" (site rankings) — 여기여 doesn't feature this
+  ❌ "다시보기 사이트" (streaming sites) — competitors categorize this
+  ❌ "링크사이트" (link site explanation) — educational content
+
+─── KEYWORD PRESENCE AUDIT ────────────────────────────────────────────
+
+Keyword/Phrase                  Competitor      You             Match
+──────────────────────────────────────────────────────────────────
+"여기여"                        ✅ (multiple)    ✅ (multiple)   ✅
+"최신주소"                      ❌              ✅              YOU WIN
+"링크모음"                      ✅              ✅              ✅
+"주소모음"                      ✅              ✅              ✅
+"ygy01.com" / "yugiyu.com"     ✅ (ygy01.com)   ✅ (yugiyu.com)  ✅
+"@ygy1552"                     ✅              ✅              ✅
+"DNS"                          ❌              ✅              YOU WIN
+"8.8.8.8"                      ❌              ✅              YOU WIN
+"2026"                          ❌ (uses 2024)   ✅              YOU WIN
+"무료"                          ✅              ❌              COMPETITOR
+"안전" / "안전한"                ✅              ❌              COMPETITOR
+"VIP" / "프리미엄"              ❌              ❌              TIED
+"텔레그램" / "Telegram"         ✅              ❌              COMPETITOR
+"강남구" (address)              ✅              ❌              COMPETITOR
+"검증" / "확인"                ✅              ✅              ✅ (partial)
+
+─── FOOTER TEXT COMPARISON ─────────────────────────────────────────────
+
+Competitor Footer:                              Your Footer:
+"대표사이트 : ygy01.com"                       "© 여기여.site"
+"텔레그램 문의 : @ygymain"                     "본 사이트는 주소 안내
+"E-Mail 문의 : yugiyu@gmail.com"                목적으로만 운영됩니다."
+"상담 가능 시간 : 매일 10:00~ 20:00"
+"주소 : 서울특별시 강남구 삼성로 341"
+"연락처 : (02)640-8080"
+"여기여는 개재된 사이트들과 전혀 연관이 없으며,
+ 단지 링크 중계 사이트입니다."
+"Copyright © 2024 주소모음.com All rights reserved"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6: ROBOTS.TXT & TECHNICAL COMPARISON
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SIGNAL                  COMPETITOR                  YOU                       WINNER
+─────────────────────────────────────────────────────────────────────────────────────
+robots.txt exists       ✅ YES                       ✅ YES                    TIED
+Sitemap reference       ✅ /sitemap.xml              ❌ WRONG DOMAIN           COMPETITOR
+                        (correct)                      (points to 9t4b site)
+
+AI crawler rules        ❌ None except PetalBot      ✅ ALLOWED for GPTBot,     YOU
+                        blocked                         ClaudeBot, PerplexityBot
+
+Google-Extended         ❌ Not specified              ✅ ALLOWED                 YOU
+
+Crawl-delay             ✅ 10s for dotbot/AhrefsBot   ❌ None                    COMPETITOR
+
+Naver Yeti              ❌ Not specified              ❌ Not specified           TIED
+
+Security headers        ❌ Not visible                ❌ Not visible             TIED
+
+HTTPS enforcement       ✅ Wix handles                ❌ Not confirmed           COMPETITOR
+
+Sitemap format          ✅ Index with child sitemap   ✅ Single file (8 URLs)    TIED
+
+Canonical tags          ❌ Not visible                ❌ Not visible             TIED
+
+Mobile optimization     ✅ Wix responsive             ❌ Not confirmed           COMPETITOR
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 7: ALL ELEMENTS COMPETITOR HAS — ADD TO YOUR SITE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRIORITY: COPY THESE FROM COMPETITOR (add to your site):
+
+1. [HIGH] FOOTER WITH CONTACT INFO
+   Copy exact pattern:
+   ```
+   대표사이트 : yugiyu.com
+   E-Mail 문의 : [your-email]
+   트위터 : @ygy1552
+   상담 가능 시간 : 매일 10:00~ 20:00
+   ※ 여기여는 개재된 사이트들과 직접적인 연관이 없으며, 단지 링크 안내 사이트입니다.
+   Copyright © 2026 여기여.site
+   ```
+
+2. [HIGH] SOCIAL MEDIA SECTION IN FOOTER
+   Add these as icon links:
+   - 트위터 @ygy1552 (already have)
+   - 텔레그램 @[your-telegram] (create one)
+   - Add: 유튜브, 인스타그램 (create channels)
+
+3. [MEDIUM] BRAND HISTORY/TIMELINE
+   Add to yugigu.html:
+   ```
+   2025: 여기여 사이트 오픈
+   2026: DNS 우회 가이드 추가, 블로그 오픈, 실시간 주소 업데이트 시작
+   ```
+
+4. [MEDIUM] CONTACT FORM
+   Add to contact.html:
+   - 성, 이름, 이메일, 제목, 메시지 → 제출
+
+5. [MEDIUM] CATEGORY DESCRIPTIONS
+   On link.html, add 1-2 sentence descriptions per category section
+
+6. [LOW] DIFFERENTIATION POINTS
+   Add to yugigu.html: "여기여만의 특별한 점 X가지"
+
+7. [LOW] MANAGEMENT PHILOSOPHY
+   Add 3-5 core values (data-driven, user-first, privacy-respecting)
+
+8. [LOW] COPYRIGHT FOOTER
+   "Copyright © 2026 여기여.site All rights reserved"
+
+PRIORITY: REMOVE THESE (things competitor has that hurt their SEO):
+
+⚠️  25 external links on homepage — don't copy this (link spam pattern)
+⚠️  Empty alt text on 7/11 images — don't copy this (accessibility penalty)
+⚠️  All TOC links point to same URL — don't copy this (broken navigation)
+⚠️  No meta description — don't copy this (lost CTR potential)
+⚠️  No schema — don't copy this (missing rich results)
+
+You are ALREADY better than competitor on:
+✅ DNS/VPN guide (they have nothing)
+✅ Blog with dated content (they have none)
+✅ FAQ section (they have none)
+✅ "2026" in title (their copyright is 2024)
+✅ AI crawlers allowed (they block some)
+✅ More focused keyword targeting (your H1 matches exactly)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 8: RAW DATA DUMP — COMPETITOR HOME EVERY ELEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COMPETITOR DOMAIN INFO:
+  Punycode:   xn--v52b19jh8ekzb.com → 주소모음.com
+  Platform:   Wix (static.wixstatic.com CDN)
+  Images:     All hosted on static.wixstatic.com
+  Sitemap:    https://www.xn--v52b19jh8ekzb.com/sitemap.xml (index with 1 child)
+  Last Sitemap Update: 2026-05-23
+  Pages:      6 (/, /링크모음, /링크사이트, /사이트순위, /여기여, /blog)
+
+COMPETITOR EXTERNAL DOMAINS LINKED TO:
+  ygy01.com (primary target - 8 links)
+  yugiyu.com (alternative - 2 links)
+  t.me/ygymain (Telegram - 2 links)
+  instagram.com/ygyjuso
+  youtube.com/@UCfMZuSF4ju-xv7izjdinVkw
+  tiktok.com/@ygy01com
+  x.com/ygy1552
+  threads.net/@ygyjuso
+  facebook.com/profile.php?id=100090766564501
+  gmail.com (mailto:yugiyu@gmail.com)
+
+COMPETITOR SOCIAL HANDLES:
+  Telegram:     @ygymain
+  Instagram:    @ygyjuso
+  YouTube:     UCfMZuSF4ju-xv7izjdinVkw
+  TikTok:      @ygy01com
+  X/Twitter:   @ygy1552
+  Threads:     @ygyjuso
+  Facebook:    profile.php?id=100090766564501
+
+COMPETITOR CONTACT INFO:
+  Email:       yugiyu@gmail.com
+  Phone:       (02)640-8080
+  Address:     서울특별시 강남구 삼성로 341
+  Hours:       매일 10:00~ 20:00
+  Telegram:    @ygymain
+
+COMPETITOR ALL IMAGES (full URLs):
+  1. https://static.wixstatic.com/media/f7e30e_1651e42c4b124791ba0eaf034a30303d~mv2.png (logo, 115×60)
+  2. https://static.wixstatic.com/media/f7e30e_07e94e2ddace463f8eb99d9525ec8317f000.jpg (hero, 192×108 blurred)
+  3. https://static.wixstatic.com/media/c837a6_6a4404bdeeac41c2bf76d3925efd9fb8~mv2.png (decorative, 35×20)
+  4. https://static.wixstatic.com/media/f7e30e_5eb7a4ecbfe64e89862d08759b4e36c1~mv2.png (여기여 image, 337×217)
+  5. https://static.wixstatic.com/media/f7e30e_1fafdd000dad464f9e3b8ad9752eddaf~mv2.gif (드라마 GIF, 141×79)
+  6. https://static.wixstatic.com/media/f7e30e_f0fef9dbdb6a4b4f8f70cdc57198c036~mv2.gif (웹툰 GIF, 141×79)
+  7. https://static.wixstatic.com/media/f7e30e_7130efea205148bea3c5aeae754a524ef000.jpg (스포츠, 141×79)
+  8. https://static.wixstatic.com/media/f7e30e_3429f944f19d4aa0b7281050afcd2eea~mv2.gif (주소모음 GIF, 480×639)
+  9. https://static.wixstatic.com/media/f7e30e_3bd85e79c41f49478f1e260b09e7e913~mv2.gif (링크사이트 GIF, 480×639)
+  10. https://static.wixstatic.com/media/f7e30e_76c191e9576f4e2e94fc328864774a5d~mv2.gif (사이트순위 GIF, 480×640)
+  11. https://static.wixstatic.com/media/f7e30e_6156a45764504cbd8f8e6ac3a272278b~mv2.png (footer logo, 72×102)
+
+COMPETITOR ROBOTS.TXT RULES:
+  User-agent: * — Allow: / — Disallow: *?lightbox=
+  PetalBot: Disallow: /
+  AdsBot-Google-Mobile, AdsBot-Google: Disallow: /_partials*, /pro-gallery*
+  dotbot: crawl-delay: 10
+  AhrefsBot: crawl-delay: 10
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 9: PRIORITY ACTION PLAN — WHAT TO DO BASED ON THIS ANALYSIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+── DO THESE (things competitor does that work) ──────────────────────────
+
+CRITICAL (Today):
+➊ Add FOOTER with email + contact + social links → match competitor pattern
+➋ Fix robots.txt sitemap URL → 9t4b → 0k0b
+
+HIGH (This Week):
+➌ Add 3-4 more images to your site (hero, category images, blog thumbnails)
+➍ Create Telegram channel + link in footer
+➎ Add contact form to contact.html
+
+MEDIUM (This Month):
+➏ Add brand history/timeline to yugigu.html
+➐ Add category descriptions on link.html (1-2 sentences each)
+➑ Add differentiation points section
+
+── DON'T DO THESE (things competitor does that hurt them) ──────────────
+
+✗ DON'T add 25+ external links on homepage (spam signal)
+✗ DON'T leave images without alt text (accessibility penalty)
+✗ DON'T use broken navigation (TOC all same URL)
+✗ DON'T skip meta descriptions (lost CTR)
+✗ DON'T skip schema markup (but competitor also doesn't have it)
+✗ DON'T have copyright year from 2 years ago (2024 → too old)
+✗ DON'T use Wix (can't control SEO elements, no schema possible)
+
+── DO THESE (things only YOU have — your competitive edge) ─────────────
+
+✅ Keep DNS/VPN guide (bypass.html) — expand it
+✅ Keep publishing blog posts (freshness signal)
+✅ Keep FAQ section — expand to 6-8 Q&As
+✅ Keep "2026" in titles — update yearly
+✅ Keep AI crawlers allowed (GEO advantage)
+✅ Keep Google-Extended allowed (Gemini training visibility)
+
+═══════════════════════════════════════════════════════════════════════════════
+END OF SEO FORENSIC XRAY REPORT
+45 signals compared | 24 gaps found | 8 where you lead
+Compiled: 2026-06-02
+═══════════════════════════════════════════════════════════════════════════════
