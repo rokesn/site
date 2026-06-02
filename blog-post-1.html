@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F0001E" />
+<title>여기여 접속 안 될 때 해결 방법 — DNS 변경 완벽 가이드 2026</title>
+<meta name="description" content="여기여 접속이 안 될 때 가장 빠른 해결 방법은 DNS 변경입니다. 구글 DNS(8.8.8.8)와 클라우드플레어(1.1.1.1) 변경 방법을 Windows, Mac, Android, iOS별로 단계별 안내합니다." />
+<meta name="keywords" content="여기여 접속안됨, 여기여 DNS 변경, 여기여 우회, 8.8.8.8 설정, 1.1.1.1 설정, DNS 변경 방법" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="여기여" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="여기여.site | 세상의 모든링크 주소찾기" />
+<meta property="og:title" content="여기여 접속 안 될 때 해결 방법 — DNS 변경 완벽 가이드 2026" />
+<meta property="og:description" content="여기여 접속이 안 될 때 DNS 변경으로 해결하는 완벽 가이드. Windows, Mac, Android, iOS 별 단계별 안내." />
+<meta property="og:image" content="https://여기여.site/og-image.svg" />
+<meta property="og:url" content="https://여기여.site/blog-post-1.html" />
+<meta property="og:locale" content="ko_KR" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@ygy1552" />
+<link rel="canonical" href="https://여기여.site/blog-post-1.html" />
+<link rel="alternate" hreflang="ko" href="https://여기여.site/blog-post-1.html" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "여기여 접속 안 될 때 해결 방법 — DNS 변경 완벽 가이드 2026",
+  "description": "여기여 접속이 안 될 때 DNS 변경으로 해결하는 완벽 가이드. Windows, Mac, Android, iOS 별 단계별 안내.",
+  "datePublished": "2026-05-13",
+  "dateModified": "2026-05-13",
+  "inLanguage": "ko",
+  "url": "https://여기여.site/blog-post-1.html",
+  "author": {"@type": "Organization", "name": "여기여", "url": "https://여기여.site/"},
+  "publisher": {"@type": "Organization", "name": "여기여", "url": "https://여기여.site/"},
+  "image": "https://여기여.site/og-image.svg",
+  "articleSection": "가이드",
+  "keywords": ["여기여 접속안됨", "DNS 변경", "여기여 우회", "8.8.8.8", "1.1.1.1"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "여기여 (Yugiyu)",
+  "url": "https://xn--ok0b236bba.site",
+  "sameAs": ["https://twitter.com/ygy1552", "https://yugiyu.com"]
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; padding: 0; background: #0d0d0d; font-family: 'Noto Sans KR', Arial, sans-serif; color: #ccc; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+  .notice-bar { width: 100%; background: #F0001E; color: #fff; text-align: center; font-size: 13px; padding: 8px 16px; }
+  nav.site-nav { width: 100%; background: #111; border-bottom: 1px solid #222; display: flex; justify-content: center; flex-wrap: wrap; gap: 4px; padding: 10px 16px; }
+  nav.site-nav a { color: #aaa; text-decoration: none; font-size: 13px; padding: 5px 12px; border-radius: 6px; transition: background 0.2s, color 0.2s; }
+  nav.site-nav a:hover, nav.site-nav a.active { background: #F0001E; color: #fff; }
+  .article-wrap { width: 100%; max-width: 680px; margin: 32px auto 48px; padding: 0 16px; }
+  nav.breadcrumb { font-size: 12px; color: #555; margin-bottom: 16px; }
+  nav.breadcrumb a { color: #888; text-decoration: none; }
+  nav.breadcrumb a:hover { color: #F0001E; }
+  nav.breadcrumb span { margin: 0 6px; }
+  .article-header { background: #1a1a1a; border-radius: 16px; padding: 28px 28px 24px; margin-bottom: 8px; border-left: 5px solid #F0001E; }
+  .article-meta { display: flex; gap: 12px; align-items: center; margin-bottom: 14px; flex-wrap: wrap; }
+  .cat-badge { background: #F0001E22; color: #F0001E; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 10px; letter-spacing: 0.5px; }
+  .date-badge { font-size: 12px; color: #555; }
+  .article-header h1 { margin: 0 0 10px; color: #fff; font-size: 22px; font-weight: 900; line-height: 1.5; }
+  .article-header .summary { font-size: 14px; color: #888; line-height: 1.8; margin: 0; }
+  .article-body { background: #1a1a1a; border-radius: 16px; padding: 28px; margin-top: 8px; }
+  .article-body h2 { color: #fff; font-size: 18px; font-weight: 700; border-left: 4px solid #F0001E; padding-left: 14px; margin: 32px 0 14px; }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body h3 { color: #ddd; font-size: 15px; font-weight: 700; margin: 20px 0 10px; padding-left: 8px; border-left: 2px solid #555; }
+  .article-body p { font-size: 14px; color: #999; line-height: 1.95; margin: 0 0 14px; }
+  .article-body ul, .article-body ol { font-size: 14px; color: #999; line-height: 1.95; padding-left: 22px; margin: 0 0 14px; }
+  .article-body ul li, .article-body ol li { margin-bottom: 6px; }
+  .step-block { background: #111; border: 1px solid #2a2a2a; border-radius: 10px; padding: 16px 18px; margin: 14px 0; }
+  .step-num { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; background: #F0001E; color: #fff; border-radius: 50%; font-size: 13px; font-weight: 700; margin-right: 10px; flex-shrink: 0; }
+  .step-title { color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; margin-bottom: 8px; }
+  .step-desc { font-size: 13px; color: #888; line-height: 1.8; padding-left: 36px; }
+  .dns-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; }
+  .dns-table th { background: #222; color: #aaa; padding: 9px 14px; text-align: left; border-bottom: 1px solid #333; }
+  .dns-table td { padding: 10px 14px; border-bottom: 1px solid #1f1f1f; color: #ccc; }
+  .dns-table tr:last-child td { border-bottom: none; }
+  .dns-val { color: #F0001E; font-weight: 700; font-family: monospace; font-size: 14px; }
+  .tip-box { background: #0d1a0d; border: 1px solid #1a3a1a; border-radius: 10px; padding: 14px 16px; font-size: 13px; color: #6a9a6a; line-height: 1.8; margin: 14px 0; }
+  .warn-box { background: #1a1000; border: 1px solid #3a2a00; border-radius: 10px; padding: 14px 16px; font-size: 13px; color: #aa8844; line-height: 1.8; margin: 14px 0; }
+  .code-block { background: #0d0d0d; border: 1px solid #2a2a2a; border-radius: 8px; padding: 12px 16px; font-family: monospace; font-size: 13px; color: #F0001E; margin: 10px 0; overflow-x: auto; }
+  .related-posts { margin-top: 32px; }
+  .related-posts h2 { color: #fff; font-size: 16px; font-weight: 700; border-left: 4px solid #F0001E; padding-left: 12px; margin: 0 0 14px; }
+  .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .related-card { background: #111; border: 1px solid #2a2a2a; border-radius: 10px; padding: 14px; text-decoration: none; transition: border-color 0.2s; }
+  .related-card:hover { border-color: #F0001E; }
+  .related-card span { color: #F0001E; font-size: 10px; font-weight: 700; display: block; margin-bottom: 5px; }
+  .related-card p { color: #aaa; font-size: 13px; line-height: 1.5; margin: 0; }
+  footer { width: 100%; text-align: center; padding: 16px; color: #444; font-size: 12px; border-top: 1px solid #1a1a1a; margin-top: auto; }
+  footer a { color: #555; text-decoration: none; }
+  footer a:hover { color: #F0001E; }
+</style>
+</head>
+<body>
+<div class="notice-bar">&#128308; 여기여 최신주소 실시간 업데이트 중 | 공식 주소: yugiyu.com</div>
+<nav class="site-nav" aria-label="사이트 내비게이션">
+  <a href="index.html">메인</a>
+  <a href="link.html">사이트 목록</a>
+  <a href="yako.html">야코</a>
+  <a href="yugigu.html">여기여</a>
+  <a href="bypass.html">우회접속</a>
+  <a href="blog.html" class="active">블로그</a>
+  <a href="contact.html">연락처</a>
+</nav>
+
+<div class="article-wrap">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="index.html">홈</a><span>›</span><a href="blog.html">블로그</a><span>›</span><span>DNS 변경 가이드</span>
+  </nav>
+
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="cat-badge">가이드</span>
+      <span class="date-badge">2026년 5월 13일</span>
+    </div>
+    <h1>여기여 접속 안 될 때 해결 방법 — DNS 변경 완벽 가이드 2026</h1>
+    <p class="summary">여기여 사이트에 갑자기 접속이 안 될 때 가장 빠르고 안전한 해결 방법은 DNS 서버를 변경하는 것입니다. 이 가이드에서는 구글 DNS(8.8.8.8)와 클라우드플레어 DNS(1.1.1.1)로 변경하는 방법을 Windows, Mac, Android, iOS 기기별로 단계별로 안내합니다.</p>
+  </div>
+
+  <div class="article-body">
+
+    <h2>여기여 접속이 안 되는 이유</h2>
+    <p>여기여를 포함한 많은 링크모음 사이트들은 국내 인터넷 차단 정책(방통심의위원회의 불법·유해정보 차단)으로 인해 접속이 차단되는 경우가 있습니다. 이 차단은 ISP(KT, SK텔레콤, LG유플러스 등) 수준에서 DNS 차단 방식으로 이루어집니다.</p>
+    <p>DNS(Domain Name System)는 쉽게 말해 인터넷의 "전화번호부"입니다. 여러분이 주소창에 도메인 이름을 입력하면, DNS 서버가 해당 도메인의 IP 주소를 찾아줍니다. 국내 ISP들은 차단 대상 사이트의 도메인이 입력됐을 때 올바른 IP 주소 대신 차단 페이지를 반환합니다.</p>
+    <p>따라서 <strong>DNS 서버를 국내 ISP 기본값에서 구글이나 클라우드플레어의 공개 DNS로 변경</strong>하면, ISP의 차단 필터를 거치지 않고 직접 해당 사이트에 접근할 수 있습니다. 별도 프로그램 설치가 필요 없고, 무료이며, 속도 저하가 거의 없어 가장 추천하는 방법입니다.</p>
+
+    <h2>추천 DNS 서버 목록</h2>
+    <p>아래 두 가지 DNS 서버 중 하나를 선택해 사용하면 됩니다. 둘 다 무료이며 전 세계적으로 신뢰받는 서비스입니다.</p>
+
+    <table class="dns-table" aria-label="추천 DNS 서버">
+      <thead>
+        <tr><th>서비스명</th><th>기본(Primary) DNS</th><th>보조(Secondary) DNS</th><th>특징</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>구글 Public DNS</td><td class="dns-val">8.8.8.8</td><td class="dns-val">8.8.4.4</td><td>안정성 최고, 전 세계 1위</td></tr>
+        <tr><td>클라우드플레어 DNS</td><td class="dns-val">1.1.1.1</td><td class="dns-val">1.0.0.1</td><td>속도 최빠름, 개인정보 보호</td></tr>
+      </tbody>
+    </table>
+
+    <div class="tip-box">💡 어떤 DNS가 더 좋나요? 두 DNS 모두 훌륭합니다. 클라우드플레어(1.1.1.1)가 일반적으로 응답 속도가 조금 더 빠르며, 구글(8.8.8.8)은 안정성이 검증된 서비스입니다. 둘 다 개인정보 정책이 명확하여 안전하게 사용할 수 있습니다.</div>
+
+    <h2>Windows에서 DNS 변경 방법</h2>
+
+    <h3>Windows 10 / 11 공통</h3>
+    <div class="step-block"><div class="step-title"><span class="step-num">1</span>설정 열기</div><div class="step-desc">키보드에서 <strong>Windows 키 + I</strong>를 눌러 설정을 엽니다. 또는 시작 버튼 → 설정(⚙️) 클릭.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">2</span>네트워크 및 인터넷 접속</div><div class="step-desc"><strong>네트워크 및 인터넷</strong> 항목을 클릭합니다. 현재 사용 중인 연결(Wi-Fi 또는 이더넷)을 선택합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">3</span>어댑터 옵션 변경</div><div class="step-desc">페이지 하단 또는 오른쪽에서 <strong>어댑터 옵션 변경</strong>을 클릭합니다. (Windows 11은 설정 → 고급 네트워크 설정)</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">4</span>네트워크 어댑터 속성 열기</div><div class="step-desc">사용 중인 Wi-Fi 또는 이더넷 어댑터를 <strong>우클릭 → 속성</strong>을 선택합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">5</span>IPv4 설정 변경</div><div class="step-desc">목록에서 <strong>인터넷 프로토콜 버전 4 (TCP/IPv4)</strong>를 선택하고 <strong>속성</strong> 버튼을 클릭합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">6</span>DNS 주소 입력</div><div class="step-desc"><strong>다음 DNS 서버 주소 사용</strong>을 선택 후 입력:<br><br>기본 설정 DNS 서버: <strong style="color:#F0001E;">8.8.8.8</strong><br>보조 DNS 서버: <strong style="color:#F0001E;">8.8.4.4</strong><br><br>입력 후 <strong>확인</strong> 클릭.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">7</span>브라우저 재시작 및 확인</div><div class="step-desc">브라우저를 완전히 닫고 다시 열어 여기여 사이트에 접속해 보세요. 만약 여전히 안 된다면 브라우저 캐시를 지우거나(Ctrl+Shift+Delete) 컴퓨터를 재시작합니다.</div></div>
+
+    <h2>Mac에서 DNS 변경 방법</h2>
+    <div class="step-block"><div class="step-title"><span class="step-num">1</span>시스템 환경설정 열기</div><div class="step-desc">화면 왼쪽 상단 Apple 로고 클릭 → <strong>시스템 환경설정</strong> (macOS Ventura 이상은 <strong>시스템 설정</strong>) 선택.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">2</span>네트워크 선택</div><div class="step-desc"><strong>네트워크</strong>를 클릭하고, 왼쪽 목록에서 현재 연결된 Wi-Fi 또는 이더넷을 선택합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">3</span>고급 설정</div><div class="step-desc"><strong>고급...</strong> 버튼을 클릭한 후 상단 탭에서 <strong>DNS</strong>를 선택합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">4</span>DNS 서버 추가</div><div class="step-desc">DNS 서버 목록 아래 <strong>+</strong> 버튼을 클릭하고 <strong>1.1.1.1</strong>을 입력합니다. 다시 <strong>+</strong>를 눌러 <strong>1.0.0.1</strong>도 추가합니다. <strong>확인 → 적용</strong>을 클릭합니다.</div></div>
+
+    <h2>Android에서 DNS 변경 방법</h2>
+    <p>Android는 제조사마다 설정 메뉴 위치가 다를 수 있습니다. 아래는 대부분의 Android 기기에서 공통으로 적용되는 방법입니다.</p>
+    <div class="step-block"><div class="step-title"><span class="step-num">1</span>설정 → Wi-Fi</div><div class="step-desc">스마트폰 설정 앱을 열고 <strong>Wi-Fi</strong> 또는 <strong>연결</strong> 항목으로 이동합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">2</span>현재 연결된 Wi-Fi 설정 열기</div><div class="step-desc">연결된 Wi-Fi 이름을 <strong>길게 누르거나</strong>, 네트워크 이름 옆의 <strong>⚙️ 아이콘</strong>을 탭합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">3</span>IP 설정을 정적으로 변경</div><div class="step-desc"><strong>IP 설정</strong>을 <strong>DHCP → 정적(Static)</strong>으로 변경합니다. IP 주소, 게이트웨이 등 기존 정보는 그대로 유지합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">4</span>DNS 입력</div><div class="step-desc">DNS 1: <strong style="color:#F0001E;">1.1.1.1</strong><br>DNS 2: <strong style="color:#F0001E;">1.0.0.1</strong><br>입력 후 <strong>저장</strong>을 탭합니다.</div></div>
+
+    <div class="warn-box">⚠️ 안드로이드 9 이상에서는 설정 → 연결 → 기타 연결 설정 → 프라이빗 DNS에서 <strong>1dot1dot1dot1.cloudflare-dns.com</strong>을 입력하는 방법도 있습니다. 이 방법은 모든 인터넷 연결(Wi-Fi + 데이터)에 적용됩니다.</div>
+
+    <h2>iPhone / iOS에서 DNS 변경 방법</h2>
+    <div class="step-block"><div class="step-title"><span class="step-num">1</span>설정 → Wi-Fi</div><div class="step-desc">iPhone 설정 앱을 열고 <strong>Wi-Fi</strong>로 이동합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">2</span>연결된 Wi-Fi 정보 열기</div><div class="step-desc">현재 연결된 Wi-Fi 이름 옆의 <strong>ⓘ 아이콘</strong>을 탭합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">3</span>DNS 설정</div><div class="step-desc">아래로 스크롤하여 <strong>DNS 구성</strong>을 찾습니다. <strong>자동 → 수동</strong>으로 변경합니다.</div></div>
+    <div class="step-block"><div class="step-title"><span class="step-num">4</span>DNS 서버 추가</div><div class="step-desc">기존 DNS 서버를 모두 삭제하고 <strong>서버 추가</strong>를 탭하여 <strong>8.8.8.8</strong>과 <strong>8.8.4.4</strong>를 입력합니다. 오른쪽 상단 <strong>저장</strong>을 탭합니다.</div></div>
+
+    <h2>DNS 변경 후에도 접속이 안 될 때</h2>
+    <p>DNS 변경 후에도 접속이 안 된다면 다음 추가 방법을 시도해 보세요.</p>
+    <ul>
+      <li><strong>브라우저 DNS 캐시 삭제:</strong> Chrome에서 chrome://net-internals/#dns 접속 후 "Clear host cache" 버튼 클릭</li>
+      <li><strong>Windows DNS 캐시 플러시:</strong> 명령 프롬프트(관리자)에서 <code>ipconfig /flushdns</code> 실행</li>
+      <li><strong>VPN 사용:</strong> Proton VPN, Windscribe 등 무료 VPN 앱을 설치하고 해외 서버에 연결</li>
+      <li><strong>다른 브라우저 시도:</strong> Chrome, Firefox, Edge 등 다른 브라우저에서 접속 시도</li>
+      <li><strong>시크릿 모드:</strong> 브라우저 시크릿/프라이빗 모드에서 접속 시도</li>
+    </ul>
+    <div class="code-block">Windows DNS 캐시 삭제 명령어:<br>ipconfig /flushdns</div>
+
+    <h2>여기여 최신주소 바로가기</h2>
+    <p>DNS 변경 완료 후 아래 주소로 접속하세요. 현재 여기여 공식 주소는 <strong>https://yugiyu.com</strong> 입니다. 주소가 변경될 경우 트위터 <a href="https://twitter.com/ygy1552" target="_blank" rel="noopener noreferrer" style="color:#F0001E;">@ygy1552</a>에서 즉시 공지됩니다.</p>
+    <p>이 페이지(여기여.site)를 북마크해 두시면 주소가 바뀌어도 항상 최신 주소를 확인할 수 있습니다.</p>
+
+    <div class="related-posts">
+      <h2>관련 포스트</h2>
+      <div class="related-grid">
+        <a class="related-card" href="blog-post-3.html"><span>가이드</span><p>VPN 없이 차단된 사이트 접속하는 방법</p></a>
+        <a class="related-card" href="blog-post-6.html"><span>가이드</span><p>여기여 DNS 변경 방법 — Windows/Mac/모바일 완벽 가이드</p></a>
+        <a class="related-card" href="blog-post-2.html"><span>정보</span><p>여기여 최신주소 2026 — 주소 변경 이력 및 확인 방법</p></a>
+        <a class="related-card" href="bypass.html"><span>우회접속</span><p>우회 접속 방법 전체 가이드</p></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span>© <span id="year"></span> 여기여.site. 본 사이트는 주소 안내 목적으로만 운영됩니다.</span><br>
+  <a href="privacy.html">개인정보처리방침</a> &nbsp;|&nbsp; <a href="terms.html">이용약관</a> &nbsp;|&nbsp; <a href="contact.html">연락처</a>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
