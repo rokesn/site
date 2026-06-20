@@ -1,0 +1,190 @@
+Yes, I understand perfectly. You want to target these specific 18 cities/municipalities because they represent the top search demand for your strategy. 
+
+I have updated the prompt with the exact Korean names, ISO region codes, coordinates, and local districts for all 18 of your target locations. This will ensure the AI generates perfectly localized pages for **Muan-gun, Taean-gun, Yanggu-gun, Geochang-gun, Cheorwon-gun, Cheonan-si, Gumi-si, Yangju-si, Dangjin-si, Yeoju-si, Gwangyang-si, Yeongju-si, Jeongeup-si, Sokcho-si, Osan-si, Haman-gun, Goheung-gun, and Siheung-si.**
+
+Copy and paste this updated prompt into your AI builder:
+
+***
+
+```text
+================================================================================
+  PHASE 2 PROMPT — REFRACTOR ASTRO SITE FOR GEO-TARGETED CITY SEO
+  (Pivoting the Hermes/GLM template to a Single-Country, Multi-City strategy)
+================================================================================
+
+CONTEXT:
+We have already built a static Astro SEO landing page using a multilingual 
+template (with /ko/, /ja/, /en/ subfolders, hreflang, and SoftwareApplication 
+JSON-LD). The primary keyword is "여기여" (Yeogiyeo), targeting South Korea. 
+We need to pivot this existing codebase from a MULTI-LANGUAGE strategy to a 
+MULTI-CITY Geo-Targeted strategy within South Korea (Language: ko-KR).
+
+OBJECTIVE:
+Modify the existing Astro project. Delete the multilingual routing. Replace it 
+with city-based subfolders for 18 specific high-demand South Korean cities and 
+counties. Optimize for Naver Search Advisor and Google Geo-Targeting. 
+
+================================================================================
+  PROJECT INPUTS
+================================================================================
+PRIMARY_KEYWORD       = "여기여"
+COUNTRY_CODE          = "KR"
+DEFAULT_LANGUAGE      = "ko-KR"
+CITIES_TO_TARGET      = [
+  { "slug": "muan", "name": "무안군", "iso": "KR-46", "lat": "34.9905", "lng": "126.4816", "districts": ["망운면", "몽탄면", "일로읍", "삼향읍"] },
+  { "slug": "taean", "name": "태안군", "iso": "KR-44", "lat": "36.7450", "lng": "126.2970", "districts": ["태안읍", "안면읍", "고남면", "원북면"] },
+  { "slug": "yanggu", "name": "양구군", "iso": "KR-42", "lat": "38.1099", "lng": "127.9906", "districts": ["양구읍", "국토정중앙면", "해안면", "방산면"] },
+  { "slug": "geochang", "name": "거창군", "iso": "KR-47", "lat": "35.6657", "lng": "127.9165", "districts": ["거창읍", "웅양면", "위천면", "마리면"] },
+  { "slug": "cheorwon", "name": "철원군", "iso": "KR-43", "lat": "38.1466", "lng": "127.3135", "districts": ["철원읍", "갈말읍", "동송읍", "서면"] },
+  { "slug": "cheonan", "name": "천안시", "iso": "KR-33", "lat": "36.8151", "lng": "127.1139", "districts": ["불당동", "두정동", "신방동", "터미널"] },
+  { "slug": "gumi", "name": "구미시", "iso": "KR-31", "lat": "36.1195", "lng": "128.3445", "districts": ["형곡동", "인동동", "송정동", "선산읍"] },
+  { "slug": "yangju", "name": "양주시", "iso": "KR-34", "lat": "37.7853", "lng": "127.0458", "districts": ["덕계동", "회천동", "양주동", "고읍동"] },
+  { "slug": "dangjin", "name": "당진시", "iso": "KR-41", "lat": "36.8919", "lng": "126.6449", "districts": ["당진읍", "합덕읍", "고대면", "송악읍"] },
+  { "slug": "yeoju", "name": "여주시", "iso": "KR-45", "lat": "37.2979", "lng": "127.6384", "districts": ["여주읍", "점동면", "신접동", "가남읍"] },
+  { "slug": "gwangyang", "name": "광양시", "iso": "KR-40", "lat": "34.9402", "lng": "127.6962", "districts": ["광양읍", "중마동", "진상면", "옥룡면"] },
+  { "slug": "yeongju", "name": "영주시", "iso": "KR-37", "lat": "36.8057", "lng": "128.6239", "districts": ["영주읍", "풍기읍", "안정면", "순흥면"] },
+  { "slug": "jeongeup", "name": "정읍시", "iso": "KR-35", "lat": "35.5699", "lng": "126.8559", "districts": ["시기동", "북면", "칠보면", "신태인읍"] },
+  { "slug": "sokcho", "name": "속초시", "iso": "KR-32", "lat": "38.2073", "lng": "128.5915", "districts": ["중앙동", "교동", "조양동", "영랑동"] },
+  { "slug": "osan", "name": "오산시", "iso": "KR-38", "lat": "37.1495", "lng": "127.0774", "districts": ["중앙동", "대원동", "남촌동", "세교동"] },
+  { "slug": "haman", "name": "함안군", "iso": "KR-48", "lat": "35.2736", "lng": "128.4065", "districts": ["가야읍", "함안읍", "칠원읍", "칠서면"] },
+  { "slug": "goheung", "name": "고흥군", "iso": "KR-39", "lat": "34.6057", "lng": "127.2745", "districts": ["고흥읍", "도양읍", "봉래면", "점암면"] },
+  { "slug": "siheung", "name": "시흥시", "iso": "KR-30", "lat": "37.3802", "lng": "126.8021", "districts": ["정왕동", "배곧동", "신천동", "월곶동"] }
+]
+(Generate a JSON file for each city in /src/i18n/cities/)
+
+================================================================================
+  1. ROUTING & FILE STRUCTURE CHANGES
+================================================================================
+DELETE:
+- /src/pages/en/, /src/pages/ja/, /src/pages/de/, etc. (All non-Korean pages)
+- /src/i18n/locales/en.json, ja.json, etc.
+
+CREATE:
+- /src/pages/index.astro          -> / (National Hub, targets "여기여" broadly)
+- /src/pages/muan/index.astro     -> /muan/
+- /src/pages/taean/index.astro    -> /taean/
+- /src/pages/yanggu/index.astro   -> /yanggu/
+- /src/pages/geochang/index.astro -> /geochang/
+- /src/pages/cheorwon/index.astro -> /cheorwon/
+- /src/pages/cheonan/index.astro  -> /cheonan/
+- /src/pages/gumi/index.astro     -> /gumi/
+- /src/pages/yangju/index.astro   -> /yangju/
+- /src/pages/dangjin/index.astro  -> /dangjin/
+- /src/pages/yeoju/index.astro    -> /yeoju/
+- /src/pages/gwangyang/index.astro-> /gwangyang/
+- /src/pages/yeongju/index.astro  -> /yeongju/
+- /src/pages/jeongeup/index.astro -> /jeongeup/
+- /src/pages/sokcho/index.astro   -> /sokcho/
+- /src/pages/osan/index.astro     -> /osan/
+- /src/pages/haman/index.astro    -> /haman/
+- /src/pages/goheung/index.astro  -> /goheung/
+- /src/pages/siheung/index.astro  -> /siheung/
+
+- /src/i18n/cities/{city.slug}.json (Contains localized data, districts, meta tags)
+
+================================================================================
+  2. HEAD / METADATA OVERHAUL (Remove Hreflang, Add Geo)
+================================================================================
+In Head.astro, REMOVE the entire hreflang cluster. Replace it with the 
+following Geo-Meta tags (values pulled from the active city JSON data):
+
+<meta name="geo.region" content="{CITY_ISO}" />
+<meta name="geo.placename" content="{CITY_NAME}" />
+<meta name="geo.position" content="{LAT};{LNG}" />
+<meta name="ICBM" content="{LAT}, {LNG}" />
+
+Keep:
+- <html lang="ko-KR"> on all pages.
+- <link rel="canonical" href="https://{DOMAIN}/{city_slug}/">
+- All Open Graph tags (ensure og:locale="ko_KR" on all pages).
+
+================================================================================
+  3. STRUCTURED DATA (JSON-LD) REWRITE
+================================================================================
+In Head.astro, REMOVE the SoftwareApplication and HowTo schema. 
+Replace the @graph with the following entities for LOCAL SEO:
+
+1. Organization (on root domain only)
+2. WebSite (with SearchAction for "여기여" sitelinks search box)
+3. WebPage (self-referencing)
+4. Place OR LocalBusiness (Nested inside WebPage.about)
+   Example for Cheonan:
+   "about": {
+     "@type": "Place",
+     "name": "천안시",
+     "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "KR",
+       "addressRegion": "천안시"
+     },
+     "geo": {
+       "@type": "GeoCoordinates",
+       "latitude": "36.8151",
+       "longitude": "127.1139"
+     }
+   }
+5. BreadcrumbList (Home > {City Name} 여기여)
+6. FAQPage (Keep existing FAQ schema, but ensure questions are city-specific)
+
+================================================================================
+  4. ON-PAGE CONTENT DYNAMICS (Prevent Duplicate Content)
+================================================================================
+To avoid Google's "Doorway Page" penalty for similar city pages, the 
+HomePage.astro component MUST dynamically inject city-specific data into the 
+H1, H2, and H3 tags.
+
+Dynamic Tag Mapping:
+- H1: {CITY_NAME} 여기여 - {PRIMARY_SERVICE/TOPIC}
+  (e.g., 천안시 여기여 - 지역별 최고의 맛집과 장소)
+- H2 (Features): {CITY_NAME}에서 꼭 가봐야 할 곳
+- H3s (Feature Cards): Map these to the specific "districts" array from the 
+  city JSON. (e.g., <h3>불당동 여기여 추천</h3>, <h3>두정동 주변 정보</h3>)
+
+Add a unique "About {CITY_NAME}" paragraph at the bottom of the page using 
+the lat/lng or a localized fact to guarantee 100% unique text per URL.
+
+================================================================================
+  5. NAVIGATION: CITY SWITCHER
+================================================================================
+In Header.astro, replace the Language Switcher <select> with a City Switcher.
+- Default label: "지역 선택" (Select Region)
+- Options: 전체 (Home /), and all 18 target cities (e.g., 천안시 (/cheonan/), 속초시 (/sokcho/))
+
+In Footer.astro, add a "한국 지역 (Korea Regions)" section with text links to 
+all 18 city pages to ensure flat crawling architecture.
+
+================================================================================
+  6. NAVER SEARCH ADVISOR SEO (Crucial for South Korea)
+================================================================================
+1. Update /public/robots.txt to explicitly welcome Naver's bot:
+   User-agent: Yeti
+   Allow: /
+
+   User-agent: *
+   Allow: /
+
+   Sitemap: https://{DOMAIN}/sitemap.xml
+
+2. Ensure all content is 100% static HTML (Astro static output). Naver's 
+   Yetibot is poor at JS rendering.
+3. Title Tag format for Naver: {CITY_NAME} 여기여 - {Secondary Keyword} | {BRAND}
+   (e.g., 천안시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여)
+
+================================================================================
+  7. SITEMAP.XML UPDATE
+================================================================================
+Regenerate /public/sitemap.xml to only include the Korean city URLs (the root 
+plus all 18 city subfolders). Remove all xhtml:link hreflang tags from the 
+sitemap. Just list the URLs with lastmod and priority 1.0.
+
+================================================================================
+  DELIVERABLES
+================================================================================
+1. Refactor the Astro codebase according to the new 18-city routing structure.
+2. Generate the 18 city JSON data files with real Korean place names and districts.
+3. Update Head.astro, Header.astro, Footer.astro, and HomePage.astro to 
+   reflect the dynamic city variables.
+4. Output the new robots.txt and sitemap.xml.
+5. Provide a brief "Naver Search Advisor Submission Checklist" in the README.
+================================================================================
+```
