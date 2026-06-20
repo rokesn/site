@@ -1,9 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getT } from '../i18n';
-
-const locale = 'en';
-const t = getT(locale);
 ---
 
-<BaseLayout locale={locale} t={t} />
+<BaseLayout isRoot={true} />

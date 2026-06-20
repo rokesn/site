@@ -1,72 +1,74 @@
 ---
-import type { Locale } from '../i18n';
-import { localePaths } from '../i18n';
+import { cities } from '../i18n/cities';
+import type { City } from '../i18n/cities';
 
 interface Props {
-  locale: string;
-  t: Locale;
+  city?: City | null;
 }
 
-const { locale, t } = Astro.props;
-const currentPath = localePaths[locale] ?? '/';
+const { city = null } = Astro.props;
 const year = new Date().getFullYear();
+const currentPath = city ? `/${city.slug}/` : '/';
 ---
 
 <footer class="bg-gray-900 border-t border-gray-800 mt-16">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <!-- Brand -->
       <div>
-        <a href={currentPath} class="text-2xl font-bold text-white hover:text-blue-400 transition-colors">
+        <a href="/" class="text-2xl font-bold text-white hover:text-blue-400 transition-colors">
           여기여
         </a>
         <p class="mt-3 text-sm text-gray-400 max-w-xs">
-          {t.footer.tagline}
+          공식 여기여 링크 허브 — 항상 최신, 항상 검증됨.
         </p>
       </div>
 
       <!-- Links -->
       <div>
-        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">Links</h3>
+        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">링크</h3>
         <ul class="space-y-2">
           <li>
-            <a
-              href="https://www.ygy01.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-sm text-gray-400 hover:text-white transition-colors"
-            >
+            <a href="https://www.ygy01.com/" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-white transition-colors">
               여기여 공식 사이트
             </a>
           </li>
           <li>
-            <a
-              href="https://github.com/%EC%97%AC%EA%B8%B0%EC%97%AC"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-sm text-gray-400 hover:text-white transition-colors"
-            >
+            <a href="https://github.com/%EC%97%AC%EA%B8%B0%EC%97%AC" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-white transition-colors">
               GitHub
             </a>
           </li>
           <li>
-            <a href={`${currentPath}privacy/`} class="text-sm text-gray-400 hover:text-white transition-colors">
-              {t.footer.privacy}
-            </a>
+            <a href={`${currentPath}privacy/`} class="text-sm text-gray-400 hover:text-white transition-colors">개인정보처리방침</a>
           </li>
           <li>
-            <a href={`${currentPath}terms/`} class="text-sm text-gray-400 hover:text-white transition-colors">
-              {t.footer.terms}
-            </a>
+            <a href={`${currentPath}terms/`} class="text-sm text-gray-400 hover:text-white transition-colors">이용약관</a>
           </li>
         </ul>
       </div>
 
       <!-- Info -->
       <div>
-        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">Info</h3>
-        <p class="text-sm text-gray-400">{t.footer.license}</p>
-        <p class="text-sm text-gray-500 mt-1">© {year} 여기여. {t.footer.rights}</p>
+        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">정보</h3>
+        <p class="text-sm text-gray-400">무료 이용</p>
+        <p class="text-sm text-gray-500 mt-1">© {year} 여기여. 모든 권리 보유.</p>
+      </div>
+
+      <!-- Korea Regions -->
+      <div>
+        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-4">한국 지역 (Korea Regions)</h3>
+        <ul class="grid grid-cols-2 gap-x-4 gap-y-1.5">
+          <li>
+            <a href="/" class="text-sm text-gray-400 hover:text-white transition-colors">전국</a>
+          </li>
+          {cities.map((c) => (
+            <li>
+              <a href={`/${c.slug}/`} class="text-sm text-gray-400 hover:text-white transition-colors">
+                {c.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   </div>

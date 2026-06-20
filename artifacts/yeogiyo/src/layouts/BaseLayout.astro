@@ -1,39 +1,28 @@
 ---
-import type { Locale } from '../i18n';
-import { localePaths, localeNames, ogLocales } from '../i18n';
+import type { City } from '../i18n/cities';
 import Head from '../components/Head.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HomePage from '../components/HomePage.astro';
 
 interface Props {
-  locale: string;
-  t: Locale;
+  city?: City | null;
+  isRoot?: boolean;
 }
 
-const { locale, t } = Astro.props;
-const dir = t.dir as 'ltr' | 'rtl';
+const { city = null, isRoot = false } = Astro.props;
 ---
 
 <!doctype html>
-<html lang={locale} dir={dir}>
+<html lang="ko-KR" dir="ltr">
   <head>
-    <Head locale={locale} t={t} />
+    <Head city={city} isRoot={isRoot} />
   </head>
   <body class="bg-gray-950 text-white antialiased">
-    <Header locale={locale} t={t} />
+    <Header city={city} />
     <main>
-      <HomePage locale={locale} t={t} />
+      <HomePage city={city} />
     </main>
-    <Footer locale={locale} t={t} />
-
-    <script>
-      const sel = document.getElementById('lang-select') as HTMLSelectElement | null;
-      if (sel) {
-        sel.addEventListener('change', () => {
-          window.location.href = sel.value;
-        });
-      }
-    </script>
+    <Footer city={city} />
   </body>
 </html>

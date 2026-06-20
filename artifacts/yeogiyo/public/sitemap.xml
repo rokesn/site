@@ -1,146 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <url>
-    <loc>https://여기여.site/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://여기여.site/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://여기여.site/ko/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://여기여.site/zh/"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://여기여.site/zh-tw/"/>
-    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://여기여.site/zh-tw/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://여기여.site/ja/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://여기여.site/de/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://여기여.site/fr/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://여기여.site/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://여기여.site/pt/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://여기여.site/it/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://여기여.site/ar/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://여기여.site/nl/"/>
-    <xhtml:link rel="alternate" hreflang="sv" href="https://여기여.site/sv/"/>
-    <xhtml:link rel="alternate" hreflang="no" href="https://여기여.site/no/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/ko/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://여기여.site/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://여기여.site/ko/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/zh/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://여기여.site/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/zh-tw/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://여기여.site/zh-tw/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/ja/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://여기여.site/ja/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/de/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://여기여.site/de/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/fr/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://여기여.site/fr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/es/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://여기여.site/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/pt/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://여기여.site/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/it/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://여기여.site/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/ar/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://여기여.site/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/nl/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://여기여.site/nl/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/sv/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="sv" href="https://여기여.site/sv/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
-  <url>
-    <loc>https://여기여.site/no/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="no" href="https://여기여.site/no/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://여기여.site/"/>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://여기여.site/</loc><lastmod>2026-06-20</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://여기여.site/muan/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/taean/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/yanggu/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/geochang/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/cheorwon/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/cheonan/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/gumi/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/yangju/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/dangjin/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/yeoju/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/gwangyang/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/yeongju/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/jeongeup/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/sokcho/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/osan/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/haman/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/goheung/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://여기여.site/siheung/</loc><lastmod>2026-06-20</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 </urlset>

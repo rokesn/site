@@ -1,21 +1,19 @@
 ---
-import type { Locale } from '../i18n';
-import { localePaths, localeNames } from '../i18n';
+import { cities } from '../i18n/cities';
+import type { City } from '../i18n/cities';
 
 interface Props {
-  locale: string;
-  t: Locale;
+  city?: City | null;
 }
 
-const { locale, t } = Astro.props;
-const currentPath = localePaths[locale] ?? '/';
+const { city = null } = Astro.props;
 ---
 
 <header class="sticky top-0 z-50 bg-gray-950/90 backdrop-blur-md border-b border-gray-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
-      <a href={currentPath} class="flex items-center gap-2 group">
+      <a href="/" class="flex items-center gap-2 group">
         <span class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
           여기여
         </span>
@@ -23,39 +21,30 @@ const currentPath = localePaths[locale] ?? '/';
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
-        <a href="#features" class="text-sm text-gray-400 hover:text-white transition-colors">
-          {t.nav.features}
-        </a>
-        <a href="#about" class="text-sm text-gray-400 hover:text-white transition-colors">
-          {t.nav.useCases}
-        </a>
-        <a href="#quickstart" class="text-sm text-gray-400 hover:text-white transition-colors">
-          {t.nav.quickStart}
-        </a>
-        <a href="#faq" class="text-sm text-gray-400 hover:text-white transition-colors">
-          {t.nav.faq}
-        </a>
+        <a href="#features" class="text-sm text-gray-400 hover:text-white transition-colors">특징</a>
+        <a href="#about" class="text-sm text-gray-400 hover:text-white transition-colors">소개</a>
+        <a href="#quickstart" class="text-sm text-gray-400 hover:text-white transition-colors">이용 방법</a>
+        <a href="#faq" class="text-sm text-gray-400 hover:text-white transition-colors">자주 묻는 질문</a>
         <a
           href="https://github.com/%EC%97%AC%EA%B8%B0%EC%97%AC"
           target="_blank"
           rel="noopener noreferrer"
           class="text-sm text-gray-400 hover:text-white transition-colors"
-        >
-          {t.nav.github}
-        </a>
+        >GitHub</a>
       </nav>
 
-      <!-- Language Switcher -->
+      <!-- City Switcher -->
       <div class="flex items-center">
-        <label for="lang-select" class="sr-only">Select language</label>
+        <label for="city-select" class="sr-only">지역 선택</label>
         <select
-          id="lang-select"
+          id="city-select"
           class="bg-gray-800 text-gray-300 text-sm rounded-lg px-3 py-1.5 border border-gray-700 hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
-          aria-label="Select language"
+          aria-label="지역 선택"
         >
-          {Object.entries(localePaths).map(([l, path]) => (
-            <option value={path} selected={l === locale}>
-              {localeNames[l]}
+          <option value="/" selected={!city}>전체 (전국)</option>
+          {cities.map((c) => (
+            <option value={`/${c.slug}/`} selected={city?.slug === c.slug}>
+              {c.name}
             </option>
           ))}
         </select>
@@ -63,3 +52,12 @@ const currentPath = localePaths[locale] ?? '/';
     </div>
   </div>
 </header>
+
+<script>
+  const sel = document.getElementById('city-select') as HTMLSelectElement | null;
+  if (sel) {
+    sel.addEventListener('change', () => {
+      window.location.href = sel.value;
+    });
+  }
+</script>
