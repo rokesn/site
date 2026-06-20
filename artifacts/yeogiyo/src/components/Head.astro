@@ -16,7 +16,10 @@ const BRAND = '여기여';
 const PUBLISHER = '여기여';
 const PUBLISHER_URL = 'https://www.ygy01.com/';
 const GITHUB_URL = 'https://github.com/%EC%97%AC%EA%B8%B0%EC%97%AC';
-const GSC_TOKEN = 'YOUR_GSC_TOKEN';
+const GSC_TOKENS = [
+  'ZVs9DZgqLAujRCreKH-xre2nrlX4sVT9Ym8UiIl6vM4',
+  '8Xou4ro_b7V6vCp8Pwe5xIH0Z1TucC8eOhud7A5q244',
+];
 const BING_TOKEN = 'YOUR_BING_TOKEN';
 const NAVER_TOKEN = 'YOUR_NAVER_TOKEN';
 const CLARITY_ID = '';
@@ -173,7 +176,9 @@ const jsonLd = { '@context': 'https://schema.org', '@graph': jsonLdGraph };
 
 <!-- Search engine verification -->
 <meta name="msvalidate.01" content={BING_TOKEN} />
-<meta name="google-site-verification" content={GSC_TOKEN} />
+{GSC_TOKENS.map((token) => (
+  <meta name="google-site-verification" content={token} />
+))}
 <meta name="naver-site-verification" content={NAVER_TOKEN} />
 
 <!-- Browser behaviour -->

@@ -1,10 +1,12 @@
 export interface City {
   slug: string;
   name: string;
+  region: string;
   iso: string;
   lat: string;
   lng: string;
   districts: string[];
+  wikiUrl: string;
   metaTitle: string;
   metaDescription: string;
   h1Secondary: string;
@@ -15,10 +17,12 @@ export const cities: City[] = [
   {
     slug: "muan",
     name: "무안군",
+    region: "전라남도",
     iso: "KR-46",
     lat: "34.9905",
     lng: "126.4816",
     districts: ["망운면", "몽탄면", "일로읍", "삼향읍"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EB%AC%B4%EC%95%88%EA%B5%B0",
     metaTitle: "무안군 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "무안군 여기여 최신 주소 바로가기. 무안군 지역 망운면, 몽탄면, 일로읍, 삼향읍의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "지역별 최고의 맛집과 장소",
@@ -27,10 +31,12 @@ export const cities: City[] = [
   {
     slug: "taean",
     name: "태안군",
+    region: "충청남도",
     iso: "KR-44",
     lat: "36.7450",
     lng: "126.2970",
     districts: ["태안읍", "안면읍", "고남면", "원북면"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%ED%83%9C%EC%95%88%EA%B5%B0",
     metaTitle: "태안군 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "태안군 여기여 최신 주소 바로가기. 태안군 지역 태안읍, 안면읍, 고남면, 원북면의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "해안 지역 최고의 정보",
@@ -39,10 +45,12 @@ export const cities: City[] = [
   {
     slug: "yanggu",
     name: "양구군",
+    region: "강원도",
     iso: "KR-42",
     lat: "38.1099",
     lng: "127.9906",
     districts: ["양구읍", "국토정중앙면", "해안면", "방산면"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EC%96%91%EA%B5%AC%EA%B5%B0",
     metaTitle: "양구군 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "양구군 여기여 최신 주소 바로가기. 양구군 지역 양구읍, 국토정중앙면, 해안면, 방산면의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "국토 정중앙의 지역 정보",
@@ -51,10 +59,12 @@ export const cities: City[] = [
   {
     slug: "geochang",
     name: "거창군",
+    region: "경상남도",
     iso: "KR-47",
     lat: "35.6657",
     lng: "127.9165",
     districts: ["거창읍", "웅양면", "위천면", "마리면"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EA%B1%B0%EC%B0%BD%EA%B5%B0",
     metaTitle: "거창군 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "거창군 여기여 최신 주소 바로가기. 거창군 지역 거창읍, 웅양면, 위천면, 마리면의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "경남 내륙 지역 최고의 정보",
@@ -63,10 +73,12 @@ export const cities: City[] = [
   {
     slug: "cheorwon",
     name: "철원군",
+    region: "강원도",
     iso: "KR-43",
     lat: "38.1466",
     lng: "127.3135",
     districts: ["철원읍", "갈말읍", "동송읍", "서면"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EC%B2%A0%EC%9B%90%EA%B5%B0",
     metaTitle: "철원군 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "철원군 여기여 최신 주소 바로가기. 철원군 지역 철원읍, 갈말읍, 동송읍, 서면의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "강원 북부 지역 최고의 정보",
@@ -75,10 +87,12 @@ export const cities: City[] = [
   {
     slug: "cheonan",
     name: "천안시",
+    region: "충청남도",
     iso: "KR-33",
     lat: "36.8151",
     lng: "127.1139",
     districts: ["불당동", "두정동", "신방동", "터미널"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EC%B2%9C%EC%95%88%EC%8B%9C",
     metaTitle: "천안시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "천안시 여기여 최신 주소 바로가기. 천안시 지역 불당동, 두정동, 신방동, 터미널의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "지역별 최고의 맛집과 장소",
@@ -87,10 +101,12 @@ export const cities: City[] = [
   {
     slug: "gumi",
     name: "구미시",
+    region: "경상북도",
     iso: "KR-31",
     lat: "36.1195",
     lng: "128.3445",
     districts: ["형곡동", "인동동", "송정동", "선산읍"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EA%B5%AC%EB%AF%B8%EC%8B%9C",
     metaTitle: "구미시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "구미시 여기여 최신 주소 바로가기. 구미시 지역 형곡동, 인동동, 송정동, 선산읍의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "경북 산업도시의 지역 정보",
@@ -99,10 +115,12 @@ export const cities: City[] = [
   {
     slug: "yangju",
     name: "양주시",
+    region: "경기도",
     iso: "KR-34",
     lat: "37.7853",
     lng: "127.0458",
     districts: ["덕계동", "회천동", "양주동", "고읍동"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EC%96%91%EC%A3%BC%EC%8B%9C",
     metaTitle: "양주시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "양주시 여기여 최신 주소 바로가기. 양주시 지역 덕계동, 회천동, 양주동, 고읍동의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "경기 북부 지역 최고의 정보",
@@ -111,10 +129,12 @@ export const cities: City[] = [
   {
     slug: "dangjin",
     name: "당진시",
+    region: "충청남도",
     iso: "KR-41",
     lat: "36.8919",
     lng: "126.6449",
     districts: ["당진읍", "합덕읍", "고대면", "송악읍"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EB%8B%B9%EC%A7%84%EC%8B%9C",
     metaTitle: "당진시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "당진시 여기여 최신 주소 바로가기. 당진시 지역 당진읍, 합덕읍, 고대면, 송악읍의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "충남 서해안 지역 최고의 정보",
@@ -123,10 +143,12 @@ export const cities: City[] = [
   {
     slug: "yeoju",
     name: "여주시",
+    region: "경기도",
     iso: "KR-45",
     lat: "37.2979",
     lng: "127.6384",
     districts: ["여주읍", "점동면", "신접동", "가남읍"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EC%97%AC%EC%A3%BC%EC%8B%9C",
     metaTitle: "여주시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "여주시 여기여 최신 주소 바로가기. 여주시 지역 여주읍, 점동면, 신접동, 가남읍의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "경기 남동부 지역 최고의 정보",
@@ -135,10 +157,12 @@ export const cities: City[] = [
   {
     slug: "gwangyang",
     name: "광양시",
+    region: "전라남도",
     iso: "KR-40",
     lat: "34.9402",
     lng: "127.6962",
     districts: ["광양읍", "중마동", "진상면", "옥룡면"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EA%B4%91%EC%96%91%EC%8B%9C",
     metaTitle: "광양시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "광양시 여기여 최신 주소 바로가기. 광양시 지역 광양읍, 중마동, 진상면, 옥룡면의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "전남 동부 지역 최고의 정보",
@@ -147,10 +171,12 @@ export const cities: City[] = [
   {
     slug: "yeongju",
     name: "영주시",
+    region: "경상북도",
     iso: "KR-37",
     lat: "36.8057",
     lng: "128.6239",
     districts: ["영주읍", "풍기읍", "안정면", "순흥면"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EC%98%81%EC%A3%BC%EC%8B%9C",
     metaTitle: "영주시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "영주시 여기여 최신 주소 바로가기. 영주시 지역 영주읍, 풍기읍, 안정면, 순흥면의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "경북 북부 지역 최고의 정보",
@@ -159,10 +185,12 @@ export const cities: City[] = [
   {
     slug: "jeongeup",
     name: "정읍시",
+    region: "전라북도",
     iso: "KR-35",
     lat: "35.5699",
     lng: "126.8559",
     districts: ["시기동", "북면", "칠보면", "신태인읍"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EC%A0%95%EC%9D%8D%EC%8B%9C",
     metaTitle: "정읍시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "정읍시 여기여 최신 주소 바로가기. 정읍시 지역 시기동, 북면, 칠보면, 신태인읍의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "전북 서부 지역 최고의 정보",
@@ -171,10 +199,12 @@ export const cities: City[] = [
   {
     slug: "sokcho",
     name: "속초시",
+    region: "강원도",
     iso: "KR-32",
     lat: "38.2073",
     lng: "128.5915",
     districts: ["중앙동", "교동", "조양동", "영랑동"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EC%86%8D%EC%B4%88%EC%8B%9C",
     metaTitle: "속초시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "속초시 여기여 최신 주소 바로가기. 속초시 지역 중앙동, 교동, 조양동, 영랑동의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "강원 동해안 지역 최고의 정보",
@@ -183,10 +213,12 @@ export const cities: City[] = [
   {
     slug: "osan",
     name: "오산시",
+    region: "경기도",
     iso: "KR-38",
     lat: "37.1495",
     lng: "127.0774",
     districts: ["중앙동", "대원동", "남촌동", "세교동"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EC%98%A4%EC%82%B0%EC%8B%9C",
     metaTitle: "오산시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "오산시 여기여 최신 주소 바로가기. 오산시 지역 중앙동, 대원동, 남촌동, 세교동의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "경기 남부 지역 최고의 정보",
@@ -195,10 +227,12 @@ export const cities: City[] = [
   {
     slug: "haman",
     name: "함안군",
+    region: "경상남도",
     iso: "KR-48",
     lat: "35.2736",
     lng: "128.4065",
     districts: ["가야읍", "함안읍", "칠원읍", "칠서면"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%ED%95%A8%EC%95%88%EA%B5%B0",
     metaTitle: "함안군 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "함안군 여기여 최신 주소 바로가기. 함안군 지역 가야읍, 함안읍, 칠원읍, 칠서면의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "경남 가야 역사의 지역 정보",
@@ -207,10 +241,12 @@ export const cities: City[] = [
   {
     slug: "goheung",
     name: "고흥군",
+    region: "전라남도",
     iso: "KR-39",
     lat: "34.6057",
     lng: "127.2745",
     districts: ["고흥읍", "도양읍", "봉래면", "점암면"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EA%B3%A0%ED%9D%A5%EA%B5%B0",
     metaTitle: "고흥군 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "고흥군 여기여 최신 주소 바로가기. 고흥군 지역 고흥읍, 도양읍, 봉래면, 점암면의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "전남 남해안 지역 최고의 정보",
@@ -219,10 +255,12 @@ export const cities: City[] = [
   {
     slug: "siheung",
     name: "시흥시",
+    region: "경기도",
     iso: "KR-30",
     lat: "37.3802",
     lng: "126.8021",
     districts: ["정왕동", "배곧동", "신천동", "월곶동"],
+    wikiUrl: "https://ko.wikipedia.org/wiki/%EC%8B%9C%ED%9D%A5%EC%8B%9C",
     metaTitle: "시흥시 여기여 - 지역 맛집, 숙소, 행사 정보 | 여기여",
     metaDescription: "시흥시 여기여 최신 주소 바로가기. 시흥시 지역 정왕동, 배곧동, 신천동, 월곶동의 최신 여기여 주소와 지역 정보를 확인하세요.",
     h1Secondary: "경기 서부 지역 최고의 정보",
@@ -233,3 +271,15 @@ export const cities: City[] = [
 export const cityMap: Record<string, City> = Object.fromEntries(
   cities.map((c) => [c.slug, c])
 );
+
+export function getRelatedCities(currentSlug: string, limit = 4): City[] {
+  const current = cityMap[currentSlug];
+  if (!current) return [];
+  const sameRegion = cities.filter(
+    (c) => c.region === current.region && c.slug !== currentSlug
+  );
+  const pool = sameRegion.length >= limit
+    ? sameRegion
+    : [...sameRegion, ...cities.filter((c) => c.slug !== currentSlug && c.region !== current.region)];
+  return pool.slice(0, limit);
+}

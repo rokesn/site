@@ -1,0 +1,55 @@
+---
+import SimpleLayout from '../../layouts/SimpleLayout.astro';
+const year = new Date().getFullYear();
+---
+
+<SimpleLayout
+  title="개인정보처리방침 | 여기여"
+  description="여기여.site 개인정보처리방침 — 수집하는 정보, 사용 방법, 귀하의 권리에 대해 안내합니다."
+  noindex={true}
+>
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <nav class="mb-8">
+      <a href="/" class="text-sm text-blue-400 hover:text-blue-300 transition-colors">← 여기여 홈으로</a>
+    </nav>
+    <h1 class="text-4xl font-bold text-white mb-4">개인정보처리방침</h1>
+    <p class="text-gray-400 mb-12 text-sm">최종 업데이트: {year}년 6월 20일</p>
+
+    <div class="space-y-10 text-gray-300 leading-relaxed">
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">1. 수집하는 정보</h2>
+        <p>여기여.site는 최소한의 정보만 수집합니다. 이 사이트를 방문할 때 서버 로그(IP 주소, 브라우저 유형, 방문 시간)가 자동으로 기록될 수 있습니다. 회원 가입, 계정 생성, 또는 개인 식별 정보 수집은 일절 없습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">2. 정보 사용 목적</h2>
+        <p>수집된 서버 로그는 사이트 성능 개선, 오류 진단, 그리고 악성 트래픽 방지 목적으로만 사용됩니다. 광고, 마케팅, 또는 제3자 판매 목적으로 사용되지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">3. 쿠키 (Cookies)</h2>
+        <p>여기여.site는 기능에 필수적인 쿠키만 사용하며, 추적 쿠키나 광고 쿠키는 사용하지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">4. 제3자 서비스</h2>
+        <p>이 사이트는 Google Fonts (폰트 로딩)를 사용합니다. 이 서비스들은 각자의 개인정보처리방침을 따릅니다. 외부 링크(여기여 공식 사이트 등)는 당사의 통제 범위 밖입니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">5. 귀하의 권리</h2>
+        <p>귀하는 수집된 정보에 대한 열람, 수정, 삭제를 요청할 권리가 있습니다. 문의 사항은 GitHub 저장소를 통해 연락하시기 바랍니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">6. 방침 변경</h2>
+        <p>본 방침은 필요에 따라 업데이트될 수 있으며, 변경 시 이 페이지의 날짜가 갱신됩니다.</p>
+      </section>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-gray-800 flex gap-6">
+      <a href="/" class="text-sm text-gray-400 hover:text-white transition-colors">홈</a>
+      <a href="/terms/" class="text-sm text-gray-400 hover:text-white transition-colors">이용약관</a>
+    </div>
+  </main>
+</SimpleLayout>

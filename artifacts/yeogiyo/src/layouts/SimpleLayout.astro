@@ -1,0 +1,47 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  noindex?: boolean;
+}
+
+const { title, description, noindex = false } = Astro.props;
+const DOMAIN = '여기여.site';
+const BRAND = '여기여';
+const GSC_TOKENS = [
+  'ZVs9DZgqLAujRCreKH-xre2nrlX4sVT9Ym8UiIl6vM4',
+  '8Xou4ro_b7V6vCp8Pwe5xIH0Z1TucC8eOhud7A5q244',
+];
+---
+
+<!doctype html>
+<html lang="ko-KR" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content={BRAND} />
+    <meta name="theme-color" content="#030712" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    {GSC_TOKENS.map((token) => (
+      <meta name="google-site-verification" content={token} />
+    ))}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" /></noscript>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    {!noindex && <meta name="robots" content="index, follow" />}
+  </head>
+  <body class="bg-gray-950 text-white antialiased">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>

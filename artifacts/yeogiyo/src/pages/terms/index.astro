@@ -1,0 +1,55 @@
+---
+import SimpleLayout from '../../layouts/SimpleLayout.astro';
+const year = new Date().getFullYear();
+---
+
+<SimpleLayout
+  title="이용약관 | 여기여"
+  description="여기여.site 이용약관 — 서비스 이용 조건과 책임 한계에 대해 안내합니다."
+  noindex={true}
+>
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <nav class="mb-8">
+      <a href="/" class="text-sm text-blue-400 hover:text-blue-300 transition-colors">← 여기여 홈으로</a>
+    </nav>
+    <h1 class="text-4xl font-bold text-white mb-4">이용약관</h1>
+    <p class="text-gray-400 mb-12 text-sm">최종 업데이트: {year}년 6월 20일</p>
+
+    <div class="space-y-10 text-gray-300 leading-relaxed">
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">1. 서비스 개요</h2>
+        <p>여기여.site는 여기여(yugiyu, yeogiyo) 최신 주소를 제공하는 정보 디렉터리 서비스입니다. 이 사이트를 이용함으로써 본 약관에 동의하는 것으로 간주됩니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">2. 서비스 이용</h2>
+        <p>본 서비스는 정보 제공 목적으로만 운영됩니다. 이 사이트에 게시된 링크는 커뮤니티 검증을 거치지만, 외부 사이트의 콘텐츠에 대해서는 책임을 지지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">3. 책임의 한계</h2>
+        <p>여기여.site는 제공된 링크 접속 가능 여부, 외부 사이트 콘텐츠의 정확성, 또는 서비스 중단에 대해 어떠한 법적 책임도 지지 않습니다. 서비스는 "현재 상태"로 제공됩니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">4. 금지 행위</h2>
+        <p>자동화 도구를 이용한 대량 크롤링, 서비스 방해 행위, 또는 악의적인 목적으로의 서비스 이용은 금지됩니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">5. 지적 재산권</h2>
+        <p>여기여.site의 디자인, 구조, 콘텐츠는 저작권법의 보호를 받습니다. 사전 서면 동의 없이 무단 복제 또는 배포를 금지합니다.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold text-white mb-3">6. 약관 변경</h2>
+        <p>본 약관은 사전 통지 없이 변경될 수 있습니다. 변경 후 지속적인 서비스 이용은 변경된 약관에 대한 동의로 간주됩니다.</p>
+      </section>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-gray-800 flex gap-6">
+      <a href="/" class="text-sm text-gray-400 hover:text-white transition-colors">홈</a>
+      <a href="/privacy/" class="text-sm text-gray-400 hover:text-white transition-colors">개인정보처리방침</a>
+    </div>
+  </main>
+</SimpleLayout>
