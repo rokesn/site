@@ -1,5 +1,6 @@
 ---
 import type { City } from '../i18n/cities';
+import { cities } from '../i18n/cities';
 
 interface Props {
   city?: City | null;
@@ -17,19 +18,29 @@ const PUBLISHER_URL = 'https://www.ygy01.com/';
 const GITHUB_URL = 'https://github.com/%EC%97%AC%EA%B8%B0%EC%97%AC';
 const GSC_TOKEN = 'YOUR_GSC_TOKEN';
 const BING_TOKEN = 'YOUR_BING_TOKEN';
+const NAVER_TOKEN = 'YOUR_NAVER_TOKEN';
 const CLARITY_ID = '';
+const TWITTER_HANDLE = '@yeogiyo';
 
 const slug = city?.slug ?? '';
 const selfPath = slug ? `/${slug}/` : '/';
 const selfUrl = `https://${DOMAIN}${selfPath}`;
 
-const pageTitle = metaTitle ?? (city ? city.metaTitle : `여기여 - 최신 주소 바로가기 | 지역별 링크 허브`);
-const pageDesc = metaDescription ?? (city ? city.metaDescription : `여기여 최신 주소를 한 곳에서 바로 확인하세요. 전국 18개 지역 여기여 주소(yugiyu)를 매일 검증해 제공합니다.`);
-const pageKeywords = city
-  ? `여기여, ${city.name} 여기여, 여기여 주소, yugiyu, 여기여 최신주소, ${city.name} 맛집, ${city.name} 정보, ${city.districts.join(', ')} 여기여`
-  : `여기여, 여기여 주소, yugiyu, 여기여 최신주소, 여기여 사이트, 여기여 링크, 여기여 접속, 여기여 바로가기`;
+const ogImageUrl = `https://${DOMAIN}/og/og-ko.png`;
+const todayISO = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
+const todayDate = todayISO.slice(0, 10);
 
-const today = new Date().toISOString().slice(0, 10);
+const pageTitle = metaTitle ?? (city
+  ? city.metaTitle
+  : `여기여 (yugiyu) - 최신 주소 바로가기 | 전국 지역별 링크 허브`);
+
+const pageDesc = metaDescription ?? (city
+  ? city.metaDescription
+  : `여기여(yugiyu) 최신 주소를 한 곳에서 확인하세요. 전국 18개 지역 여기여 주소를 매일 검증해 제공합니다. 무료, 빠름, 안전.`);
+
+const pageKeywords = city
+  ? `여기여, ${city.name} 여기여, 여기여 주소, yugiyu, yeogiyo, 여기여 최신주소, ${city.name} 정보, ${city.districts.join(', ')} 여기여`
+  : `여기여, 여기여 주소, yugiyu, yeogiyo, 여기여 최신주소, 여기여 사이트, 여기여 링크, 여기여 접속, 여기여 바로가기`;
 
 const breadcrumbItems: object[] = [
   { '@type': 'ListItem', position: 1, name: '여기여 홈', item: `https://${DOMAIN}/` },
@@ -42,6 +53,42 @@ if (city) {
     item: selfUrl,
   });
 }
+
+const localBusinessOrPlace = city ? {
+  '@type': 'LocalBusiness',
+  '@id': `https://${DOMAIN}/${city.slug}/#localbusiness`,
+  name: `${city.name} 여기여`,
+  description: city.metaDescription,
+  url: selfUrl,
+  address: {
+    '@type': 'PostalAddress',
+    addressCountry: 'KR',
+    addressRegion: city.name,
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: city.lat,
+    longitude: city.lng,
+  },
+  areaServed: {
+    '@type': 'Place',
+    name: city.name,
+    containedInPlace: { '@type': 'Country', name: '대한민국' },
+  },
+} : null;
+
+const itemListJson = (!city && isRoot) ? {
+  '@type': 'ItemList',
+  '@id': `https://${DOMAIN}/#citylist`,
+  name: '여기여 지역별 페이지 목록',
+  numberOfItems: cities.length,
+  itemListElement: cities.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: `${c.name} 여기여`,
+    url: `https://${DOMAIN}/${c.slug}/`,
+  })),
+} : null;
 
 const jsonLdGraph: object[] = [
   ...(isRoot || !city ? [{
@@ -70,25 +117,16 @@ const jsonLdGraph: object[] = [
     '@id': selfUrl + '#webpage',
     url: selfUrl,
     name: pageTitle,
+    description: pageDesc,
     inLanguage: 'ko-KR',
     isPartOf: { '@id': `https://${DOMAIN}/#website` },
-    dateModified: today,
-    ...(city ? {
-      about: {
-        '@type': 'Place',
-        name: city.name,
-        address: {
-          '@type': 'PostalAddress',
-          addressCountry: 'KR',
-          addressRegion: city.name,
-        },
-        geo: {
-          '@type': 'GeoCoordinates',
-          latitude: city.lat,
-          longitude: city.lng,
-        },
-      },
-    } : {}),
+    datePublished: '2026-01-01T00:00:00Z',
+    dateModified: todayISO,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'h2', '#about p'],
+    },
+    ...(city && localBusinessOrPlace ? { about: localBusinessOrPlace } : {}),
   },
   {
     '@type': 'BreadcrumbList',
@@ -101,34 +139,74 @@ const jsonLdGraph: object[] = [
     mainEntity: [
       { '@type': 'Question', name: '여기여(yugiyu)는 무엇인가요?', acceptedAnswer: { '@type': 'Answer', text: '여기여(yugiyu 또는 yeogiyo)는 웹 주소를 집계하고 검증하는 한국의 인기 인터넷 링크 허브입니다. 빠르고, 무료이며, 탐색이 쉽습니다.' } },
       { '@type': 'Question', name: '여기여 주소는 왜 변경되나요?', acceptedAnswer: { '@type': 'Answer', text: '여기여는 서비스 가용성 유지를 위해 주기적으로 도메인을 업데이트합니다. 이 페이지는 항상 현재 검증된 여기여 주소를 표시합니다.' } },
+      { '@type': 'Question', name: '여기여는 안전한가요?', acceptedAnswer: { '@type': 'Answer', text: '이 페이지에 나열된 링크는 게시 전 커뮤니티 검증을 거칩니다. 이 페이지의 주소만 이용하는 것을 권장합니다.' } },
       { '@type': 'Question', name: '여기여는 무료인가요?', acceptedAnswer: { '@type': 'Answer', text: '네, 여기여는 완전 무료입니다. 이 링크 허브도 무료입니다.' } },
       ...(city ? [
-        { '@type': 'Question', name: `${city.name} 여기여는 어떻게 접속하나요?`, acceptedAnswer: { '@type': 'Answer', text: `${city.name} 여기여 최신 주소는 이 페이지(여기여.site/${city.slug}/)를 북마크하고 필요할 때마다 방문하세요.` } },
+        { '@type': 'Question', name: `${city.name} 여기여는 어떻게 접속하나요?`, acceptedAnswer: { '@type': 'Answer', text: `${city.name} 여기여 최신 주소는 여기여.site/${city.slug}/ 를 북마크하고 방문하세요. ${city.districts.join(', ')} 등 지역별 정보를 제공합니다.` } },
       ] : []),
     ],
   },
+  ...(itemListJson ? [itemListJson] : []),
+  ...(city && localBusinessOrPlace ? [localBusinessOrPlace] : []),
 ];
 
 const jsonLd = { '@context': 'https://schema.org', '@graph': jsonLdGraph };
 ---
 
+<!-- Charset & Viewport -->
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+
+<!-- Icons & Manifest -->
 <link rel="icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content={BRAND} />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#030712" />
 <link rel="manifest" href="/site.webmanifest" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Sitemap autodiscovery -->
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+<!-- Search engine verification -->
 <meta name="msvalidate.01" content={BING_TOKEN} />
 <meta name="google-site-verification" content={GSC_TOKEN} />
+<meta name="naver-site-verification" content={NAVER_TOKEN} />
 
+<!-- Browser behaviour -->
+<meta name="format-detection" content="telephone=no, date=no, address=no" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+
+<!-- DNS prefetch + preconnect for fonts -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
+
+<!-- Font loading — non-render-blocking with fetchpriority hint -->
+<link
+  rel="preload"
+  as="style"
+  fetchpriority="high"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
 <noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+  />
 </noscript>
 
+<!-- Title & Core meta -->
 <title>{pageTitle}</title>
 <meta name="description" content={pageDesc} />
 <meta name="keywords" content={pageKeywords} />
@@ -136,7 +214,7 @@ const jsonLd = { '@context': 'https://schema.org', '@graph': jsonLdGraph };
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <link rel="canonical" href={selfUrl} />
 
-<!-- Geo meta tags (city pages) -->
+<!-- Geo meta tags (city pages only) -->
 {city && (
   <>
     <meta name="geo.region" content={city.iso} />
@@ -152,20 +230,26 @@ const jsonLd = { '@context': 'https://schema.org', '@graph': jsonLdGraph };
 <meta property="og:url" content={selfUrl} />
 <meta property="og:title" content={pageTitle} />
 <meta property="og:description" content={pageDesc} />
-<meta property="og:image" content={`https://${DOMAIN}/og/og-ko.png`} />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content={city ? `${city.name} 여기여 — 공식 링크 허브` : '여기여 — 공식 링크 허브'} />
+<meta property="og:image:alt" content={city ? `${city.name} 여기여 — 공식 링크 허브` : '여기여 — 전국 공식 링크 허브'} />
 <meta property="og:locale" content="ko_KR" />
+<meta property="og:updated_time" content={todayISO} />
+<meta property="article:modified_time" content={todayISO} />
 
-<!-- Twitter -->
+<!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content={TWITTER_HANDLE} />
+<meta name="twitter:creator" content={TWITTER_HANDLE} />
 <meta name="twitter:url" content={selfUrl} />
 <meta name="twitter:title" content={pageTitle} />
 <meta name="twitter:description" content={pageDesc} />
-<meta name="twitter:image" content={`https://${DOMAIN}/og/og-ko.png`} />
+<meta name="twitter:image" content={ogImageUrl} />
+<meta name="twitter:image:alt" content={city ? `${city.name} 여기여` : '여기여'} />
 
-<!-- JSON-LD -->
+<!-- JSON-LD Structured Data -->
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
 {CLARITY_ID && (

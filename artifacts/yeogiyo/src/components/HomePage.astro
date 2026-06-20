@@ -1,5 +1,6 @@
 ---
 import type { City } from '../i18n/cities';
+import { cities } from '../i18n/cities';
 import FeatureCard from './FeatureCard.astro';
 import FaqAccordion from './FaqAccordion.astro';
 
@@ -14,15 +15,11 @@ const districts = city?.districts ?? [];
 
 const h1 = city
   ? `${cityName} 여기여 - ${city.h1Secondary}`
-  : '여기여 — 전국 최신 주소 링크 허브';
+  : '여기여 (yugiyu) — 전국 최신 주소 링크 허브';
 
 const h2Features = city
   ? `${cityName}에서 여기여를 더 스마트하게`
   : '왜 여기여.site가 가장 신뢰받는 링크 허브인가';
-
-const h2Districts = city
-  ? `${cityName}에서 꼭 가봐야 할 곳`
-  : '';
 
 const features = [
   { icon: '⚡', title: '매일 업데이트되는 여기여 주소', description: '공식 여기여 주소는 매일 검증 후 업데이트됩니다. 항상 작동하는 최신 링크를 제공합니다.' },
@@ -39,6 +36,7 @@ const faqs = [
   { question: '여기여는 안전한가요?', answer: '이 페이지에 나열된 링크는 게시 전 커뮤니티 검증을 거칩니다. 무작위 소셜 미디어 게시물의 링크가 아닌 이 페이지의 주소만 이용하는 것을 권장합니다.' },
   { question: '최신 여기여 주소는 어떻게 찾나요?', answer: `이 페이지(여기여.site${city ? `/${city.slug}/` : ''})를 북마크하고 주소가 필요할 때마다 방문하세요. 도메인 변경 후 몇 시간 내에 링크를 업데이트합니다.` },
   { question: "'여기여'는 한국어로 무슨 뜻인가요?", answer: "'여기여(yeogiyo)'는 '바로 여기!'라는 뜻의 한국어 표현입니다. 플랫폼의 미션을 반영합니다: 필요한 모든 것이 바로 여기에." },
+  { question: '여기여, yugiyu, yeogiyo의 차이점은 무엇인가요?', answer: '차이 없습니다 — yugiyu와 yeogiyo는 같은 한국어 단어 여기여의 로마자 표기 방식이 다를 뿐입니다. 세 가지 표기 모두 검색에 커버됩니다.' },
   { question: '여기여는 무료인가요?', answer: '네, 여기여는 완전 무료입니다. 이 링크 허브도 무료입니다. 최신 여기여 주소를 찾고 접속하는 데 구독, 계정, 결제가 일절 필요하지 않습니다.' },
   ...(city ? [
     { question: `${cityName} 여기여 주소는 어디서 찾나요?`, answer: `${cityName} 여기여 최신 주소는 여기여.site/${city.slug}/ 페이지를 북마크하고 방문하세요. ${districts.join(', ')} 등 지역별 정보도 함께 제공됩니다.` },
@@ -46,11 +44,45 @@ const faqs = [
 ];
 
 const quickStartSteps = [
-  { title: '1단계 — 이 페이지 북마크 저장', description: `Ctrl+D(Mac은 Cmd+D)를 눌러 여기여.site${city ? `/${city.slug}/` : ''}를 북마크하세요. 이 페이지는 항상 최신 여기여 주소로 업데이트됩니다.`, code: `# 북마크할 URL:\nhttps://여기여.site${city ? `/${city.slug}/` : ''}` },
-  { title: '2단계 — 최신 여기여 주소 확인', description: '이 페이지의 링크 섹션으로 스크롤해 현재 검증된 여기여 주소를 확인하세요. 타임스탬프로 최신 업데이트 시간을 알 수 있습니다.', code: '# 최신 검증된 여기여 주소:\nhttps://www.ygy01.com/' },
-  { title: '3단계 — 접속 및 이용', description: '링크를 클릭해 여기여로 바로 이동하세요. 임시 중단 시에는 미러 섹션에서 대체 여기여 주소를 확인하세요.', code: '# 대체 미러 링크 목록:\nhttps://여기여.site' },
+  {
+    title: '1단계 — 이 페이지 북마크 저장',
+    description: `Ctrl+D(Mac은 Cmd+D)를 눌러 여기여.site${city ? `/${city.slug}/` : ''}를 북마크하세요.`,
+    code: `# 북마크할 URL:\nhttps://여기여.site${city ? `/${city.slug}/` : ''}`,
+  },
+  {
+    title: '2단계 — 최신 여기여 주소 확인',
+    description: '이 페이지의 링크 섹션으로 스크롤해 현재 검증된 여기여 주소를 확인하세요.',
+    code: '# 최신 검증된 여기여 주소:\nhttps://www.ygy01.com/',
+  },
+  {
+    title: '3단계 — 접속 및 이용',
+    description: '링크를 클릭해 여기여로 바로 이동하세요. 임시 중단 시에는 미러 섹션에서 대체 주소를 확인하세요.',
+    code: '# 대체 미러 링크 목록:\nhttps://여기여.site',
+  },
 ];
 ---
+
+<!-- Breadcrumb (city pages only) — visible nav for UX + Yeti crawl signal -->
+{city && (
+  <nav aria-label="breadcrumb" class="bg-gray-900 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5">
+      <ol class="flex items-center gap-2 text-sm text-gray-400" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/" class="hover:text-white transition-colors">
+            <span itemprop="name">여기여 홈</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li aria-hidden="true" class="text-gray-600">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-gray-200">{city.name} 여기여</span>
+          <meta itemprop="item" content={`https://여기여.site/${city.slug}/`} />
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </nav>
+)}
 
 <!-- Hero -->
 <section id="hero" class="relative overflow-hidden bg-gray-950 pt-20 pb-24">
@@ -98,7 +130,12 @@ const quickStartSteps = [
     <div class="mt-12 inline-flex items-center gap-3 bg-gray-900 border border-gray-800 rounded-xl px-6 py-3">
       <span class="w-2 h-2 rounded-full bg-green-400 flex-shrink-0"></span>
       <span class="text-sm text-gray-400">최신 여기여 주소:</span>
-      <a href="https://www.ygy01.com/" target="_blank" rel="noopener noreferrer" class="text-sm font-mono text-blue-400 hover:text-blue-300 transition-colors">
+      <a
+        href="https://www.ygy01.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-sm font-mono text-blue-400 hover:text-blue-300 transition-colors"
+      >
         www.ygy01.com
       </a>
     </div>
@@ -118,11 +155,11 @@ const quickStartSteps = [
   </div>
 </section>
 
-<!-- City Districts (only for city pages) -->
+<!-- City Districts (city pages only) -->
 {city && districts.length > 0 && (
   <section id="districts" class="py-20 bg-gray-900/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-white text-center mb-4">{h2Districts}</h2>
+      <h2 class="text-3xl font-bold text-white text-center mb-4">{cityName}에서 꼭 가봐야 할 곳</h2>
       <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">{cityName} 주요 지역별 여기여 추천 정보</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {districts.map((district) => (
@@ -136,13 +173,40 @@ const quickStartSteps = [
   </section>
 )}
 
-<!-- About / What is -->
+<!-- City Hub Index (root page only) — internal link equity to all 18 cities -->
+{!city && (
+  <section id="regions" class="py-20 bg-gray-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-white text-center mb-4">지역별 여기여 바로가기</h2>
+      <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">전국 18개 주요 도시 · 군의 여기여 최신 주소를 확인하세요</p>
+      <nav aria-label="지역별 여기여 링크">
+        <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+          {cities.map((c) => (
+            <li>
+              <a
+                href={`/${c.slug}/`}
+                class="flex flex-col items-center justify-center bg-gray-900 border border-gray-800 rounded-xl p-4 hover:border-blue-700 hover:bg-gray-900/80 transition-all duration-200 text-center group"
+              >
+                <span class="text-sm font-semibold text-white group-hover:text-blue-400 transition-colors leading-snug">
+                  {c.name}
+                </span>
+                <span class="text-xs text-gray-500 mt-1">여기여</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+  </section>
+)}
+
+<!-- About -->
 <section id="about" class="py-20 bg-gray-950">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold text-white mb-8 text-center">
       {city ? `${cityName} 여기여란?` : '여기여(yugiyu)란 무엇인가?'}
     </h2>
-    <div class="prose prose-invert prose-lg max-w-none space-y-6">
+    <div class="space-y-6">
       <p class="text-gray-300 leading-relaxed text-base">
         여기여 — 영문으로는 yugiyu 또는 yeogiyo로 표기 — 는 한국에서 가장 널리 사용되는 인터넷 링크 허브 중 하나입니다. 수백만 명의 사용자가 검증된 웹 주소에 빠르고 안정적으로 접근하기 위해 여기여를 이용하고 있습니다.
       </p>

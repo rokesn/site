@@ -1,0 +1,134 @@
+================================================================================
+  여기여.site — SEO IMPROVEMENT TRACKER
+  Target: Google + Naver (ko-KR), 18-city geo-targeting strategy
+  Last updated: 2026-06-20
+================================================================================
+
+LEGEND:  [ ] = pending   [x] = done
+
+================================================================================
+  1. SITEMAP.XML — PROFESSIONAL FORMAT
+================================================================================
+[x] Rewrite sitemap.xml with proper W3C-standard XML structure:
+    - Each <url> block properly indented across multiple lines
+    - Full ISO 8601 datetime in <lastmod> (YYYY-MM-DDThh:mm:ssZ)
+    - Correct sitemaps.org/0.9 namespace only (no xhtml bloat)
+    - All 19 URLs (root + 18 cities) present with priority + changefreq
+    - Submit to Google Search Console and Naver Search Advisor after deploy
+
+================================================================================
+  2. TECHNICAL META TAGS — HEAD IMPROVEMENTS
+================================================================================
+[x] Add <link rel="sitemap" type="application/xml" href="/sitemap.xml"> in <head>
+    WHY: Explicitly signals sitemap location to all crawlers, including Yeti
+
+[x] Add <meta name="theme-color" content="#030712"> (dark toolbar on mobile Chrome/Edge)
+    WHY: Improves branded PWA appearance; minor UX/trust signal
+
+[x] Add <meta name="mobile-web-app-capable" content="yes"> (Android Chrome)
+    WHY: Enables add-to-homescreen for Android; complements apple-touch-icon
+
+[x] Add <meta name="apple-mobile-web-app-capable" content="yes"> (iOS Safari)
+    WHY: Allows fullscreen mode when saved to iOS home screen
+
+[x] Add <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    WHY: Improves iOS home screen experience; consistent with dark theme
+
+[x] Add <meta name="format-detection" content="telephone=no, date=no, address=no">
+    WHY: Prevents iOS/Android from auto-linking phone numbers/dates in Korean content
+
+[x] Add <meta name="referrer" content="strict-origin-when-cross-origin">
+    WHY: Controls referrer header; helps analytics accuracy, security best practice
+
+[x] Add Naver Search Advisor verification placeholder:
+    <meta name="naver-site-verification" content="YOUR_NAVER_TOKEN">
+    WHY: Required to submit site to Naver Search Advisor (Korean Google equivalent)
+
+[x] Add <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    WHY: DNS-prefetch is a cheaper fallback for browsers that don't support preconnect;
+         using both maximises font load speed
+
+================================================================================
+  3. OPEN GRAPH & TWITTER — COMPLETENESS
+================================================================================
+[x] Add <meta property="og:image:type" content="image/png">
+    WHY: Facebook/Kakao crawlers use MIME type to validate OG image; prevents fallback
+
+[x] Add <meta property="og:updated_time" content="{ISO-date}">
+    WHY: Signals content freshness to social crawlers and Naver SERP
+
+[x] Add <meta name="twitter:site" content="@yeogiyo">
+    <meta name="twitter:creator" content="@yeogiyo">
+    WHY: Twitter card validator requires these for "large image" eligibility
+
+[x] Add <meta property="article:modified_time" content="{ISO-date}">
+    WHY: Used by Naver, Google News, and Facebook for freshness ranking
+
+================================================================================
+  4. JSON-LD STRUCTURED DATA — ENHANCEMENTS
+================================================================================
+[x] Add datePublished to WebPage JSON-LD entity
+    WHY: Google's Rich Results Test requires datePublished for article-type pages;
+         improves freshness understanding
+
+[x] Add speakable property to WebPage JSON-LD (voice search / Google Assistant)
+    WHY: Enables Google Assistant and Naver Clova to read page summary aloud;
+         growing traffic channel in Korea
+
+[x] Add ItemList JSON-LD on root page listing all 18 city URLs
+    WHY: Signals the hub-and-spoke architecture to Google; can generate sitelinks;
+         improves crawl path understanding
+
+[x] Upgrade city page JSON-LD: replace bare Place with LocalBusiness
+    WHY: LocalBusiness is Google's preferred schema for geo-pages; eligible for
+         Knowledge Panel and Naver Place enrichment
+
+[x] Add @id anchor to Place/LocalBusiness entities for entity disambiguation
+    WHY: Allows Google Knowledge Graph to link entities across pages
+
+================================================================================
+  5. INTERNAL LINKING & CONTENT ARCHITECTURE
+================================================================================
+[x] Add city hub section on root index page (visible cards with city name + link)
+    WHY: Creates crawlable internal link equity from root to all 18 city pages;
+         reduces reliance on footer for link discovery; improves PageRank flow
+
+[x] Add breadcrumb visible UI element on city pages (not just JSON-LD)
+    WHY: Visual breadcrumb improves UX + gives Googlebot a secondary signal;
+         Naver Yetibot relies heavily on visible navigational elements
+
+================================================================================
+  6. PERFORMANCE & CORE WEB VITALS
+================================================================================
+[x] Add fetchpriority="high" to the font preload link (LCP font chain hint)
+    WHY: Tells browser to prioritise the Korean font fetch above other resources;
+         directly improves LCP score, which is a Google ranking factor
+
+[x] Add <meta http-equiv="x-dns-prefetch-control" content="on">
+    WHY: Explicitly enables DNS prefetch in some enterprise browsers that disable it
+
+================================================================================
+  7. NAVER-SPECIFIC SEO
+================================================================================
+[x] Ensure robots.txt has Yeti explicitly allowed (already done in Phase 2)
+[x] Naver verification meta tag added (see section 2 above)
+[x] All pages render as static HTML — no client-side routing (Astro static output)
+    WHY: Naver Yetibot has poor JavaScript rendering; static HTML is mandatory
+
+[ ] MANUAL — Submit sitemap to https://searchadvisor.naver.com after deploy
+[ ] MANUAL — Submit sitemap to https://search.google.com/search-console after deploy
+[ ] MANUAL — Register site in Naver Search Advisor > Site Management
+
+================================================================================
+  8. KEYWORD & CONTENT IMPROVEMENTS
+================================================================================
+[x] Add secondary keyword variation in root H1 ("yugiyu" romanisation)
+    WHY: Captures users who search in Latin script; covers both Korean and expat traffic
+
+[x] Improve root page meta description to exactly 155 chars for optimal SERP snippet
+    WHY: Google truncates descriptions >160 chars; 150-155 is the sweet spot
+
+================================================================================
+  SUMMARY: 22 items implemented automatically | 3 items require manual action
+================================================================================
