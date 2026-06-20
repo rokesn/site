@@ -42,8 +42,8 @@ const pageDesc = metaDescription ?? (city
   : `여기여(yugiyu) 최신 주소를 한 곳에서 확인하세요. 전국 18개 지역 여기여 주소를 매일 검증해 제공합니다. 무료, 빠름, 안전.`);
 
 const pageKeywords = city
-  ? `여기여, ${city.name} 여기여, 여기여 주소, yugiyu, yeogiyo, 여기여 최신주소, ${city.name} 정보, ${city.districts.join(', ')} 여기여`
-  : `여기여, 여기여 주소, yugiyu, yeogiyo, 여기여 최신주소, 여기여 사이트, 여기여 링크, 여기여 접속, 여기여 바로가기`;
+  ? city.keywords.join(', ')
+  : `여기여, 여기여 주소, yugiyu, yeogiyo, 여기여 최신주소, 여기여 사이트, 여기여 링크, 여기여 접속, 여기여 바로가기, 전국 여기여`;
 
 const breadcrumbItems: object[] = [
   { '@type': 'ListItem', position: 1, name: '여기여 홈', item: `https://${DOMAIN}/` },
