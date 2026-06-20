@@ -1,0 +1,57 @@
+{
+  "lang": "no",
+  "dir": "ltr",
+  "metaTitle": "여기여 (Yeogiyo) — Gjeldende adresse | yugiyu offisiell lenke-hub",
+  "metaDescription": "여기여 adresse verifiseres daglig. Finn den siste 여기여-adressen umiddelbart. Gratis, raskt, trygt.",
+  "metaKeywords": "여기여, yugiyu, 여기여 adresse, yeogiyo, koreansk lenke-hub, 여기여 nettsted",
+  "ogImageAlt": "여기여 (Yeogiyo) — Offisiell lenke-hub",
+  "nav": { "home": "Hjem", "features": "Funksjoner", "useCases": "Brukstilfeller", "quickStart": "Hurtigstart", "faq": "Vanlige spørsmål", "github": "GitHub" },
+  "hero": { "tagline": "여기여-adressen verifiseres hver dag — alt på ett sted.", "ctaPrimary": "Besøk 여기여", "ctaSecondary": "Hvordan få tilgang" },
+  "featuresHeading": "Hvorfor 여기여.site er den mest pålitelige lenke-hubben",
+  "features": [
+    { "title": "Daglig oppdatert adresse", "description": "Den offisielle adressen verifiseres og oppdateres hver dag." },
+    { "title": "Umiddelbar tilgang", "description": "Ingen registrering nødvendig. Klikk og gå direkte." },
+    { "title": "Community-verifiserte lenker", "description": "Hver lenke verifiseres før publisering." },
+    { "title": "Mobile-first opplevelse", "description": "Fullstendig optimalisert for smarttelefoner og nettbrett." },
+    { "title": "Trygg og sikker", "description": "Alle adresser består sikkerhetskontroller." },
+    { "title": "Helt gratis", "description": "100% gratis, ingen abonnementer eller skjulte gebyrer." }
+  ],
+  "capabilitiesHeading": "Flere funksjoner i 여기여",
+  "capabilities": [
+    { "title": "Bokmerkevennlig URL", "description": "Lagre denne siden og kom tilbake når som helst." },
+    { "title": "Flere speillenker", "description": "Reserve-speil tilgjengelig hvis en adresse er offline." },
+    { "title": "Oppetidsovervåking", "description": "Vi overvåker aktivt 여기여-serverne." },
+    { "title": "Historisk adressearkiv", "description": "Se historikken for å verifisere gjeldende lenker." },
+    { "title": "Flerspråklig støtte", "description": "Denne guiden er tilgjengelig på 14 språk." },
+    { "title": "Sosial deling", "description": "Del umiddelbart via KakaoTalk, LINE eller annen meldingstjeneste." }
+  ],
+  "whatIsHeading": "Hva er 여기여 (Yeogiyo)?",
+  "whatIsBody": "여기여 — også romanisert som yugiyu eller yeogiyo — er en av de mest brukte internett-lenke-hubbene i Korea. Millioner av brukere stoler på 여기여 for rask, pålitelig tilgang til verifiserte nettadresser.",
+  "useCasesHeading": "Hvem bruker 여기여 og hvorfor",
+  "useCases": [
+    { "title": "Daglige brukere som søker 여기여-adressen", "description": "Denne siden gir den gjeldende adressen umiddelbart." },
+    { "title": "Community-moderatorer", "description": "Moderatorer deler kun verifiserte lenker fra denne hubben." },
+    { "title": "Tilbakevendende besøkende etter adresseendring", "description": "Denne hubben er den raskeste måten å finne den nye adressen på." },
+    { "title": "Internasjonale brukere", "description": "Brukere over hele verden får tilgang til 여기여 via denne flerspråklige guiden." }
+  ],
+  "quickStartHeading": "Tilgang til 여기여 i 3 trinn",
+  "quickStartSteps": [
+    { "title": "Trinn 1 — Lagre denne siden som bokmerke", "description": "Trykk Ctrl+D for å lagre 여기여.site.", "code": "# URL å lagre:\nhttps://여기여.site" },
+    { "title": "Trinn 2 — Sjekk gjeldende adresse", "description": "Rull til lenkeseksjonen for å se den verifiserte adressen.", "code": "# Siste verifiserte adresse:\nhttps://www.ygy01.com/" },
+    { "title": "Trinn 3 — Besøk og nyt", "description": "Klikk på lenken for å gå direkte til 여기여.", "code": "# Alternative speillenker:\nhttps://여기여.site" }
+  ],
+  "faqHeading": "Vanlige spørsmål om 여기여",
+  "faqs": [
+    { "question": "Hva er 여기여 (yugiyu)?", "answer": "여기여 er en populær koreansk internett-lenke-hubb som samler og verifiserer nettadresser." },
+    { "question": "Hvorfor endres adressen?", "answer": "여기여 oppdaterer domenet sitt regelmessig for å opprettholde tjenestetilgjengelighet." },
+    { "question": "Er 여기여 trygt?", "answer": "Alle listede lenker verifiseres av fellesskapet før publisering." },
+    { "question": "Hvordan finner jeg den siste adressen?", "answer": "Bokmerk 여기여.site og besøk det ved behov." },
+    { "question": "Hva betyr '여기여' på koreansk?", "answer": "'여기여' betyr omtrent 'Her er det!' på koreansk." },
+    { "question": "Forskjell mellom 여기여, yugiyu og yeogiyo?", "answer": "Ingen — de er bare forskjellige romaniseringer av det samme koreanske ordet." },
+    { "question": "Er 여기여 gratis?", "answer": "Ja, helt gratis. Ingen abonnement nødvendig." },
+    { "question": "Kan jeg dele lenken?", "answer": "Ja, del 여기여.site via hvilken som helst meldingsapp." }
+  ],
+  "finalCtaHeading": "Mist aldri 여기여-lenken din igjen",
+  "finalCtaButton": "Gå til 여기여 nå",
+  "footer": { "tagline": "Offisiell 여기여-lenke-hubb — alltid oppdatert, alltid verifisert.", "license": "Gratis bruk", "rights": "Alle rettigheter forbeholdt.", "privacy": "Personvern", "terms": "Vilkår for bruk" }
+}

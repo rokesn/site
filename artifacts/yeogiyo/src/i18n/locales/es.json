@@ -1,0 +1,57 @@
+{
+  "lang": "es",
+  "dir": "ltr",
+  "metaTitle": "여기여 (Yeogiyo) — Dirección actualizada | yugiyu Hub de enlaces",
+  "metaDescription": "여기여 dirección verificada diariamente. Encuentra el último enlace 여기여 al instante. Gratis, rápido, seguro.",
+  "metaKeywords": "여기여, yugiyu, 여기여 dirección, yeogiyo, hub de enlaces coreano, 여기여 sitio",
+  "ogImageAlt": "여기여 (Yeogiyo) — Hub de enlaces oficial",
+  "nav": { "home": "Inicio", "features": "Características", "useCases": "Casos de uso", "quickStart": "Inicio rápido", "faq": "Preguntas frecuentes", "github": "GitHub" },
+  "hero": { "tagline": "La dirección 여기여 verificada cada día — todo en un solo lugar.", "ctaPrimary": "Visitar 여기여", "ctaSecondary": "Cómo acceder" },
+  "featuresHeading": "Por qué 여기여.site es el hub de enlaces más confiable",
+  "features": [
+    { "title": "Dirección actualizada diariamente", "description": "La dirección oficial se verifica y actualiza cada día." },
+    { "title": "Acceso instantáneo", "description": "Sin registro. Haz clic y accede inmediatamente." },
+    { "title": "Enlaces verificados por la comunidad", "description": "Cada enlace se verifica antes de su publicación." },
+    { "title": "Experiencia mobile-first", "description": "Completamente optimizado para smartphones y tablets." },
+    { "title": "Seguro y protegido", "description": "Todas las direcciones pasan verificaciones de seguridad." },
+    { "title": "Completamente gratis", "description": "100% gratis, sin suscripciones ni cargos ocultos." }
+  ],
+  "capabilitiesHeading": "Más funciones de 여기여",
+  "capabilities": [
+    { "title": "URL favorita", "description": "Guarda esta página y regresa cuando lo necesites." },
+    { "title": "Múltiples enlaces espejo", "description": "Espejos de respaldo disponibles si una dirección está caída." },
+    { "title": "Monitoreo de disponibilidad", "description": "Monitoreamos activamente los servidores de 여기여." },
+    { "title": "Archivo histórico", "description": "Consulta el historial de direcciones para verificar enlaces actuales." },
+    { "title": "Soporte multilingüe", "description": "Esta guía está disponible en 14 idiomas." },
+    { "title": "Compartir en redes", "description": "Comparte instantáneamente vía KakaoTalk, LINE u otro mensajero." }
+  ],
+  "whatIsHeading": "¿Qué es 여기여 (Yeogiyo)?",
+  "whatIsBody": "여기여 — también romanizado como yugiyu o yeogiyo — es uno de los hubs de enlaces de internet más utilizados en Corea. Millones de usuarios confían en 여기여 para acceder rápida y confiablemente a direcciones web verificadas.",
+  "useCasesHeading": "Quién usa 여기여 y por qué",
+  "useCases": [
+    { "title": "Usuarios buscando la dirección 여기여", "description": "Esta página proporciona la dirección actual de inmediato." },
+    { "title": "Moderadores de comunidades", "description": "Los moderadores comparten solo enlaces verificados desde este hub." },
+    { "title": "Visitantes tras cambio de dirección", "description": "Este hub es la forma más rápida de encontrar la nueva dirección." },
+    { "title": "Usuarios internacionales", "description": "Usuarios de todo el mundo acceden a 여기여 mediante esta guía multilingüe." }
+  ],
+  "quickStartHeading": "Accede a 여기여 en 3 pasos",
+  "quickStartSteps": [
+    { "title": "Paso 1 — Guarda esta página como favorito", "description": "Presiona Ctrl+D para guardar 여기여.site.", "code": "# URL para guardar:\nhttps://여기여.site" },
+    { "title": "Paso 2 — Verifica la dirección actual", "description": "Desplázate a la sección de enlaces para ver la dirección verificada.", "code": "# Última dirección verificada:\nhttps://www.ygy01.com/" },
+    { "title": "Paso 3 — Visita y disfruta", "description": "Haz clic en el enlace para ir directamente a 여기여.", "code": "# Espejos alternativos:\nhttps://여기여.site" }
+  ],
+  "faqHeading": "Preguntas frecuentes sobre 여기여",
+  "faqs": [
+    { "question": "¿Qué es 여기여 (yugiyu)?", "answer": "여기여 es un popular hub de enlaces de internet coreano que agrega y verifica direcciones web." },
+    { "question": "¿Por qué cambia la dirección?", "answer": "여기여 actualiza su dominio periódicamente para mantener la disponibilidad del servicio." },
+    { "question": "¿Es seguro 여기여?", "answer": "Todos los enlaces listados son verificados por la comunidad antes de publicarse." },
+    { "question": "¿Cómo encuentro la última dirección?", "answer": "Guarda 여기여.site como favorito y visítalo cuando lo necesites." },
+    { "question": "¿Qué significa '여기여' en coreano?", "answer": "'여기여' significa aproximadamente '¡Aquí está!' en coreano." },
+    { "question": "¿Diferencia entre 여기여, yugiyu y yeogiyo?", "answer": "Ninguna — son simplemente diferentes romanizaciones de la misma palabra coreana." },
+    { "question": "¿Es gratis 여기여?", "answer": "Sí, completamente gratis. No se requiere suscripción." },
+    { "question": "¿Puedo compartir el enlace?", "answer": "Sí, comparte 여기여.site a través de cualquier aplicación de mensajería." }
+  ],
+  "finalCtaHeading": "Nunca pierdas tu enlace 여기여 de nuevo",
+  "finalCtaButton": "Ir a 여기여 ahora",
+  "footer": { "tagline": "Hub oficial de enlaces 여기여 — siempre actualizado, siempre verificado.", "license": "Uso gratuito", "rights": "Todos los derechos reservados.", "privacy": "Privacidad", "terms": "Términos de uso" }
+}

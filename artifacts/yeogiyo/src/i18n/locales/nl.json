@@ -1,0 +1,57 @@
+{
+  "lang": "nl",
+  "dir": "ltr",
+  "metaTitle": "여기여 (Yeogiyo) — Huidig adres | yugiyu officiële link-hub",
+  "metaDescription": "여기여 adres dagelijks geverifieerd. Vind het laatste 여기여-adres direct. Gratis, snel, veilig.",
+  "metaKeywords": "여기여, yugiyu, 여기여 adres, yeogiyo, Koreaanse link-hub, 여기여 website",
+  "ogImageAlt": "여기여 (Yeogiyo) — Officiële link-hub",
+  "nav": { "home": "Home", "features": "Functies", "useCases": "Gebruiksscenario's", "quickStart": "Snel starten", "faq": "Veelgestelde vragen", "github": "GitHub" },
+  "hero": { "tagline": "Het 여기여-adres elke dag geverifieerd — alles op één plek.", "ctaPrimary": "Bezoek 여기여", "ctaSecondary": "Hoe toegang te krijgen" },
+  "featuresHeading": "Waarom 여기여.site de meest vertrouwde link-hub is",
+  "features": [
+    { "title": "Dagelijks bijgewerkt adres", "description": "Het officiële adres wordt elke dag geverifieerd en bijgewerkt." },
+    { "title": "Directe toegang", "description": "Geen registratie nodig. Klik en ga direct." },
+    { "title": "Door de community geverifieerde links", "description": "Elke link wordt geverifieerd voor publicatie." },
+    { "title": "Mobile-first ervaring", "description": "Volledig geoptimaliseerd voor smartphones en tablets." },
+    { "title": "Veilig en beveiligd", "description": "Alle adressen doorstaan veiligheidscontroles." },
+    { "title": "Volledig gratis", "description": "100% gratis, geen abonnementen of verborgen kosten." }
+  ],
+  "capabilitiesHeading": "Meer functies van 여기여",
+  "capabilities": [
+    { "title": "Bladwijzervriendelijke URL", "description": "Sla deze pagina op en kom terug wanneer nodig." },
+    { "title": "Meerdere spiegellinks", "description": "Back-upspiegels beschikbaar als een adres offline is." },
+    { "title": "Uptime-monitoring", "description": "We bewaken actief de 여기여-servers." },
+    { "title": "Historisch adresarchief", "description": "Bekijk de geschiedenis om huidige links te verifiëren." },
+    { "title": "Meertalige ondersteuning", "description": "Deze gids is beschikbaar in 14 talen." },
+    { "title": "Sociaal delen", "description": "Deel direct via KakaoTalk, LINE of een andere messenger." }
+  ],
+  "whatIsHeading": "Wat is 여기여 (Yeogiyo)?",
+  "whatIsBody": "여기여 — ook geromaniseerd als yugiyu of yeogiyo — is een van de meest gebruikte internet-link-hubs in Korea. Miljoenen gebruikers vertrouwen op 여기여 voor snelle, betrouwbare toegang tot geverifieerde webadressen.",
+  "useCasesHeading": "Wie gebruikt 여기여 en waarom",
+  "useCases": [
+    { "title": "Gebruikers die het 여기여-adres zoeken", "description": "Deze pagina geeft direct het huidige adres." },
+    { "title": "Community-moderatoren", "description": "Moderatoren delen alleen geverifieerde links van deze hub." },
+    { "title": "Bezoekers na adreswijziging", "description": "Deze hub is de snelste manier om het nieuwe adres te vinden." },
+    { "title": "Internationale gebruikers", "description": "Gebruikers wereldwijd openen 여기여 via deze meertalige gids." }
+  ],
+  "quickStartHeading": "Toegang tot 여기여 in 3 stappen",
+  "quickStartSteps": [
+    { "title": "Stap 1 — Sla deze pagina op als bladwijzer", "description": "Druk op Ctrl+D om 여기여.site op te slaan.", "code": "# URL om op te slaan:\nhttps://여기여.site" },
+    { "title": "Stap 2 — Controleer het huidige adres", "description": "Scroll naar de linksectie om het geverifieerde adres te zien.", "code": "# Laatste geverifieerde adres:\nhttps://www.ygy01.com/" },
+    { "title": "Stap 3 — Bezoek en geniet", "description": "Klik op de link om direct naar 여기여 te gaan.", "code": "# Alternatieve spiegellinks:\nhttps://여기여.site" }
+  ],
+  "faqHeading": "Veelgestelde vragen over 여기여",
+  "faqs": [
+    { "question": "Wat is 여기여 (yugiyu)?", "answer": "여기여 is een populaire Koreaanse internet-link-hub die webadressen verzamelt en verifieert." },
+    { "question": "Waarom verandert het adres?", "answer": "여기여 werkt zijn domein regelmatig bij om de beschikbaarheid van de service te behouden." },
+    { "question": "Is 여기여 veilig?", "answer": "Alle vermelde links worden door de community geverifieerd voor publicatie." },
+    { "question": "Hoe vind ik het laatste adres?", "answer": "Sla 여기여.site op als bladwijzer en bezoek het wanneer nodig." },
+    { "question": "Wat betekent '여기여' in het Koreaans?", "answer": "'여기여' betekent ongeveer 'Hier is het!' in het Koreaans." },
+    { "question": "Verschil tussen 여기여, yugiyu en yeogiyo?", "answer": "Geen — het zijn gewoon verschillende romaniseringen van hetzelfde Koreaanse woord." },
+    { "question": "Is 여기여 gratis?", "answer": "Ja, volledig gratis. Geen abonnement vereist." },
+    { "question": "Kan ik de link delen?", "answer": "Ja, deel 여기여.site via een berichtenapplicatie." }
+  ],
+  "finalCtaHeading": "Verlies nooit meer je 여기여-link",
+  "finalCtaButton": "Ga nu naar 여기여",
+  "footer": { "tagline": "Officiële 여기여-link-hub — altijd actueel, altijd geverifieerd.", "license": "Gratis gebruik", "rights": "Alle rechten voorbehouden.", "privacy": "Privacy", "terms": "Gebruiksvoorwaarden" }
+}

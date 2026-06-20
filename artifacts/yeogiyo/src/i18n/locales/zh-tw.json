@@ -1,0 +1,57 @@
+{
+  "lang": "zh-TW",
+  "dir": "ltr",
+  "metaTitle": "여기여 (Yeogiyo) — 最新地址直達 | yugiyu 官方連結中心",
+  "metaDescription": "여기여 每日更新最新驗證地址。一站式找到最新 여기여 주소，免費、快速、安全。",
+  "metaKeywords": "여기여, yugiyu, 여기여地址, 여기여最新地址, yeogiyo, 韓國連結導覽, 여기여網站",
+  "ogImageAlt": "여기여 (Yeogiyo) — 官方連結中心",
+  "nav": { "home": "首頁", "features": "功能", "useCases": "使用場景", "quickStart": "快速開始", "faq": "常見問題", "github": "GitHub" },
+  "hero": { "tagline": "每日更新驗證的 여기여 最新地址，再也不用滿網路搜索。", "ctaPrimary": "訪問 여기여", "ctaSecondary": "使用教學" },
+  "featuresHeading": "為什麼 여기여.site 是最值得信賴的連結中心",
+  "features": [
+    { "title": "每日更新的 여기여 地址", "description": "官方 여기여 地址每天驗證更新，始終為您提供最新可用連結。" },
+    { "title": "即時訪問，零門檻", "description": "無需註冊，點擊連結直達 여기여，任何裝置均快速載入。" },
+    { "title": "社群驗證連結", "description": "每個連結收錄前均經社群驗證，絕不引導至仿冒或有害頁面。" },
+    { "title": "行動裝置優先", "description": "完全針對手機和平板優化，隨時隨地輕鬆找到正確地址。" },
+    { "title": "安全可靠", "description": "所有地址均通過安全檢查，收藏本頁，永不迷路。" },
+    { "title": "完全免費", "description": "여기여 及本連結中心 100% 免費，無訂閱、無隱藏費用。" }
+  ],
+  "capabilitiesHeading": "여기여 更多實用功能",
+  "capabilities": [
+    { "title": "收藏友善URL", "description": "收藏本頁，隨時返回獲取最新 여기여 地址。" },
+    { "title": "多鏡像連結", "description": "若某一地址臨時不可用，我們提供備用鏡像。" },
+    { "title": "在線狀態監控", "description": "持續監控 여기여 伺服器在線狀態，新地址上線時第一時間通知社群。" },
+    { "title": "歷史地址歸檔", "description": "查看歷史地址記錄，直接驗證當前連結的真實性。" },
+    { "title": "多語言支援", "description": "本指南提供14種語言版本。" },
+    { "title": "社群分享", "description": "透過 KakaoTalk、LINE 即時分享最新驗證地址。" }
+  ],
+  "whatIsHeading": "什麼是 여기여 (Yeogiyo)?",
+  "whatIsBody": "여기여（也寫作 yugiyu 或 yeogiyo）是韓國最廣泛使用的網路連結中心之一，數百萬用戶依賴它快速取得已驗證的網址。「여기여」這個名字完美詮釋了它的使命：您需要的一切，就在這裡。",
+  "useCasesHeading": "誰在使用 여기여",
+  "useCases": [
+    { "title": "搜尋 여기여 地址的日常用戶", "description": "最常見用途：有人搜尋「여기여 주소」並需要當前正確域名，本頁即時提供答案。" },
+    { "title": "分享驗證連結的社群管理員", "description": "社群管理員使用本中心向成員分享已驗證的連結，防止釣魚仿冒站。" },
+    { "title": "域名變更後重新尋找的回訪用戶", "description": "當 여기여 更新地址時，書籤失效，本中心是找到新站點最快的方式。" },
+    { "title": "尋求韓國內容的海外用戶", "description": "全球用戶透過本多語言指南安全訪問 여기여。" }
+  ],
+  "quickStartHeading": "3步訪問 여기여",
+  "quickStartSteps": [
+    { "title": "第一步 — 收藏本頁", "description": "按 Ctrl+D 收藏 여기여.site。", "code": "# 收藏此URL:\nhttps://여기여.site" },
+    { "title": "第二步 — 查看最新地址", "description": "向下滾動至連結區域，查看當前已驗證的 여기여 地址。", "code": "# 最新驗證地址:\nhttps://www.ygy01.com/" },
+    { "title": "第三步 — 訪問並享用", "description": "點擊連結直達 여기여。若臨時不可用，請查看鏡像區域。", "code": "# 備用鏡像:\nhttps://여기여.site" }
+  ],
+  "faqHeading": "關於 여기여 的常見問題",
+  "faqs": [
+    { "question": "여기여 (yugiyu) 是什麼？", "answer": "여기여 是韓國熱門連結中心，以快速、免費、易用著稱。" },
+    { "question": "為什麼地址會變化？", "answer": "여기여 定期更新域名以維持服務可用性，本頁始終顯示當前有效地址。" },
+    { "question": "여기여 安全嗎？", "answer": "本頁連結發布前均經社群驗證，建議只使用本頁地址。" },
+    { "question": "如何找到最新地址？", "answer": "收藏 여기여.site，需要時隨時訪問。" },
+    { "question": "'여기여'是什麼意思？", "answer": "韓語「就在這裡！」，體現了平台一站式服務的使命。" },
+    { "question": "免費嗎？", "answer": "是的，完全免費，無需訂閱或付款。" },
+    { "question": "可以分享連結嗎？", "answer": "可以，透過任意通訊工具分享 여기여.site 即可。" },
+    { "question": "有繁體中文版嗎？", "answer": "是的，本頁即為繁體中文版。" }
+  ],
+  "finalCtaHeading": "永不再丟失您的 여기여 連結",
+  "finalCtaButton": "立即訪問 여기여",
+  "footer": { "tagline": "官方 여기여 連結中心 — 始終最新，始終驗證。", "license": "免費使用", "rights": "保留所有權利。", "privacy": "隱私政策", "terms": "服務條款" }
+}

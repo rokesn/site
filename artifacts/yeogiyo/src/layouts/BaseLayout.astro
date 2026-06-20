@@ -1,0 +1,39 @@
+---
+import type { Locale } from '../i18n';
+import { localePaths, localeNames, ogLocales } from '../i18n';
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HomePage from '../components/HomePage.astro';
+
+interface Props {
+  locale: string;
+  t: Locale;
+}
+
+const { locale, t } = Astro.props;
+const dir = t.dir as 'ltr' | 'rtl';
+---
+
+<!doctype html>
+<html lang={locale} dir={dir}>
+  <head>
+    <Head locale={locale} t={t} />
+  </head>
+  <body class="bg-gray-950 text-white antialiased">
+    <Header locale={locale} t={t} />
+    <main>
+      <HomePage locale={locale} t={t} />
+    </main>
+    <Footer locale={locale} t={t} />
+
+    <script>
+      const sel = document.getElementById('lang-select') as HTMLSelectElement | null;
+      if (sel) {
+        sel.addEventListener('change', () => {
+          window.location.href = sel.value;
+        });
+      }
+    </script>
+  </body>
+</html>

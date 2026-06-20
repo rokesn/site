@@ -1,0 +1,22 @@
+{
+  "name": "여기여 (Yeogiyo)",
+  "short_name": "여기여",
+  "description": "여기여 최신 주소 바로가기 — yugiyu official link hub",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
