@@ -5,6 +5,7 @@ export default defineConfig({
   output: "static",
   integrations: [tailwind()],
   site: "https://여기여.site",
+  trailingSlash: "always",
   build: {
     format: "directory",
   },
