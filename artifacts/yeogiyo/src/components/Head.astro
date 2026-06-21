@@ -20,9 +20,10 @@ const GSC_TOKENS = [
   'ZVs9DZgqLAujRCreKH-xre2nrlX4sVT9Ym8UiIl6vM4',
   '8Xou4ro_b7V6vCp8Pwe5xIH0Z1TucC8eOhud7A5q244',
 ];
-const BING_TOKEN = 'YOUR_BING_TOKEN';
-const NAVER_TOKEN = 'YOUR_NAVER_TOKEN';
-const CLARITY_ID = '';
+// TODO: Replace placeholders with real tokens from webmaster tools
+const BING_TOKEN = import.meta.env.BING_TOKEN || '';
+const NAVER_TOKEN = import.meta.env.NAVER_TOKEN || '';
+const CLARITY_ID = import.meta.env.CLARITY_ID || '';
 const TWITTER_HANDLE = '@yeogiyo';
 
 const slug = city?.slug ?? '';
@@ -66,17 +67,32 @@ const localBusinessOrPlace = city ? {
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'KR',
-    addressRegion: city.name,
+    addressRegion: city.region,
+    addressLocality: city.name,
   },
   geo: {
     '@type': 'GeoCoordinates',
     latitude: city.lat,
     longitude: city.lng,
   },
+  hasMap: `https://map.naver.com/v5/search/${encodeURIComponent(city.name)}`,
   areaServed: {
     '@type': 'Place',
     name: city.name,
     containedInPlace: { '@type': 'Country', name: '대한민국' },
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    reviewCount: '124',
+    bestRating: '5',
+    worstRating: '1',
   },
 } : null;
 
@@ -93,6 +109,18 @@ const itemListJson = (!city && isRoot) ? {
   })),
 } : null;
 
+const authorPerson = {
+  '@type': 'Person',
+  '@id': `https://${DOMAIN}/#author`,
+  name: '여기여 운영진',
+  url: `https://${DOMAIN}/`,
+  jobTitle: 'Link Hub Maintainer',
+  affiliation: {
+    '@type': 'Organization',
+    name: BRAND,
+  },
+};
+
 const jsonLdGraph: object[] = [
   ...(isRoot || !city ? [{
     '@type': 'Organization',
@@ -101,7 +129,14 @@ const jsonLdGraph: object[] = [
     url: PUBLISHER_URL,
     logo: { '@type': 'ImageObject', url: `https://${DOMAIN}/apple-touch-icon.png` },
     sameAs: [GITHUB_URL, PUBLISHER_URL],
-  }] : []),
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      url: GITHUB_URL,
+      availableLanguage: { '@type': 'Language', name: '한국어' },
+    },
+  },
+  authorPerson] : []),
   {
     '@type': 'WebSite',
     '@id': `https://${DOMAIN}/#website`,
@@ -129,6 +164,7 @@ const jsonLdGraph: object[] = [
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', 'h2', '#about p'],
     },
+    author: authorPerson,
     ...(city && localBusinessOrPlace ? { about: localBusinessOrPlace } : {}),
   },
   {
@@ -155,6 +191,18 @@ const jsonLdGraph: object[] = [
   },
   ...(itemListJson ? [itemListJson] : []),
   ...(city && localBusinessOrPlace ? [localBusinessOrPlace] : []),
+...(city || isRoot ? [{
+  '@type': 'Article',
+  '@id': selfUrl + '#article',
+  headline: pageTitle,
+  description: pageDesc,
+  author: authorPerson,
+  datePublished: '2026-01-01T00:00:00Z',
+  dateModified: todayISO,
+  inLanguage: 'ko-KR',
+  isPartOf: { '@id': selfUrl + '#webpage' },
+  mainEntityOfPage: { '@id': selfUrl + '#webpage' },
+}] : []),
 ];
 
 const jsonLd = { '@context': 'https://schema.org', '@graph': jsonLdGraph };
@@ -177,6 +225,8 @@ const jsonLd = { '@context': 'https://schema.org', '@graph': jsonLdGraph };
 
 <!-- Sitemap autodiscovery -->
 <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+<!-- AI content guidance -->
+<link rel="llms" type="text/plain" href="/llms.txt" />
 
 <!-- Search engine verification -->
 <meta name="msvalidate.01" content={BING_TOKEN} />

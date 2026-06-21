@@ -1,0 +1,5 @@
+# Placeholder for IndexNow key
+# Get a real key from https://www.bing.com/webmasters/
+# Then replace the content of this file with your actual key
+# and set INDEXNOW_KEY in your environment variables.env.example
+INDEXNOW_KEY=your_bing_indexnow_key_here

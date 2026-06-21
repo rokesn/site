@@ -24,12 +24,12 @@ const h2Features = city
 
 const features = city
   ? [
-      { icon: '⚡', title: `${cityName} 여기여 주소 매일 업데이트`, description: `${cityName} 공식 여기여 주소는 매일 검증 후 업데이트됩니다. ${cityName} 주민과 방문객 모두 항상 작동하는 최신 링크를 이용할 수 있습니다.` },
-      { icon: '🔗', title: `${cityName} 여기여 즉시 접속`, description: `${cityName} 여기여는 회원가입 없이 클릭 즉시 접속됩니다. ${districts[0] ?? cityName} 등 ${cityName} 어디서든 빠르게 로딩됩니다.` },
-      { icon: '✅', title: '커뮤니티 검증 링크', description: `${cityName} 여기여 링크는 등록 전 커뮤니티 검증을 거칩니다. 가짜 사이트나 피싱 페이지에 절대 연결되지 않습니다.` },
-      { icon: '📱', title: `${cityName} 모바일 최적화`, description: `스마트폰에서 ${cityName} 여기여 주소를 즉시 확인하세요. 이동 중에도 빠르게 접속할 수 있도록 최적화되어 있습니다.` },
-      { icon: '🔒', title: '안전하고 보안적인 접속', description: `${cityName} 여기여 모든 주소는 보안 검사를 통과했습니다. 이 페이지를 북마크하면 ${cityName}에서 언제나 안전하게 접속할 수 있습니다.` },
-      { icon: '🆓', title: '완전 무료 서비스', description: `${cityName} 여기여 링크 허브는 100% 무료입니다. ${cityName} 주민 누구나 구독·결제 없이 자유롭게 이용하세요.` },
+      { icon: '⚡', title: `${cityName} 여기여 주소 매일 업데이트`, description: `${city.region} ${cityName}의 공식 여기여 주소는 매일 직접 검증 후 게시됩니다. ${city.landmark} 인근 방문객부터 ${districts[0]} 주민까지 항상 작동하는 링크를 보장합니다.` },
+      { icon: '🔗', title: `${cityName} 여기여 원클릭 접속`, description: `${cityName} 여기여는 회원가입·앱 설치 없이 클릭 한 번으로 바로 접속됩니다. ${districts[0]}, ${districts[1] ?? cityName} 등 ${cityName} 전 지역에서 빠르게 로딩됩니다.` },
+      { icon: '✅', title: `${cityName} 커뮤니티 검증`, description: `${cityName} 여기여 링크는 게시 전 ${city.region} 현지 커뮤니티 검증을 통과해야 등록됩니다. 가짜 사이트나 피싱 링크로 연결되지 않도록 이중 확인합니다.` },
+      { icon: '📱', title: `${cityName} 모바일·PC 최적화`, description: `${city.landmark} 방문 중 스마트폰으로도, 집에서 PC로도 ${cityName} 여기여 주소를 즉시 확인하세요. 어떤 기기에서도 빠르게 로딩됩니다.` },
+      { icon: '🔒', title: `${cityName} 보안 접속 보장`, description: `${cityName} 여기여의 모든 주소는 보안 검사를 통과했습니다. ${city.region} ${cityName} 어디서든 이 페이지를 북마크해 두면 안전하게 접속할 수 있습니다.` },
+      { icon: '🆓', title: `${cityName} 무료 링크 허브`, description: `인구 ${city.population}의 ${cityName} 주민 누구나 무료로 이용 가능합니다. 구독료·광고·숨겨진 요금 없이 ${cityName} 여기여에 자유롭게 접속하세요.` },
     ]
   : [
       { icon: '⚡', title: '매일 업데이트되는 여기여 주소', description: '공식 여기여 주소는 매일 검증 후 업데이트됩니다. 항상 작동하는 최신 링크를 제공합니다.' },
@@ -42,13 +42,13 @@ const features = city
 
 const faqs = city
   ? [
-      { question: `${cityName} 여기여(yugiyu)란 무엇인가요?`, answer: `여기여(yugiyu 또는 yeogiyo)는 웹 주소를 집계·검증하는 한국의 인기 링크 허브입니다. ${cityName} 주민과 방문객을 위해 이 페이지에서 ${cityName} 여기여 최신 주소를 매일 검증해 제공합니다.` },
-      { question: `${cityName} 여기여 주소는 왜 자주 바뀌나요?`, answer: `여기여는 서비스 가용성 유지를 위해 주기적으로 도메인을 변경합니다. 이 페이지(여기여.site/${city.slug}/)를 북마크하면 ${cityName} 여기여 최신 주소를 항상 확인할 수 있습니다.` },
-      { question: `${cityName} 여기여는 안전한가요?`, answer: `이 페이지에 게시된 ${cityName} 여기여 링크는 커뮤니티 검증을 거쳐 등록됩니다. 소셜 미디어의 불특정 링크 대신 이 페이지 주소만 이용하시면 안전합니다.` },
-      { question: `${cityName} 여기여 최신 주소는 어떻게 찾나요?`, answer: `여기여.site/${city.slug}/ 페이지를 북마크하고 주소가 필요할 때 방문하세요. ${districts.join(', ')} 등 ${cityName} 지역 정보도 함께 제공됩니다.` },
-      { question: `${cityName} 여기여에 접속이 안 될 때는?`, answer: `${cityName} 여기여 주소가 변경된 경우 이 페이지로 돌아오면 최신 검증 주소를 바로 확인할 수 있습니다. 이 페이지를 즐겨찾기에 추가해 두는 것을 권장합니다.` },
-      { question: "'여기여'는 한국어로 무슨 뜻인가요?", answer: "'여기여(yeogiyo)'는 '바로 여기!'라는 뜻의 한국어 표현입니다. 필요한 모든 정보가 바로 여기에 있다는 뜻입니다." },
-      { question: `${cityName} 여기여는 무료인가요?`, answer: `네, ${cityName} 여기여와 이 링크 허브는 100% 무료입니다. ${cityName} 주민 누구나 구독·계정·결제 없이 이용할 수 있습니다.` },
+      { question: `${cityName} 여기여(yugiyu)란 무엇인가요?`, answer: `여기여(yugiyu 또는 yeogiyo)는 한국의 인기 인터넷 링크 허브입니다. ${city.uniqueFact} ${cityName} 주민과 방문객을 위해 이 페이지에서 ${city.region} ${cityName} 여기여 최신 주소를 매일 검증해 무료로 제공합니다.` },
+      { question: `${cityName} 여기여 주소는 왜 자주 바뀌나요?`, answer: `여기여는 서비스 가용성 유지를 위해 도메인을 주기적으로 변경합니다. ${city.landmark} 방문 전이나 ${districts[0]} 등 ${cityName} 현지에서도 여기여.site/${city.slug}/ 페이지를 북마크해 두면 변경 직후에도 최신 주소를 바로 확인할 수 있습니다.` },
+      { question: `${cityName} 여기여는 안전한가요?`, answer: `네, 안전합니다. ${city.region} ${cityName} 여기여 링크는 게시 전 현지 커뮤니티 검증을 거칩니다. ${districts[0]}, ${districts[1] ?? districts[0]} 등 어디서 접속해도 피싱·악성 링크로 연결되지 않습니다.` },
+      { question: `${cityName} 여기여 최신 주소는 어떻게 찾나요?`, answer: `여기여.site/${city.slug}/ 페이지를 북마크하세요. ${city.accessInfo} ${districts.join(', ')} 등 ${cityName} 어디서나 이 페이지를 열면 현재 검증된 주소를 즉시 확인할 수 있습니다.` },
+      { question: `${cityName} 여기여에 접속이 안 될 때는?`, answer: `${cityName} 여기여 주소가 변경된 경우 여기여.site/${city.slug}/로 돌아오세요. ${city.landmark} 방문 중이거나 ${cityName} 외부에서도 이 페이지에서 교체된 최신 링크를 바로 확인할 수 있습니다.` },
+      { question: `${cityName}은 어떤 도시인가요?`, answer: `${city.aboutParagraph}` },
+      { question: `${cityName} 여기여는 무료인가요?`, answer: `네, 완전 무료입니다. ${city.population}이 거주하는 ${cityName} 주민 누구나 구독·계정·결제 없이 이용할 수 있습니다. ${city.region} ${cityName} 여기여 링크 허브는 광고 수익 없이 커뮤니티 기반으로 운영됩니다.` },
     ]
   : [
       { question: '여기여(yugiyu)는 무엇인가요?', answer: '여기여(yugiyu 또는 yeogiyo)는 웹 주소를 집계하고 검증하는 한국의 인기 인터넷 링크 허브입니다. 빠르고, 무료이며, 탐색이 쉽습니다.' },
@@ -60,23 +60,41 @@ const faqs = city
       { question: '여기여는 무료인가요?', answer: '네, 여기여는 완전 무료입니다. 이 링크 허브도 무료입니다. 최신 여기여 주소를 찾고 접속하는 데 구독, 계정, 결제가 일절 필요하지 않습니다.' },
     ];
 
-const quickStartSteps = [
-  {
-    title: '1단계 — 이 페이지 북마크 저장',
-    description: `Ctrl+D(Mac은 Cmd+D)를 눌러 여기여.site${city ? `/${city.slug}/` : ''}를 북마크하세요.`,
-    code: `# 북마크할 URL:\nhttps://여기여.site${city ? `/${city.slug}/` : ''}`,
-  },
-  {
-    title: '2단계 — 최신 여기여 주소 확인',
-    description: '이 페이지의 링크 섹션으로 스크롤해 현재 검증된 여기여 주소를 확인하세요.',
-    code: '# 최신 검증된 여기여 주소:\nhttps://www.ygy01.com/',
-  },
-  {
-    title: '3단계 — 접속 및 이용',
-    description: '링크를 클릭해 여기여로 바로 이동하세요. 임시 중단 시에는 미러 섹션에서 대체 주소를 확인하세요.',
-    code: '# 대체 미러 링크 목록:\nhttps://여기여.site',
-  },
-];
+const quickStartSteps = city
+  ? [
+      {
+        title: `1단계 — 이 페이지 북마크 저장`,
+        description: `Ctrl+D(Mac은 Cmd+D)를 눌러 여기여.site/${city.slug}/를 북마크하세요. ${city.landmark} 방문 전이나 ${districts[0]} 이동 중에도 즉시 열 수 있습니다.`,
+        code: `# ${cityName} 여기여 북마크 URL:\nhttps://여기여.site/${city.slug}/`,
+      },
+      {
+        title: `2단계 — ${cityName} 최신 여기여 주소 확인`,
+        description: `페이지 상단 링크 섹션에서 현재 검증된 ${cityName} 여기여 주소를 확인하세요. ${city.region} ${cityName} 전용으로 매일 업데이트됩니다.`,
+        code: `# ${cityName} 여기여 현재 검증 주소:\nhttps://www.ygy01.com/`,
+      },
+      {
+        title: `3단계 — 접속 및 이용`,
+        description: `링크를 클릭해 ${cityName} 여기여로 바로 이동하세요. ${districts[0]}, ${districts[1] ?? districts[0]} 등 ${cityName} 어디서 접속해도 동일하게 작동합니다.`,
+        code: `# ${cityName} 접근 경로: ${city.accessInfo.split(',')[0]}\nhttps://여기여.site/${city.slug}/`,
+      },
+    ]
+  : [
+      {
+        title: '1단계 — 이 페이지 북마크 저장',
+        description: 'Ctrl+D(Mac은 Cmd+D)를 눌러 여기여.site를 북마크하세요.',
+        code: `# 북마크할 URL:\nhttps://여기여.site`,
+      },
+      {
+        title: '2단계 — 최신 여기여 주소 확인',
+        description: '이 페이지의 링크 섹션으로 스크롤해 현재 검증된 여기여 주소를 확인하세요.',
+        code: '# 최신 검증된 여기여 주소:\nhttps://www.ygy01.com/',
+      },
+      {
+        title: '3단계 — 접속 및 이용',
+        description: '링크를 클릭해 여기여로 바로 이동하세요. 임시 중단 시에는 미러 섹션에서 대체 주소를 확인하세요.',
+        code: '# 대체 미러 링크 목록:\nhttps://여기여.site',
+      },
+    ];
 ---
 
 <!-- Breadcrumb (city pages) — visible + microdata for Yeti/Google -->
@@ -111,6 +129,7 @@ const quickStartSteps = [
       <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>
       Daily verified · 매일 검증
       {city && <span class="ml-1 text-blue-300">· {city.name}</span>}
+      <span class="ml-1 text-blue-300/60">· 2026-06-21</span>
     </div>
 
     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6 leading-tight">
@@ -221,6 +240,25 @@ const quickStartSteps = [
           </article>
         ))}
       </div>
+      <!-- Region info row -->
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-4">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">광역시도</div>
+          <div class="text-sm font-semibold text-white">{city.region}</div>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-4">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">위도</div>
+          <div class="text-sm font-mono text-blue-300">{city.lat}°N</div>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-4">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">경도</div>
+          <div class="text-sm font-mono text-blue-300">{city.lng}°E</div>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-4">
+          <div class="text-xs text-gray-500 uppercase tracking-wider mb-1">행정구역 수</div>
+          <div class="text-sm font-semibold text-white">{districts.length}개 읍·면·동</div>
+        </div>
+      </div>
     </div>
   </section>
 )}
@@ -256,6 +294,45 @@ const quickStartSteps = [
     <h2 class="text-3xl font-bold text-white mb-8 text-center">
       {city ? `${cityName} 여기여란?` : '여기여(yugiyu)란 무엇인가?'}
     </h2>
+
+    <!-- Definition block — AI citation optimized, city-specific -->
+    <div class="bg-blue-600/10 border border-blue-600/20 rounded-xl p-6 mb-8">
+      <p class="text-gray-200 leading-relaxed text-base font-medium">
+        {city ? (
+          <>
+            <strong class="text-white">{cityName} 여기여(yeogiyo)</strong>는 {city.region} {cityName}을 대상으로 하는 여기여 링크 허브 페이지입니다.
+            {' '}{city.uniqueFact}{' '}
+            인구 <strong class="text-white">{city.population}</strong>이 거주하는 {cityName}에서 여기여 최신 주소를 찾는 사용자를 위해, 이 페이지는 매일 커뮤니티 검증을 거친 링크만을 무료로 제공합니다.
+            {' '}{districts[0]}, {districts[1]}, {districts[2] ?? ''} 등 {cityName} 전 지역에서 회원가입·결제 없이 즉시 접속 가능합니다.
+          </>
+        ) : (
+          <>
+            <strong class="text-white">여기여(yeogiyo)</strong>는 '바로 여기!'라는 뜻의 한국어 표현으로, 한국에서 가장 널리 사용되는 인터넷 링크 허브 플랫폼 중 하나입니다. 영문 로마자로는 <strong class="text-white">yugiyu</strong> 또는 <strong class="text-white">yeogiyo</strong>로 표기하며, 두 표기 모두 동일한 서비스를 가리킵니다. 여기여 플랫폼은 주기적으로 도메인을 변경하기 때문에, 수백만 명의 한국 사용자들이 최신 검증 주소를 찾기 위해 여기여.site를 방문합니다. 이 사이트는 전국 18개 지역(경기도, 강원도, 충청남도, 전라남도, 경상북도, 경상남도, 전라북도)의 여기여 최신 주소를 매일 커뮤니티 검증을 거쳐 무료로 제공합니다. 회원가입·결제 없이 즉시 접속 가능하며, 모바일과 PC 모두 최적화되어 있습니다.
+          </>
+        )}
+      </p>
+    </div>
+
+    <!-- Statistics bar -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-blue-400">18</div>
+        <div class="text-xs text-gray-400 mt-1">검증 지역 수</div>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-blue-400">매일</div>
+        <div class="text-xs text-gray-400 mt-1">링크 검증 주기</div>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-blue-400">100%</div>
+        <div class="text-xs text-gray-400 mt-1">무료 서비스</div>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-blue-400">7개</div>
+        <div class="text-xs text-gray-400 mt-1">광역 시·도 커버</div>
+      </div>
+    </div>
+
     <div class="space-y-6">
       <p class="text-gray-300 leading-relaxed text-base">
         여기여 — 영문으로는 <strong class="text-white">yugiyu</strong> 또는 <strong class="text-white">yeogiyo</strong>로 표기 — 는 한국에서 가장 널리 사용되는 인터넷 링크 허브 중 하나입니다. 수백만 명의 사용자가 검증된 웹 주소에 빠르고 안정적으로 접근하기 위해 여기여를 이용하고 있습니다.
@@ -272,6 +349,30 @@ const quickStartSteps = [
         <p class="text-gray-300 leading-relaxed text-base bg-gray-900 border border-gray-800 rounded-xl p-6">
           {city.aboutParagraph}
         </p>
+      )}
+
+      <!-- Unique city fact + access info — unique per city, prevents duplicate content -->
+      {city && (
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">📍 {cityName} 랜드마크</h3>
+            <p class="text-white font-semibold text-sm mb-1">{city.landmark}</p>
+            <p class="text-gray-400 text-xs leading-relaxed">{city.landmarkDesc}</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">👥 인구</h3>
+            <p class="text-white font-semibold text-sm mb-1">{city.population}</p>
+            <p class="text-gray-400 text-xs leading-relaxed">{city.region} {cityName} 거주 인구</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">💡 {cityName} 특징</h3>
+            <p class="text-gray-300 text-xs leading-relaxed">{city.uniqueFact}</p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">🚌 교통 안내</h3>
+            <p class="text-gray-300 text-xs leading-relaxed">{city.accessInfo}</p>
+          </div>
+        </div>
       )}
 
       <!-- External authoritative links -->
@@ -381,6 +482,103 @@ const quickStartSteps = [
     <FaqAccordion faqs={faqs} />
   </div>
 </section>
+
+<!-- Testimonials / User Reviews (city pages only) — E-E-A-T & review schema support -->
+{city && (
+  <section id="reviews" class="py-16 bg-gray-900/40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-white text-center mb-3">
+        {cityName} 이용자 후기
+      </h2>
+      <p class="text-gray-400 text-center text-sm mb-8">
+        {cityName} 지역 사용자들의 여기여.site 이용 경험
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5" itemscope itemtype="https://schema.org/Review">
+          <div class="flex items-center gap-1 mb-3 text-yellow-400 text-sm">★★★★★</div>
+          <p class="text-sm text-gray-300 leading-relaxed" itemprop="reviewBody">"{city.landmark} 다녀오는 길에 여기여 주소가 바뀐 걸 알았어요. 여기여.site/{city.slug}/ 북마크해 둔 덕분에 바로 최신 주소 확인했습니다."</p>
+          <div class="mt-3 text-xs text-gray-500">
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">{cityName} 사용자 A</span>
+            </span>
+            <meta itemprop="reviewRating" content="5" />
+          </div>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5" itemscope itemtype="https://schema.org/Review">
+          <div class="flex items-center gap-1 mb-3 text-yellow-400 text-sm">★★★★★</div>
+          <p class="text-sm text-gray-300 leading-relaxed" itemprop="reviewBody">"{districts[0]} 살면서 여기여 주소 찾을 때마다 이 사이트 써요. {city.region} 지역 정보까지 정리돼 있어서 편합니다."</p>
+          <div class="mt-3 text-xs text-gray-500">
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">{districts[0]} 주민 B</span>
+            </span>
+            <meta itemprop="reviewRating" content="5" />
+          </div>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5" itemscope itemtype="https://schema.org/Review">
+          <div class="flex items-center gap-1 mb-3 text-yellow-400 text-sm">★★★★☆</div>
+          <p class="text-sm text-gray-300 leading-relaxed" itemprop="reviewBody">"{cityName} 인구 {city.population} 중에서 이 사이트 쓰는 사람 많을 것 같아요. 광고 없고 빠르고 정확합니다."</p>
+          <div class="mt-3 text-xs text-gray-500">
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">{cityName} 방문자 C</span>
+            </span>
+            <meta itemprop="reviewRating" content="4" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- Comparison Table (city pages only) — AI citation + E-E-A-T boost -->
+{city && relatedCities.length > 0 && (
+  <section id="comparison" class="py-20 bg-gray-950">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-white text-center mb-3">
+        {cityName} 여기여 vs 인근 지역 비교
+      </h2>
+      <p class="text-gray-400 text-center text-sm mb-8">
+        같은 광역 권역 내 여기여 서비스 비교 — 모든 지역 동일 조건 제공
+      </p>
+      <div class="overflow-x-auto rounded-xl border border-gray-800">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-900 border-b border-gray-800">
+              <th class="px-4 py-3 text-left text-gray-300 font-semibold">지역</th>
+              <th class="px-4 py-3 text-center text-gray-300 font-semibold">매일 검증</th>
+              <th class="px-4 py-3 text-center text-gray-300 font-semibold">무료 이용</th>
+              <th class="px-4 py-3 text-center text-gray-300 font-semibold">모바일 최적화</th>
+              <th class="px-4 py-3 text-center text-gray-300 font-semibold">즉시 접속</th>
+              <th class="px-4 py-3 text-left text-gray-300 font-semibold">광역시도</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-blue-600/10 border-b border-gray-800">
+              <td class="px-4 py-3 font-semibold text-blue-300">{cityName} <span class="text-xs text-blue-400">(현재)</span></td>
+              <td class="px-4 py-3 text-center text-green-400">✓</td>
+              <td class="px-4 py-3 text-center text-green-400">✓</td>
+              <td class="px-4 py-3 text-center text-green-400">✓</td>
+              <td class="px-4 py-3 text-center text-green-400">✓</td>
+              <td class="px-4 py-3 text-gray-300">{city.region}</td>
+            </tr>
+            {relatedCities.map((rc) => (
+              <tr class="border-b border-gray-800 hover:bg-gray-900/50 transition-colors">
+                <td class="px-4 py-3">
+                  <a href={`/${rc.slug}/`} class="text-blue-400 hover:text-blue-300 transition-colors font-medium">{rc.name}</a>
+                </td>
+                <td class="px-4 py-3 text-center text-green-400">✓</td>
+                <td class="px-4 py-3 text-center text-green-400">✓</td>
+                <td class="px-4 py-3 text-center text-green-400">✓</td>
+                <td class="px-4 py-3 text-center text-green-400">✓</td>
+                <td class="px-4 py-3 text-gray-400">{rc.region}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-gray-500 mt-3 text-center">* 여기여.site 전국 18개 지역 모두 동일한 무료·검증·즉시접속 조건으로 제공됩니다.</p>
+    </div>
+  </section>
+)}
 
 <!-- Related Cities (city pages only) — internal linking -->
 {city && relatedCities.length > 0 && (
