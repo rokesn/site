@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd artifacts/yeogiyo && npm install && npm run build",
+  "outputDirectory": "artifacts/yeogiyo/dist",
+  "installCommand": "echo skip"
+}
