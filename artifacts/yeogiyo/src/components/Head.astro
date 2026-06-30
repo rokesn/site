@@ -87,17 +87,6 @@ const localBusinessOrPlace = city ? {
     opens: '00:00',
     closes: '23:59',
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: 4.8,
-    reviewCount: 124,
-    bestRating: 5,
-    worstRating: 1,
-    itemReviewed: {
-      '@type': 'LocalBusiness',
-      name: city ? `${city.name} 여기여` : '여기여',
-    },
-  },
 } : null;
 
 const itemListJson = (!city && isRoot) ? {
@@ -169,7 +158,6 @@ const jsonLdGraph: object[] = [
       cssSelector: ['h1', 'h2', '#about p'],
     },
     author: authorPerson,
-    ...(city && localBusinessOrPlace ? { about: localBusinessOrPlace } : {}),
   },
   {
     '@type': 'BreadcrumbList',
