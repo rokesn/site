@@ -19,4 +19,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://여기여.site/sitemap.xml
+Sitemap: https://xn--ok0b236bba.site/sitemap.xml

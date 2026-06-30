@@ -7,27 +7,25 @@
 
 ## 주요 페이지
 
-- [홈 — 전국 여기여 허브](https://여기여.site/): 전국 18개 지역 여기여 주소 한눈에 보기
-- [천안시 여기여](https://여기여.site/cheonan/): 충청남도 천안시 여기여 최신 주소
-- [속초시 여기여](https://여기여.site/sokcho/): 강원도 속초시 여기여 최신 주소
-- [시흥시 여기여](https://여기여.site/siheung/): 경기도 시흥시 여기여 최신 주소
-- [구미시 여기여](https://여기여.site/gumi/): 경상북도 구미시 여기여 최신 주소
-- [양주시 여기여](https://여기여.site/yangju/): 경기도 양주시 여기여 최신 주소
-- [오산시 여기여](https://여기여.site/osan/): 경기도 오산시 여기여 최신 주소
-- [당진시 여기여](https://여기여.site/dangjin/): 충청남도 당진시 여기여 최신 주소
-- [광양시 여기여](https://여기여.site/gwangyang/): 전라남도 광양시 여기여 최신 주소
-- [무안군 여기여](https://여기여.site/muan/): 전라남도 무안군 여기여 최신 주소
-- [태안군 여기여](https://여기여.site/taean/): 충청남도 태안군 여기여 최신 주소
-- [영주시 여기여](https://여기여.site/yeongju/): 경상북도 영주시 여기여 최신 주소
-- [정읍시 여기여](https://여기여.site/jeongeup/): 전라북도 정읍시 여기여 최신 주소
-- [함안군 여기여](https://여기여.site/haman/): 경상남도 함안군 여기여 최신 주소
-- [고흥군 여기여](https://여기여.site/goheung/): 전라남도 고흥군 여기여 최신 주소
-- [양구군 여기여](https://여기여.site/yanggu/): 강원도 양구군 여기여 최신 주소
-- [철원군 여기여](https://여기여.site/cheorwon/): 강원도 철원군 여기여 최신 주소
-- [거창군 여기여](https://여기여.site/geochang/): 경상남도 거창군 여기여 최신 주소
-- [여주시 여기여](https://여기여.site/yeoju/): 경기도 여주시 여기여 최신 주소
-- [개인정보처리방침](https://여기여.site/privacy/): 개인정보 수집 및 사용 안내
-- [이용약관](https://여기여.site/terms/): 서비스 이용 약관
+- [홈 — 전국 여기여 허브](https://xn--ok0b236bba.site/): 전국 18개 지역 여기여 주소 한눈에 보기
+- [천안시 여기여](https://xn--ok0b236bba.site/cheonan/): 충청남도 천안시 여기여 최신 주소
+- [속초시 여기여](https://xn--ok0b236bba.site/sokcho/): 강원도 속초시 여기여 최신 주소
+- [시흥시 여기여](https://xn--ok0b236bba.site/siheung/): 경기도 시흥시 여기여 최신 주소
+- [구미시 여기여](https://xn--ok0b236bba.site/gumi/): 경상북도 구미시 여기여 최신 주소
+- [양주시 여기여](https://xn--ok0b236bba.site/yangju/): 경기도 양주시 여기여 최신 주소
+- [오산시 여기여](https://xn--ok0b236bba.site/osan/): 경기도 오산시 여기여 최신 주소
+- [당진시 여기여](https://xn--ok0b236bba.site/dangjin/): 충청남도 당진시 여기여 최신 주소
+- [광양시 여기여](https://xn--ok0b236bba.site/gwangyang/): 전라남도 광양시 여기여 최신 주소
+- [무안군 여기여](https://xn--ok0b236bba.site/muan/): 전라남도 무안군 여기여 최신 주소
+- [태안군 여기여](https://xn--ok0b236bba.site/taean/): 충청남도 태안군 여기여 최신 주소
+- [영주시 여기여](https://xn--ok0b236bba.site/yeongju/): 경상북도 영주시 여기여 최신 주소
+- [정읍시 여기여](https://xn--ok0b236bba.site/jeongeup/): 전라북도 정읍시 여기여 최신 주소
+- [함안군 여기여](https://xn--ok0b236bba.site/haman/): 경상남도 함안군 여기여 최신 주소
+- [고흥군 여기여](https://xn--ok0b236bba.site/goheung/): 전라남도 고흥군 여기여 최신 주소
+- [양구군 여기여](https://xn--ok0b236bba.site/yanggu/): 강원도 양구군 여기여 최신 주소
+- [철원군 여기여](https://xn--ok0b236bba.site/cheorwon/): 강원도 철원군 여기여 최신 주소
+- [거창군 여기여](https://xn--ok0b236bba.site/geochang/): 경상남도 거창군 여기여 최신 주소
+- [여주시 여기여](https://xn--ok0b236bba.site/yeoju/): 경기도 여주시 여기여 최신 주소
 
 ## 검증 지역 목록
 
@@ -45,11 +43,11 @@
 
 ## 콘텐츠 라이선스
 
-이 사이트의 콘텐츠는 커뮤니티 검증 기반으로 제공됩니다. AI 학습 및 인용 시 출처를 명시해 주세요: 여기여.site
+이 사이트의 콘텐츠는 커뮤니티 검증 기반으로 제공됩니다. AI 학습 및 인용 시 출처를 명시해 주세요: xn--ok0b236bba.site
 
 ## 운영 정보
 
 - 운영자: 여기여 운영진
-- 최종 업데이트: 2026-06-21
+- 최종 업데이트: 2026-06-30
 - 언어: 한국어 (ko-KR)
 - 대상: 한국 전국 여기여 사용자

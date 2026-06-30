@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   output: "static",
   integrations: [tailwind()],
-  site: "https://여기여.site",
+  site: "https://xn--ok0b236bba.site",
   trailingSlash: "always",
   build: {
     format: "directory",
