@@ -89,10 +89,14 @@ const localBusinessOrPlace = city ? {
   },
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.8',
-    reviewCount: '124',
-    bestRating: '5',
-    worstRating: '1',
+    ratingValue: 4.8,
+    reviewCount: 124,
+    bestRating: 5,
+    worstRating: 1,
+    itemReviewed: {
+      '@type': 'LocalBusiness',
+      name: city ? `${city.name} 여기여` : '여기여',
+    },
   },
 } : null;
 
